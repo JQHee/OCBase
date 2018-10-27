@@ -1,0 +1,33 @@
+platform :ios, '8.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'OCBase' do
+  
+    pod 'MJExtension', '~> 3.0.15.1'
+    pod 'pop', '~> 1.0.10'
+    pod 'MJRefresh', '~> 3.1.15.7'
+    pod 'SDWebImage', '~> 5.0.0-beta3'
+    pod 'IQKeyboardManager', '~> 6.2.0'
+    pod 'DateTools', '~> 2.0.0'
+    # OC的稳定版本是2.5
+    # pod 'ReactiveCocoa', '~> 2.5'
+    pod 'Masonry'
+    pod 'AFNetworking'
+    pod 'FDStackView'
+    pod "CYLTabBarController", "~>1.11.0"
+    # pod 'HYBImageCliped'
+    # pod 'YYText', '~> 1.0.7'
+    pod 'SDCycleScrollView','~> 1.61'
+    pod 'MBProgressHUD'
+    # 已经很久没有维护了
+    # pod 'LPPhotoViewer', '~> 0.0.7’
+    # pod 'LBXScan'
+    # pod 'INTULocationManager'
+    # pod 'TZImagePickerController'
+    # pod 'CocoaSecurity'
+    pod 'DZNEmptyDataSet'
+    # pod 'Realm'
+    # pod 'FMDB', '~> 2.6.2'
+
+end

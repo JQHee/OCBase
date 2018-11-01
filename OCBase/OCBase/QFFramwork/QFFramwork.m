@@ -10,19 +10,6 @@
 
 @implementation QFFramwork
 
-+ (UITapGestureRecognizer *)touchView:(id)targetView action:(void (^)())viewBlock {
-    ((UIView *)targetView).userInteractionEnabled = YES;
-    UITapGestureRecognizer *bind = [[UITapGestureRecognizer alloc] init];
-    [targetView addGestureRecognizer:bind];
-    [[bind rac_gestureSignal] subscribeNext:^(id x) {
-        if (viewBlock) {
-            viewBlock();
-        }
-    }];
-
-    return bind;
-}
-
 + (void)actionSheetShowToVC:(UIViewController *)VC
                      titles:(NSArray<NSString *> *)titles
               callBackIndex:(void (^)(NSInteger index))block {

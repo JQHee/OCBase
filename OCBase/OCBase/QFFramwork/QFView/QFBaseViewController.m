@@ -27,7 +27,7 @@
      */
     self.navigationController.navigationBar.translucent = NO;
     //修改导航条背景色（themeColor）
-    self.navigationController.navigationBar.barTintColor = [Common hexStringToColor:@"#2a6c6b"];
+    //self.navigationController.navigationBar.barTintColor = [Common hexStringToColor:@"#2a6c6b"];
     //修改导航条标题颜色
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil]];
     //修改导航条添加的按钮（item）颜色(黄色)
@@ -76,7 +76,7 @@
 
 
 - (void)dealloc {
-    debugLog(@"dealloc");
+    NSLog(@"dealloc");
 }
 
 

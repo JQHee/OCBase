@@ -6,15 +6,13 @@
 //  Copyright © 2016年 GFB Network Technology Co.,Ltd. All rights reserved.
 //
 
-#import "GFBAPIList.m"
+#import "APIList.h"
 #import "List.m"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
 
 @interface QFFramwork : NSObject
-
-+ (UITapGestureRecognizer *)touchView:(id)targetView action:(void (^)())viewBlock;
 
 + (void)actionSheetShowToVC:(UIViewController *)VC
                      titles:(NSArray<NSString *> *)titles

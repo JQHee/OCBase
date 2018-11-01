@@ -7,7 +7,7 @@
 //
 
 #import "NetworkVerification.h"
-#import "YSBReachability.h"
+#import "Reachability.h"
 
 @implementation NetworkVerification
 
@@ -16,7 +16,7 @@
     //return 2;//测试使用
     NSInteger ANetWorkStateInteger = -1;
 
-    YSBReachability *r = [YSBReachability reachabilityForInternetConnection];
+    Reachability *r = [Reachability reachabilityForInternetConnection];
 
     switch ([r currentReachabilityStatus]) {
         case NotReachable:

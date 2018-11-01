@@ -75,7 +75,7 @@
 }
 
 - (void)dealloc {
-    debugLog(@"dealloc");
+    NSLog(@"dealloc");
 }
 
 @end

@@ -18,7 +18,7 @@ target 'OCBase' do
     pod "CYLTabBarController", "~>1.11.0"
     # pod 'HYBImageCliped'
     # pod 'YYText', '~> 1.0.7'
-    pod 'SDCycleScrollView','~> 1.61'
+    #pod 'SDCycleScrollView', '~> 1.75'
     pod 'MBProgressHUD'
     # 已经很久没有维护了
     # pod 'LPPhotoViewer', '~> 0.0.7’

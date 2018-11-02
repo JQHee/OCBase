@@ -53,6 +53,9 @@
 		662CA959218464A40061E49E /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 662CA924218464A30061E49E /* UIImage+Rotate.m */; };
 		662CA95A218464A40061E49E /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 662CA925218464A30061E49E /* GTMBase64.m */; };
 		662CA95B218464A40061E49E /* QFCheckTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 662CA927218464A30061E49E /* QFCheckTools.m */; };
+		6632CD2F218C8A4600F65829 /* MLFunctionPageItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6632CD2D218C8A4600F65829 /* MLFunctionPageItemView.m */; };
+		6632CD30218C8A4600F65829 /* MLFunctionPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6632CD2E218C8A4600F65829 /* MLFunctionPageView.m */; };
+		6632CD33218C8A5800F65829 /* MLApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6632CD32218C8A5800F65829 /* MLApplication.m */; };
 		66B48E80218B3A0F005A7BF2 /* MBProgressHUD+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B48E7F218B3A0F005A7BF2 /* MBProgressHUD+Core.m */; };
 		66B48E83218B3BC3005A7BF2 /* UIDevice+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B48E82218B3BC3005A7BF2 /* UIDevice+Core.m */; };
 		66B48E86218B3D7F005A7BF2 /* BFNavigationBarFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B48E85218B3D7F005A7BF2 /* BFNavigationBarFit.m */; };
@@ -168,6 +171,12 @@
 		662CA927218464A30061E49E /* QFCheckTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFCheckTools.m; sourceTree = "<group>"; };
 		662CA928218464A30061E49E /* QFPhoneManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFPhoneManagerVC.h; sourceTree = "<group>"; };
 		662CA929218464A30061E49E /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		6632CD2B218C8A4600F65829 /* MLFunctionPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLFunctionPageView.h; sourceTree = "<group>"; };
+		6632CD2C218C8A4600F65829 /* MLFunctionPageItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLFunctionPageItemView.h; sourceTree = "<group>"; };
+		6632CD2D218C8A4600F65829 /* MLFunctionPageItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLFunctionPageItemView.m; sourceTree = "<group>"; };
+		6632CD2E218C8A4600F65829 /* MLFunctionPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLFunctionPageView.m; sourceTree = "<group>"; };
+		6632CD31218C8A5800F65829 /* MLApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLApplication.h; sourceTree = "<group>"; };
+		6632CD32218C8A5800F65829 /* MLApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLApplication.m; sourceTree = "<group>"; };
 		66B48E7E218B3A0F005A7BF2 /* MBProgressHUD+Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Core.h"; sourceTree = "<group>"; };
 		66B48E7F218B3A0F005A7BF2 /* MBProgressHUD+Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Core.m"; sourceTree = "<group>"; };
 		66B48E81218B3BC3005A7BF2 /* UIDevice+Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Core.h"; sourceTree = "<group>"; };
@@ -240,6 +249,8 @@
 				662CA8BB218464A30061E49E /* QFFramwork */,
 				662CA889218460830061E49E /* AppDelegate.h */,
 				662CA88A218460830061E49E /* AppDelegate.m */,
+				6632CD31218C8A5800F65829 /* MLApplication.h */,
+				6632CD32218C8A5800F65829 /* MLApplication.m */,
 				662CA88C218460830061E49E /* ViewController.h */,
 				662CA88D218460830061E49E /* ViewController.m */,
 				662CA88F218460830061E49E /* Main.storyboard */,
@@ -299,6 +310,7 @@
 		662CA8CF218464A30061E49E /* QFView */ = {
 			isa = PBXGroup;
 			children = (
+				6632CD2A218C8A2D00F65829 /* FunctionPageView */,
 				662CA8C3218464A30061E49E /* StarView */,
 				662CA8FA218464A30061E49E /* PasswordView */,
 				662CA8D0218464A30061E49E /* QFBaseTableViewController.h */,
@@ -393,6 +405,17 @@
 				662CA915218464A30061E49E /* UIImage+Extension.h */,
 			);
 			path = VDCameraAndPhotoTool;
+			sourceTree = "<group>";
+		};
+		6632CD2A218C8A2D00F65829 /* FunctionPageView */ = {
+			isa = PBXGroup;
+			children = (
+				6632CD2C218C8A4600F65829 /* MLFunctionPageItemView.h */,
+				6632CD2D218C8A4600F65829 /* MLFunctionPageItemView.m */,
+				6632CD2B218C8A4600F65829 /* MLFunctionPageView.h */,
+				6632CD2E218C8A4600F65829 /* MLFunctionPageView.m */,
+			);
+			path = FunctionPageView;
 			sourceTree = "<group>";
 		};
 		66B48E79218B37B4005A7BF2 /* HUD */ = {
@@ -682,12 +705,14 @@
 				662CA899218460850061E49E /* main.m in Sources */,
 				662CA939218464A30061E49E /* ZJContentView.m in Sources */,
 				662CA948218464A30061E49E /* APIList.h in Sources */,
+				6632CD2F218C8A4600F65829 /* MLFunctionPageItemView.m in Sources */,
 				662CA935218464A30061E49E /* QFBaseViewController.m in Sources */,
 				662CA953218464A40061E49E /* QFNetworking.m in Sources */,
 				662CA95A218464A40061E49E /* GTMBase64.m in Sources */,
 				662CA937218464A30061E49E /* ZJTitleView.m in Sources */,
 				662CA92C218464A30061E49E /* List.m in Sources */,
 				662CA94C218464A40061E49E /* NSMutableArray+Safe.m in Sources */,
+				6632CD30218C8A4600F65829 /* MLFunctionPageView.m in Sources */,
 				662CA88B218460830061E49E /* AppDelegate.m in Sources */,
 				662CA938218464A30061E49E /* UIViewController+ZJScrollPageController.m in Sources */,
 				662CA94F218464A40061E49E /* UIImage+Extension.m in Sources */,
@@ -702,6 +727,7 @@
 				662CA92D218464A30061E49E /* YSBStarView.m in Sources */,
 				662CA942218464A30061E49E /* NetworkVerification.m in Sources */,
 				662CA936218464A30061E49E /* UIView+ZJFrame.m in Sources */,
+				6632CD33218C8A5800F65829 /* MLApplication.m in Sources */,
 				662CA951218464A40061E49E /* UIViewExt.m in Sources */,
 				662CA94B218464A40061E49E /* NSString+check.m in Sources */,
 			);

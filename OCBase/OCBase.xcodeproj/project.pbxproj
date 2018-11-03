@@ -60,6 +60,7 @@
 		66B2B719218DD3A600F028FF /* UIImageView+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2B718218DD3A600F028FF /* UIImageView+Core.m */; };
 		66B2B721218DD47500F028FF /* NSObject+SkyHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2B71D218DD47400F028FF /* NSObject+SkyHUD.m */; };
 		66B2B722218DD47500F028FF /* NSObject+SkyToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2B71F218DD47500F028FF /* NSObject+SkyToast.m */; };
+		66B2B725218DD7EC00F028FF /* UIImage+ALinExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2B724218DD7EC00F028FF /* UIImage+ALinExtension.m */; };
 		66B48E80218B3A0F005A7BF2 /* MBProgressHUD+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B48E7F218B3A0F005A7BF2 /* MBProgressHUD+Core.m */; };
 		66B48E83218B3BC3005A7BF2 /* UIDevice+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B48E82218B3BC3005A7BF2 /* UIDevice+Core.m */; };
 		66B48E86218B3D7F005A7BF2 /* BFNavigationBarFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B48E85218B3D7F005A7BF2 /* BFNavigationBarFit.m */; };
@@ -189,6 +190,8 @@
 		66B2B71E218DD47500F028FF /* NSObject+SkyToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SkyToast.h"; sourceTree = "<group>"; };
 		66B2B71F218DD47500F028FF /* NSObject+SkyToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SkyToast.m"; sourceTree = "<group>"; };
 		66B2B720218DD47500F028FF /* NSObject+SkyHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SkyHUD.h"; sourceTree = "<group>"; };
+		66B2B723218DD7EC00F028FF /* UIImage+ALinExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ALinExtension.h"; sourceTree = "<group>"; };
+		66B2B724218DD7EC00F028FF /* UIImage+ALinExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ALinExtension.m"; sourceTree = "<group>"; };
 		66B48E7E218B3A0F005A7BF2 /* MBProgressHUD+Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Core.h"; sourceTree = "<group>"; };
 		66B48E7F218B3A0F005A7BF2 /* MBProgressHUD+Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Core.m"; sourceTree = "<group>"; };
 		66B48E81218B3BC3005A7BF2 /* UIDevice+Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Core.h"; sourceTree = "<group>"; };
@@ -481,6 +484,8 @@
 		66B48E7C218B38D1005A7BF2 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				66B2B723218DD7EC00F028FF /* UIImage+ALinExtension.h */,
+				66B2B724218DD7EC00F028FF /* UIImage+ALinExtension.m */,
 				662CA924218464A30061E49E /* UIImage+Rotate.m */,
 				662CA929218464A30061E49E /* UIViewExt.h */,
 				662CA916218464A30061E49E /* UIViewExt.m */,
@@ -755,6 +760,7 @@
 				662CA959218464A40061E49E /* UIImage+Rotate.m in Sources */,
 				662CA933218464A30061E49E /* QFBaseTableViewController.m in Sources */,
 				662CA949218464A40061E49E /* NSData+AES256.m in Sources */,
+				66B2B725218DD7EC00F028FF /* UIImage+ALinExtension.m in Sources */,
 				662CA92D218464A30061E49E /* YSBStarView.m in Sources */,
 				662CA942218464A30061E49E /* NetworkVerification.m in Sources */,
 				662CA936218464A30061E49E /* UIView+ZJFrame.m in Sources */,

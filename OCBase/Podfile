@@ -29,5 +29,7 @@ target 'OCBase' do
     pod 'DZNEmptyDataSet'
     # pod 'Realm'
     # pod 'FMDB', '~> 2.6.2'
+    # 分页查看器
+    pod 'TYPagerController'
 
 end

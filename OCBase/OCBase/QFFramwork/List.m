@@ -53,6 +53,7 @@
 #import "GTMBase64.h"
 #import "NetworkVerification.h"
 #import "QFLocationInfo.h"
+#import "UIScrollView+Core.h"
 
 #pragma mark - 库集合
 #import "DateTools.h"
@@ -71,4 +72,5 @@
 // #import "CocoaSecurity.h"
 // #import <Realm/Realm.h>
 #import "UIScrollView+EmptyDataSet.h"
+
 

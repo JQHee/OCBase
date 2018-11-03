@@ -56,6 +56,7 @@
 		6632CD2F218C8A4600F65829 /* MLFunctionPageItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6632CD2D218C8A4600F65829 /* MLFunctionPageItemView.m */; };
 		6632CD30218C8A4600F65829 /* MLFunctionPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6632CD2E218C8A4600F65829 /* MLFunctionPageView.m */; };
 		6632CD33218C8A5800F65829 /* MLApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6632CD32218C8A5800F65829 /* MLApplication.m */; };
+		66B2B6D8218D8F9000F028FF /* UIScrollView+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2B6D7218D8F9000F028FF /* UIScrollView+Core.m */; };
 		66B48E80218B3A0F005A7BF2 /* MBProgressHUD+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B48E7F218B3A0F005A7BF2 /* MBProgressHUD+Core.m */; };
 		66B48E83218B3BC3005A7BF2 /* UIDevice+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B48E82218B3BC3005A7BF2 /* UIDevice+Core.m */; };
 		66B48E86218B3D7F005A7BF2 /* BFNavigationBarFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B48E85218B3D7F005A7BF2 /* BFNavigationBarFit.m */; };
@@ -177,6 +178,8 @@
 		6632CD2E218C8A4600F65829 /* MLFunctionPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLFunctionPageView.m; sourceTree = "<group>"; };
 		6632CD31218C8A5800F65829 /* MLApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLApplication.h; sourceTree = "<group>"; };
 		6632CD32218C8A5800F65829 /* MLApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLApplication.m; sourceTree = "<group>"; };
+		66B2B6D6218D8F9000F028FF /* UIScrollView+Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Core.h"; sourceTree = "<group>"; };
+		66B2B6D7218D8F9000F028FF /* UIScrollView+Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Core.m"; sourceTree = "<group>"; };
 		66B48E7E218B3A0F005A7BF2 /* MBProgressHUD+Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Core.h"; sourceTree = "<group>"; };
 		66B48E7F218B3A0F005A7BF2 /* MBProgressHUD+Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Core.m"; sourceTree = "<group>"; };
 		66B48E81218B3BC3005A7BF2 /* UIDevice+Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Core.h"; sourceTree = "<group>"; };
@@ -288,7 +291,6 @@
 				66B48E7B218B38C3005A7BF2 /* Foundation */,
 				66B48E7A218B3856005A7BF2 /* Encryption */,
 				662CA8EC218464A30061E49E /* NetWork */,
-				66B48E79218B37B4005A7BF2 /* HUD */,
 				662CA8C1218464A30061E49E /* List.m */,
 				662CA8C2218464A30061E49E /* QFFramwork.h */,
 				662CA8FF218464A30061E49E /* QFFramwork.m */,
@@ -418,6 +420,15 @@
 			path = FunctionPageView;
 			sourceTree = "<group>";
 		};
+		66B2B6D5218D8F7700F028FF /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				66B2B6D6218D8F9000F028FF /* UIScrollView+Core.h */,
+				66B2B6D7218D8F9000F028FF /* UIScrollView+Core.m */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
 		66B48E79218B37B4005A7BF2 /* HUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,6 +481,8 @@
 		66B48E7D218B3957005A7BF2 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				66B2B6D5218D8F7700F028FF /* Refresh */,
+				66B48E79218B37B4005A7BF2 /* HUD */,
 				662CA911218464A30061E49E /* VDCameraAndPhotoTool */,
 			);
 			path = 3rd;
@@ -704,6 +717,7 @@
 				66B48E83218B3BC3005A7BF2 /* UIDevice+Core.m in Sources */,
 				662CA899218460850061E49E /* main.m in Sources */,
 				662CA939218464A30061E49E /* ZJContentView.m in Sources */,
+				66B2B6D8218D8F9000F028FF /* UIScrollView+Core.m in Sources */,
 				662CA948218464A30061E49E /* APIList.h in Sources */,
 				6632CD2F218C8A4600F65829 /* MLFunctionPageItemView.m in Sources */,
 				662CA935218464A30061E49E /* QFBaseViewController.m in Sources */,

@@ -64,6 +64,7 @@
 		66B48E80218B3A0F005A7BF2 /* MBProgressHUD+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B48E7F218B3A0F005A7BF2 /* MBProgressHUD+Core.m */; };
 		66B48E83218B3BC3005A7BF2 /* UIDevice+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B48E82218B3BC3005A7BF2 /* UIDevice+Core.m */; };
 		66B48E86218B3D7F005A7BF2 /* BFNavigationBarFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B48E85218B3D7F005A7BF2 /* BFNavigationBarFit.m */; };
+		66C59B86218EF10D006D2C66 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C59B85218EF10D006D2C66 /* QRViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +199,8 @@
 		66B48E82218B3BC3005A7BF2 /* UIDevice+Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Core.m"; sourceTree = "<group>"; };
 		66B48E84218B3D7F005A7BF2 /* BFNavigationBarFit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFNavigationBarFit.h; sourceTree = "<group>"; };
 		66B48E85218B3D7F005A7BF2 /* BFNavigationBarFit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFNavigationBarFit.m; sourceTree = "<group>"; };
+		66C59B84218EF10D006D2C66 /* QRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
+		66C59B85218EF10D006D2C66 /* QRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
 		66D1CA478F5529CE254F37EB /* Pods-OCBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBase.release.xcconfig"; path = "Target Support Files/Pods-OCBase/Pods-OCBase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -298,6 +301,7 @@
 		662CA8BB218464A30061E49E /* QFFramwork */ = {
 			isa = PBXGroup;
 			children = (
+				66C59B83218EF0D3006D2C66 /* QRScan */,
 				66B48E7D218B3957005A7BF2 /* 3rd */,
 				66B48E7C218B38D1005A7BF2 /* UIKit */,
 				66B48E7B218B38C3005A7BF2 /* Foundation */,
@@ -506,6 +510,15 @@
 				662CA911218464A30061E49E /* VDCameraAndPhotoTool */,
 			);
 			path = 3rd;
+			sourceTree = "<group>";
+		};
+		66C59B83218EF0D3006D2C66 /* QRScan */ = {
+			isa = PBXGroup;
+			children = (
+				66C59B84218EF10D006D2C66 /* QRViewController.h */,
+				66C59B85218EF10D006D2C66 /* QRViewController.m */,
+			);
+			path = QRScan;
 			sourceTree = "<group>";
 		};
 		EF66E45EF6925B4ECCCA5F57 /* Frameworks */ = {
@@ -732,6 +745,7 @@
 				662CA93B218464A30061E49E /* ZJSegmentStyle.m in Sources */,
 				66B48E80218B3A0F005A7BF2 /* MBProgressHUD+Core.m in Sources */,
 				662CA932218464A30061E49E /* CALayer+RumtimeAttribute.m in Sources */,
+				66C59B86218EF10D006D2C66 /* QRViewController.m in Sources */,
 				662CA88E218460830061E49E /* ViewController.m in Sources */,
 				662CA952218464A40061E49E /* QFPhoneManagerVC.m in Sources */,
 				66B48E83218B3BC3005A7BF2 /* UIDevice+Core.m in Sources */,

@@ -15,6 +15,8 @@ target 'OCBase' do
     pod 'AFNetworking'
     pod 'FDStackView'
     pod "CYLTabBarController", "~>1.11.0"
+    # 全屏返回框架
+    # pod 'FDFullscreenPopGesture', '1.1'
     # pod 'WRNavigationBar'
     # 最近不维护了
     pod 'Masonry'
@@ -58,5 +60,7 @@ target 'OCBase' do
     # TableView加载图片的优化方案：https://www.jianshu.com/p/328e503900d0
     # CollectionView加载图片优化方案: https://www.jianshu.com/p/32fe33caca3f
     # 好多叠在一起的button常见直播：https://www.jianshu.com/p/b1f715035adc
+
+    # 动画相关：https://www.kancloud.cn/manual/ios/97759
 
 end

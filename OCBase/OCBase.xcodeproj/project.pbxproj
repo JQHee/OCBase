@@ -57,6 +57,8 @@
 		662F6A562197F2A900FD5231 /* UIView+BFAddTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 662F6A552197F2A900FD5231 /* UIView+BFAddTapGestureRecognizer.m */; };
 		662F6A592197F38F00FD5231 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 662F6A582197F38F00FD5231 /* UIButton+Block.m */; };
 		662F6A5C2197FC5E00FD5231 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 662F6A5B2197FC5E00FD5231 /* NullSafe.m */; };
+		662F6AA321980CC800FD5231 /* YINMethodHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 662F6AA021980CC800FD5231 /* YINMethodHook.m */; };
+		662F6AA421980CC800FD5231 /* UIViewController+YINNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 662F6AA221980CC800FD5231 /* UIViewController+YINNav.m */; };
 		6632CD2F218C8A4600F65829 /* MLFunctionPageItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6632CD2D218C8A4600F65829 /* MLFunctionPageItemView.m */; };
 		6632CD30218C8A4600F65829 /* MLFunctionPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6632CD2E218C8A4600F65829 /* MLFunctionPageView.m */; };
 		6632CD33218C8A5800F65829 /* MLApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6632CD32218C8A5800F65829 /* MLApplication.m */; };
@@ -188,6 +190,10 @@
 		662F6A572197F38F00FD5231 /* UIButton+Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		662F6A582197F38F00FD5231 /* UIButton+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
 		662F6A5B2197FC5E00FD5231 /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
+		662F6A9F21980CC800FD5231 /* YINMethodHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YINMethodHook.h; sourceTree = "<group>"; };
+		662F6AA021980CC800FD5231 /* YINMethodHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YINMethodHook.m; sourceTree = "<group>"; };
+		662F6AA121980CC800FD5231 /* UIViewController+YINNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YINNav.h"; sourceTree = "<group>"; };
+		662F6AA221980CC800FD5231 /* UIViewController+YINNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YINNav.m"; sourceTree = "<group>"; };
 		6632CD2B218C8A4600F65829 /* MLFunctionPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLFunctionPageView.h; sourceTree = "<group>"; };
 		6632CD2C218C8A4600F65829 /* MLFunctionPageItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLFunctionPageItemView.h; sourceTree = "<group>"; };
 		6632CD2D218C8A4600F65829 /* MLFunctionPageItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLFunctionPageItemView.m; sourceTree = "<group>"; };
@@ -444,6 +450,17 @@
 			path = NullSafe;
 			sourceTree = "<group>";
 		};
+		662F6A9E21980CBC00FD5231 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				662F6AA121980CC800FD5231 /* UIViewController+YINNav.h */,
+				662F6AA221980CC800FD5231 /* UIViewController+YINNav.m */,
+				662F6A9F21980CC800FD5231 /* YINMethodHook.h */,
+				662F6AA021980CC800FD5231 /* YINMethodHook.m */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
 		6632CD2A218C8A2D00F65829 /* FunctionPageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,6 +547,7 @@
 		66B48E7D218B3957005A7BF2 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				662F6A9E21980CBC00FD5231 /* NavigationBar */,
 				662F6A5A2197FC4C00FD5231 /* NullSafe */,
 				66B2B6D5218D8F7700F028FF /* Refresh */,
 				66B48E79218B37B4005A7BF2 /* HUD */,
@@ -771,6 +789,7 @@
 				662CA94E218464A40061E49E /* QFUserInfo.m in Sources */,
 				662CA93B218464A30061E49E /* ZJSegmentStyle.m in Sources */,
 				66B48E80218B3A0F005A7BF2 /* MBProgressHUD+Core.m in Sources */,
+				662F6AA421980CC800FD5231 /* UIViewController+YINNav.m in Sources */,
 				662CA932218464A30061E49E /* CALayer+RumtimeAttribute.m in Sources */,
 				66C59B86218EF10D006D2C66 /* QRViewController.m in Sources */,
 				662CA88E218460830061E49E /* ViewController.m in Sources */,
@@ -787,6 +806,7 @@
 				662CA95A218464A40061E49E /* GTMBase64.m in Sources */,
 				662CA937218464A30061E49E /* ZJTitleView.m in Sources */,
 				662CA92C218464A30061E49E /* List.m in Sources */,
+				662F6AA321980CC800FD5231 /* YINMethodHook.m in Sources */,
 				662CA94C218464A40061E49E /* NSMutableArray+Safe.m in Sources */,
 				66B2B719218DD3A600F028FF /* UIImageView+Core.m in Sources */,
 				6632CD30218C8A4600F65829 /* MLFunctionPageView.m in Sources */,

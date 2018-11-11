@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
   - CYLTabBarController (1.11.0)
   - DateTools (2.0.0)
   - DZNEmptyDataSet (1.8.1)
@@ -30,6 +31,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - Aspects
   - CYLTabBarController (~> 1.11.0)
   - DateTools (~> 2.0.0)
   - DZNEmptyDataSet
@@ -45,6 +47,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - Aspects
     - CYLTabBarController
     - DateTools
     - DZNEmptyDataSet
@@ -59,6 +62,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CYLTabBarController: de931d849db806419eadd4a85f3476f7656ac526
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
@@ -71,6 +75,6 @@ SPEC CHECKSUMS:
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   SDWebImage: e52654ceef9fdc19f4c612d64a5b6d3f05dd81a4
 
-PODFILE CHECKSUM: d357cfd421d7103c0b7461da84df5c4f8e379dd2
+PODFILE CHECKSUM: dd58b2543811289e14756c2b98694b9924b374e4
 
 COCOAPODS: 1.6.0.beta.1

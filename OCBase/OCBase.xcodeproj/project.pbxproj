@@ -71,6 +71,9 @@
 		66B48E83218B3BC3005A7BF2 /* UIDevice+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B48E82218B3BC3005A7BF2 /* UIDevice+Core.m */; };
 		66B48E86218B3D7F005A7BF2 /* BFNavigationBarFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B48E85218B3D7F005A7BF2 /* BFNavigationBarFit.m */; };
 		66C59B86218EF10D006D2C66 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C59B85218EF10D006D2C66 /* QRViewController.m */; };
+		66D569C22198415D00D9EBD5 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D569C12198415D00D9EBD5 /* BaseViewModel.m */; };
+		66D569C52198446D00D9EBD5 /* TestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D569C42198446D00D9EBD5 /* TestViewModel.m */; };
+		66D569C92198497C00D9EBD5 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D569C82198497C00D9EBD5 /* ArrayDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,6 +222,12 @@
 		66C59B84218EF10D006D2C66 /* QRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
 		66C59B85218EF10D006D2C66 /* QRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
 		66D1CA478F5529CE254F37EB /* Pods-OCBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBase.release.xcconfig"; path = "Target Support Files/Pods-OCBase/Pods-OCBase.release.xcconfig"; sourceTree = "<group>"; };
+		66D569C02198415D00D9EBD5 /* BaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		66D569C12198415D00D9EBD5 /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		66D569C32198446D00D9EBD5 /* TestViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewModel.h; sourceTree = "<group>"; };
+		66D569C42198446D00D9EBD5 /* TestViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewModel.m; sourceTree = "<group>"; };
+		66D569C72198497C00D9EBD5 /* ArrayDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
+		66D569C82198497C00D9EBD5 /* ArrayDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +290,7 @@
 		662CA888218460830061E49E /* OCBase */ = {
 			isa = PBXGroup;
 			children = (
+				66D569BE2198412D00D9EBD5 /* MVVM */,
 				662CA8BB218464A30061E49E /* QFFramwork */,
 				662CA889218460830061E49E /* AppDelegate.h */,
 				662CA88A218460830061E49E /* AppDelegate.m */,
@@ -318,6 +328,7 @@
 		662CA8BB218464A30061E49E /* QFFramwork */ = {
 			isa = PBXGroup;
 			children = (
+				66D569C62198495F00D9EBD5 /* DataSource */,
 				66C59B83218EF0D3006D2C66 /* QRScan */,
 				66B48E7D218B3957005A7BF2 /* 3rd */,
 				66B48E7C218B38D1005A7BF2 /* UIKit */,
@@ -565,6 +576,34 @@
 			path = QRScan;
 			sourceTree = "<group>";
 		};
+		66D569BE2198412D00D9EBD5 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				66D569BF2198413D00D9EBD5 /* ViewModel */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		66D569BF2198413D00D9EBD5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				66D569C02198415D00D9EBD5 /* BaseViewModel.h */,
+				66D569C12198415D00D9EBD5 /* BaseViewModel.m */,
+				66D569C32198446D00D9EBD5 /* TestViewModel.h */,
+				66D569C42198446D00D9EBD5 /* TestViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		66D569C62198495F00D9EBD5 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				66D569C72198497C00D9EBD5 /* ArrayDataSource.h */,
+				66D569C82198497C00D9EBD5 /* ArrayDataSource.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		EF66E45EF6925B4ECCCA5F57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -733,6 +772,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OCBase/Pods-OCBase-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
 				"${BUILT_PRODUCTS_DIR}/CYLTabBarController/CYLTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/DateTools/DateTools.framework",
@@ -750,6 +790,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CYLTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTools.framework",
@@ -775,17 +816,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				66B48E86218B3D7F005A7BF2 /* BFNavigationBarFit.m in Sources */,
+				66D569C92198497C00D9EBD5 /* ArrayDataSource.m in Sources */,
 				662CA93E218464A30061E49E /* UIButton+QFButtonCountDown.m in Sources */,
 				662CA93D218464A30061E49E /* ZJScrollPageView.m in Sources */,
 				662CA947218464A30061E49E /* QFFramwork.m in Sources */,
 				662CA93A218464A30061E49E /* ZJCollectionView.m in Sources */,
 				662CA934218464A30061E49E /* QFBigText.m in Sources */,
+				66D569C52198446D00D9EBD5 /* TestViewModel.m in Sources */,
 				662CA945218464A30061E49E /* YSBPasswordView.m in Sources */,
 				662CA956218464A40061E49E /* QFLocationInfo.m in Sources */,
 				662F6A532197EE1A00FD5231 /* UIImage+ImageEffects.m in Sources */,
 				662CA946218464A30061E49E /* UITextField+YSBTextFieldDelegate.m in Sources */,
 				662CA93F218464A30061E49E /* Reachability.m in Sources */,
 				662CA95B218464A40061E49E /* QFCheckTools.m in Sources */,
+				66D569C22198415D00D9EBD5 /* BaseViewModel.m in Sources */,
 				662CA94E218464A40061E49E /* QFUserInfo.m in Sources */,
 				662CA93B218464A30061E49E /* ZJSegmentStyle.m in Sources */,
 				66B48E80218B3A0F005A7BF2 /* MBProgressHUD+Core.m in Sources */,

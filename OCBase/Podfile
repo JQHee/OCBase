@@ -53,6 +53,9 @@ target 'OCBase' do
     # 如何在列表中优雅的嵌入广告
     # pod 'IMYAOPTableView'
 
+    # 面向切面编程
+    pod 'Aspects'
+
     # 指纹校验：https://www.jianshu.com/p/4a0bec497ebd
     # iCloud开发：https://www.jianshu.com/p/33ebab1c2ee1
     # 登录成功后，重新请求网络：https://www.jianshu.com/p/6c5f711a0252

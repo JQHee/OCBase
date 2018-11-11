@@ -10,30 +10,37 @@ target 'OCBase' do
     pod 'SDWebImage', '~> 5.0.0-beta3'
     pod 'IQKeyboardManager', '~> 6.2.0'
     pod 'DateTools', '~> 2.0.0'
-    # OC的稳定版本是2.5
-    # pod 'ReactiveCocoa', '~> 2.5'
-    # 最近不维护了
-    pod 'Masonry'
-    # pod 'SDAutoLayout', '~> 2.1.3'
+    pod 'MBProgressHUD'
+    pod 'DZNEmptyDataSet'
     pod 'AFNetworking'
     pod 'FDStackView'
     pod "CYLTabBarController", "~>1.11.0"
+    # 最近不维护了
+    pod 'Masonry'
+    # pod 'SDAutoLayout', '~> 2.1.3'
+    # OC的稳定版本是2.5
+    # pod 'ReactiveCocoa', '~> 2.5'
     # pod 'HYBImageCliped'
     # pod 'YYText', '~> 1.0.7'
     #pod 'SDCycleScrollView', '~> 1.75'
-    pod 'MBProgressHUD'
-    # 已经很久没有维护了
-    # pod 'LPPhotoViewer', '~> 0.0.7’
+
     # pod 'LBXScan'
     # pod 'INTULocationManager'
-    # pod 'TZImagePickerController'
     # pod 'CocoaSecurity'
-    pod 'DZNEmptyDataSet'
+
+    # 数据库
     # pod 'Realm'
     # pod 'FMDB', '~> 2.6.2'
+
     # 分页查看器
     # pod 'TYPagerController'
+    # pod 'TZImagePickerController'
+    # 已经很久没有维护了
+    # pod 'LPPhotoViewer', '~> 0.0.7’
     # 角标
     # pod 'JSBadgeView'
+
+    # 弹窗框架
+    # pod 'LEEAlert'
 
 end

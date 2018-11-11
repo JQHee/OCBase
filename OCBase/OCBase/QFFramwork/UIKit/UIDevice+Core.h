@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 // 是否是刘海屏
 - (BOOL) isFullScreen;
 
+- (BOOL) isIPhoneXSeries;
+
 @end
 
 NS_ASSUME_NONNULL_END

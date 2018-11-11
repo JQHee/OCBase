@@ -15,6 +15,7 @@ target 'OCBase' do
     pod 'AFNetworking'
     pod 'FDStackView'
     pod "CYLTabBarController", "~>1.11.0"
+    # pod 'WRNavigationBar'
     # 最近不维护了
     pod 'Masonry'
     # pod 'SDAutoLayout', '~> 2.1.3'
@@ -31,6 +32,8 @@ target 'OCBase' do
     # 数据库
     # pod 'Realm'
     # pod 'FMDB', '~> 2.6.2'
+    # 不需要写sql语句，通过model操作数据库
+    # pod 'YIIFMDB'
 
     # 分页查看器
     # pod 'TYPagerController'
@@ -42,5 +45,18 @@ target 'OCBase' do
 
     # 弹窗框架
     # pod 'LEEAlert'
+    # 换肤框架
+    # pod 'LEETheme'
+
+    # 如何在列表中优雅的嵌入广告
+    # pod 'IMYAOPTableView'
+
+    # 指纹校验：https://www.jianshu.com/p/4a0bec497ebd
+    # iCloud开发：https://www.jianshu.com/p/33ebab1c2ee1
+    # 登录成功后，重新请求网络：https://www.jianshu.com/p/6c5f711a0252
+    # NullSafe: https://github.com/nicklockwood/NullSafe
+    # TableView加载图片的优化方案：https://www.jianshu.com/p/328e503900d0
+    # CollectionView加载图片优化方案: https://www.jianshu.com/p/32fe33caca3f
+    # 好多叠在一起的button常见直播：https://www.jianshu.com/p/b1f715035adc
 
 end

@@ -62,5 +62,6 @@ target 'OCBase' do
     # 好多叠在一起的button常见直播：https://www.jianshu.com/p/b1f715035adc
 
     # 动画相关：https://www.kancloud.cn/manual/ios/97759
+    # 一句话实现转场动画：https://github.com/308823810/SS_AnimationTransition
 
 end

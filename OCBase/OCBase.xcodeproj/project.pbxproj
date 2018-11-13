@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EBC01D88EBD6AC9447A9F72 /* Pods_OCBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3443FDB9A5500ADF9FA587 /* Pods_OCBase.framework */; };
+		6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6617631A219B03CC00EAEE34 /* WordFilter.m */; };
+		6617631D219B03CC00EAEE34 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6617631B219B03CC00EAEE34 /* words.txt */; };
+		66176335219B045D00EAEE34 /* MLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66176321219B045D00EAEE34 /* MLLocationManager.m */; };
+		66176336219B045D00EAEE34 /* MLCityListHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66176325219B045D00EAEE34 /* MLCityListHotCell.m */; };
+		66176337219B045D00EAEE34 /* MLCityListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66176327219B045D00EAEE34 /* MLCityListTableViewCell.m */; };
+		66176338219B045D00EAEE34 /* MLCityListHotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66176328219B045D00EAEE34 /* MLCityListHotTableViewCell.xib */; };
+		66176339219B045D00EAEE34 /* MLCityListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66176329219B045D00EAEE34 /* MLCityListHeaderView.xib */; };
+		6617633A219B045D00EAEE34 /* MLCityListHotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6617632A219B045D00EAEE34 /* MLCityListHotTableViewCell.m */; };
+		6617633B219B045D00EAEE34 /* MLCityListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6617632B219B045D00EAEE34 /* MLCityListHeaderView.m */; };
+		6617633C219B045D00EAEE34 /* MLCityListHotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6617632E219B045D00EAEE34 /* MLCityListHotCell.xib */; };
+		6617633D219B045D00EAEE34 /* MLCityListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66176330219B045D00EAEE34 /* MLCityListTableViewCell.xib */; };
+		6617633E219B045D00EAEE34 /* MLCityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66176333219B045D00EAEE34 /* MLCityListViewController.m */; };
+		6617633F219B045D00EAEE34 /* MLCityListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66176334219B045D00EAEE34 /* MLCityListViewController.xib */; };
 		662CA88B218460830061E49E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 662CA88A218460830061E49E /* AppDelegate.m */; };
 		662CA88E218460830061E49E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 662CA88D218460830061E49E /* ViewController.m */; };
 		662CA891218460830061E49E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662CA88F218460830061E49E /* Main.storyboard */; };
@@ -74,6 +86,7 @@
 		66D569C22198415D00D9EBD5 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D569C12198415D00D9EBD5 /* BaseViewModel.m */; };
 		66D569C52198446D00D9EBD5 /* TestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D569C42198446D00D9EBD5 /* TestViewModel.m */; };
 		66D569C92198497C00D9EBD5 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D569C82198497C00D9EBD5 /* ArrayDataSource.m */; };
+		7C7CDF23E4307D801909F316 /* libPods-OCBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFEFA846E8CBF14A5F3484B /* libPods-OCBase.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,8 +107,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F3443FDB9A5500ADF9FA587 /* Pods_OCBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E15A478EEBF569E1D197D7F /* Pods-OCBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBase.debug.xcconfig"; path = "Target Support Files/Pods-OCBase/Pods-OCBase.debug.xcconfig"; sourceTree = "<group>"; };
+		66176319219B03CB00EAEE34 /* WordFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordFilter.h; sourceTree = "<group>"; };
+		6617631A219B03CC00EAEE34 /* WordFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordFilter.m; sourceTree = "<group>"; };
+		6617631B219B03CC00EAEE34 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		66176321219B045D00EAEE34 /* MLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLocationManager.m; sourceTree = "<group>"; };
+		66176322219B045D00EAEE34 /* MLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLocationManager.h; sourceTree = "<group>"; };
+		66176325219B045D00EAEE34 /* MLCityListHotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCityListHotCell.m; sourceTree = "<group>"; };
+		66176326219B045D00EAEE34 /* MLCityListHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCityListHeaderView.h; sourceTree = "<group>"; };
+		66176327219B045D00EAEE34 /* MLCityListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCityListTableViewCell.m; sourceTree = "<group>"; };
+		66176328219B045D00EAEE34 /* MLCityListHotTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLCityListHotTableViewCell.xib; sourceTree = "<group>"; };
+		66176329219B045D00EAEE34 /* MLCityListHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLCityListHeaderView.xib; sourceTree = "<group>"; };
+		6617632A219B045D00EAEE34 /* MLCityListHotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCityListHotTableViewCell.m; sourceTree = "<group>"; };
+		6617632B219B045D00EAEE34 /* MLCityListHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCityListHeaderView.m; sourceTree = "<group>"; };
+		6617632C219B045D00EAEE34 /* MLCityListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCityListTableViewCell.h; sourceTree = "<group>"; };
+		6617632D219B045D00EAEE34 /* MLCityListHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCityListHotCell.h; sourceTree = "<group>"; };
+		6617632E219B045D00EAEE34 /* MLCityListHotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLCityListHotCell.xib; sourceTree = "<group>"; };
+		6617632F219B045D00EAEE34 /* MLCityListHotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCityListHotTableViewCell.h; sourceTree = "<group>"; };
+		66176330219B045D00EAEE34 /* MLCityListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLCityListTableViewCell.xib; sourceTree = "<group>"; };
+		66176332219B045D00EAEE34 /* MLCityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCityListViewController.h; sourceTree = "<group>"; };
+		66176333219B045D00EAEE34 /* MLCityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCityListViewController.m; sourceTree = "<group>"; };
+		66176334219B045D00EAEE34 /* MLCityListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLCityListViewController.xib; sourceTree = "<group>"; };
 		662CA886218460830061E49E /* OCBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		662CA889218460830061E49E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		662CA88A218460830061E49E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -228,6 +260,7 @@
 		66D569C42198446D00D9EBD5 /* TestViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewModel.m; sourceTree = "<group>"; };
 		66D569C72198497C00D9EBD5 /* ArrayDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
 		66D569C82198497C00D9EBD5 /* ArrayDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
+		DCFEFA846E8CBF14A5F3484B /* libPods-OCBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,7 +268,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EBC01D88EBD6AC9447A9F72 /* Pods_OCBase.framework in Frameworks */,
+				7C7CDF23E4307D801909F316 /* libPods-OCBase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +296,80 @@
 				66D1CA478F5529CE254F37EB /* Pods-OCBase.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		66176318219B03C000EAEE34 /* WordFilter */ = {
+			isa = PBXGroup;
+			children = (
+				66176319219B03CB00EAEE34 /* WordFilter.h */,
+				6617631A219B03CC00EAEE34 /* WordFilter.m */,
+				6617631B219B03CC00EAEE34 /* words.txt */,
+			);
+			path = WordFilter;
+			sourceTree = "<group>";
+		};
+		6617631E219B044700EAEE34 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6617631F219B045D00EAEE34 /* CitySelector */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6617631F219B045D00EAEE34 /* CitySelector */ = {
+			isa = PBXGroup;
+			children = (
+				66176320219B045D00EAEE34 /* Location */,
+				66176323219B045D00EAEE34 /* List */,
+			);
+			path = CitySelector;
+			sourceTree = "<group>";
+		};
+		66176320219B045D00EAEE34 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				66176321219B045D00EAEE34 /* MLLocationManager.m */,
+				66176322219B045D00EAEE34 /* MLLocationManager.h */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		66176323219B045D00EAEE34 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				66176324219B045D00EAEE34 /* View */,
+				66176331219B045D00EAEE34 /* ViewController */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		66176324219B045D00EAEE34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66176325219B045D00EAEE34 /* MLCityListHotCell.m */,
+				66176326219B045D00EAEE34 /* MLCityListHeaderView.h */,
+				66176327219B045D00EAEE34 /* MLCityListTableViewCell.m */,
+				66176328219B045D00EAEE34 /* MLCityListHotTableViewCell.xib */,
+				66176329219B045D00EAEE34 /* MLCityListHeaderView.xib */,
+				6617632A219B045D00EAEE34 /* MLCityListHotTableViewCell.m */,
+				6617632B219B045D00EAEE34 /* MLCityListHeaderView.m */,
+				6617632C219B045D00EAEE34 /* MLCityListTableViewCell.h */,
+				6617632D219B045D00EAEE34 /* MLCityListHotCell.h */,
+				6617632E219B045D00EAEE34 /* MLCityListHotCell.xib */,
+				6617632F219B045D00EAEE34 /* MLCityListHotTableViewCell.h */,
+				66176330219B045D00EAEE34 /* MLCityListTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66176331219B045D00EAEE34 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				66176332219B045D00EAEE34 /* MLCityListViewController.h */,
+				66176333219B045D00EAEE34 /* MLCityListViewController.m */,
+				66176334219B045D00EAEE34 /* MLCityListViewController.xib */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		662CA87D218460830061E49E = {
@@ -328,6 +435,7 @@
 		662CA8BB218464A30061E49E /* QFFramwork */ = {
 			isa = PBXGroup;
 			children = (
+				6617631E219B044700EAEE34 /* Components */,
 				66D569C62198495F00D9EBD5 /* DataSource */,
 				66C59B83218EF0D3006D2C66 /* QRScan */,
 				66B48E7D218B3957005A7BF2 /* 3rd */,
@@ -426,6 +534,7 @@
 		662CA901218464A30061E49E /* QFTools */ = {
 			isa = PBXGroup;
 			children = (
+				66176318219B03C000EAEE34 /* WordFilter */,
 				662CA903218464A30061E49E /* Common.m */,
 				662CA907218464A30061E49E /* QFLocationInfo.h */,
 				662CA90B218464A30061E49E /* QFCheckTools.h */,
@@ -607,7 +716,7 @@
 		EF66E45EF6925B4ECCCA5F57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F3443FDB9A5500ADF9FA587 /* Pods_OCBase.framework */,
+				DCFEFA846E8CBF14A5F3484B /* libPods-OCBase.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -623,7 +732,7 @@
 				662CA882218460830061E49E /* Sources */,
 				662CA883218460830061E49E /* Frameworks */,
 				662CA884218460830061E49E /* Resources */,
-				FBC35863503316C12167EFDD /* [CP] Embed Pods Frameworks */,
+				5AA2926E02E28B16E619BE5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -719,7 +828,13 @@
 			files = (
 				662CA896218460850061E49E /* LaunchScreen.storyboard in Resources */,
 				662CA893218460850061E49E /* Assets.xcassets in Resources */,
+				6617631D219B03CC00EAEE34 /* words.txt in Resources */,
+				66176339219B045D00EAEE34 /* MLCityListHeaderView.xib in Resources */,
+				6617633F219B045D00EAEE34 /* MLCityListViewController.xib in Resources */,
 				662CA891218460830061E49E /* Main.storyboard in Resources */,
+				6617633D219B045D00EAEE34 /* MLCityListTableViewCell.xib in Resources */,
+				6617633C219B045D00EAEE34 /* MLCityListHotCell.xib in Resources */,
+				66176338219B045D00EAEE34 /* MLCityListHotTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,6 +855,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5AA2926E02E28B16E619BE5C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCBase/Pods-OCBase-resources.sh",
+				"${PODS_ROOT}/DateTools/DateTools/DateTools/DateTools.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DateTools.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCBase/Pods-OCBase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D6BC2BC1F95B8E5091652F3C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -762,52 +903,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FBC35863503316C12167EFDD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OCBase/Pods-OCBase-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
-				"${BUILT_PRODUCTS_DIR}/CYLTabBarController/CYLTabBarController.framework",
-				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
-				"${BUILT_PRODUCTS_DIR}/DateTools/DateTools.framework",
-				"${BUILT_PRODUCTS_DIR}/FDStackView/FDStackView.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
-				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CYLTabBarController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTools.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDStackView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCBase/Pods-OCBase-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -817,6 +912,7 @@
 			files = (
 				66B48E86218B3D7F005A7BF2 /* BFNavigationBarFit.m in Sources */,
 				66D569C92198497C00D9EBD5 /* ArrayDataSource.m in Sources */,
+				66176337219B045D00EAEE34 /* MLCityListTableViewCell.m in Sources */,
 				662CA93E218464A30061E49E /* UIButton+QFButtonCountDown.m in Sources */,
 				662CA93D218464A30061E49E /* ZJScrollPageView.m in Sources */,
 				662CA947218464A30061E49E /* QFFramwork.m in Sources */,
@@ -842,6 +938,7 @@
 				662CA899218460850061E49E /* main.m in Sources */,
 				662CA939218464A30061E49E /* ZJContentView.m in Sources */,
 				66B2B6D8218D8F9000F028FF /* UIScrollView+Core.m in Sources */,
+				6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */,
 				662CA948218464A30061E49E /* APIList.h in Sources */,
 				6632CD2F218C8A4600F65829 /* MLFunctionPageItemView.m in Sources */,
 				662CA935218464A30061E49E /* QFBaseViewController.m in Sources */,
@@ -852,6 +949,9 @@
 				662CA92C218464A30061E49E /* List.m in Sources */,
 				662F6AA321980CC800FD5231 /* YINMethodHook.m in Sources */,
 				662CA94C218464A40061E49E /* NSMutableArray+Safe.m in Sources */,
+				66176335219B045D00EAEE34 /* MLLocationManager.m in Sources */,
+				6617633B219B045D00EAEE34 /* MLCityListHeaderView.m in Sources */,
+				66176336219B045D00EAEE34 /* MLCityListHotCell.m in Sources */,
 				66B2B719218DD3A600F028FF /* UIImageView+Core.m in Sources */,
 				6632CD30218C8A4600F65829 /* MLFunctionPageView.m in Sources */,
 				662CA88B218460830061E49E /* AppDelegate.m in Sources */,
@@ -864,6 +964,7 @@
 				662CA950218464A40061E49E /* VDCameraAndPhotoTool.m in Sources */,
 				662CA959218464A40061E49E /* UIImage+Rotate.m in Sources */,
 				662CA933218464A30061E49E /* QFBaseTableViewController.m in Sources */,
+				6617633E219B045D00EAEE34 /* MLCityListViewController.m in Sources */,
 				662CA949218464A40061E49E /* NSData+AES256.m in Sources */,
 				66B2B725218DD7EC00F028FF /* UIImage+ALinExtension.m in Sources */,
 				662F6A562197F2A900FD5231 /* UIView+BFAddTapGestureRecognizer.m in Sources */,
@@ -874,6 +975,7 @@
 				6632CD33218C8A5800F65829 /* MLApplication.m in Sources */,
 				662F6A592197F38F00FD5231 /* UIButton+Block.m in Sources */,
 				662CA951218464A40061E49E /* UIViewExt.m in Sources */,
+				6617633A219B045D00EAEE34 /* MLCityListHotTableViewCell.m in Sources */,
 				66B2B722218DD47500F028FF /* NSObject+SkyToast.m in Sources */,
 				662CA94B218464A40061E49E /* NSString+check.m in Sources */,
 			);
@@ -981,7 +1083,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1034,7 +1136,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

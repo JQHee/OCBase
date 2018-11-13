@@ -25,6 +25,7 @@
    
     if (![self isKindOfClass:[UINavigationController class]]&&self.navigationController) {
         __weak typeof(self)weak_self = self;
+        
         [self.navigationController aspect_hookSelector:@selector(popViewControllerAnimated:) withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> info){
             UIViewController *vc = ((UINavigationController *)info.instance).viewControllers[ ((UINavigationController *)info.instance).viewControllers.count-2];
             

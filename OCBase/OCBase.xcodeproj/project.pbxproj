@@ -20,6 +20,7 @@
 		6617633D219B045D00EAEE34 /* MLCityListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66176330219B045D00EAEE34 /* MLCityListTableViewCell.xib */; };
 		6617633E219B045D00EAEE34 /* MLCityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66176333219B045D00EAEE34 /* MLCityListViewController.m */; };
 		6617633F219B045D00EAEE34 /* MLCityListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66176334219B045D00EAEE34 /* MLCityListViewController.xib */; };
+		66176342219B072D00EAEE34 /* AutoCutting.sh in Resources */ = {isa = PBXBuildFile; fileRef = 66176341219B072D00EAEE34 /* AutoCutting.sh */; };
 		662CA88B218460830061E49E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 662CA88A218460830061E49E /* AppDelegate.m */; };
 		662CA88E218460830061E49E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 662CA88D218460830061E49E /* ViewController.m */; };
 		662CA891218460830061E49E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662CA88F218460830061E49E /* Main.storyboard */; };
@@ -128,6 +129,9 @@
 		66176332219B045D00EAEE34 /* MLCityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCityListViewController.h; sourceTree = "<group>"; };
 		66176333219B045D00EAEE34 /* MLCityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCityListViewController.m; sourceTree = "<group>"; };
 		66176334219B045D00EAEE34 /* MLCityListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLCityListViewController.xib; sourceTree = "<group>"; };
+		66176341219B072D00EAEE34 /* AutoCutting.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = AutoCutting.sh; sourceTree = "<group>"; };
+		66176343219B0C2E00EAEE34 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		66176344219B0CF700EAEE34 /* MainThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainThread.h; sourceTree = "<group>"; };
 		662CA886218460830061E49E /* OCBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		662CA889218460830061E49E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		662CA88A218460830061E49E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -372,6 +376,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		66176340219B071C00EAEE34 /* sh */ = {
+			isa = PBXGroup;
+			children = (
+				66176341219B072D00EAEE34 /* AutoCutting.sh */,
+			);
+			path = sh;
+			sourceTree = "<group>";
+		};
 		662CA87D218460830061E49E = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +409,7 @@
 		662CA888218460830061E49E /* OCBase */ = {
 			isa = PBXGroup;
 			children = (
+				66176340219B071C00EAEE34 /* sh */,
 				66D569BE2198412D00D9EBD5 /* MVVM */,
 				662CA8BB218464A30061E49E /* QFFramwork */,
 				662CA889218460830061E49E /* AppDelegate.h */,
@@ -448,6 +461,8 @@
 				662CA8FF218464A30061E49E /* QFFramwork.m */,
 				662CA8CF218464A30061E49E /* QFView */,
 				662CA901218464A30061E49E /* QFTools */,
+				66176343219B0C2E00EAEE34 /* Singleton.h */,
+				66176344219B0CF700EAEE34 /* MainThread.h */,
 			);
 			path = QFFramwork;
 			sourceTree = "<group>";
@@ -830,6 +845,7 @@
 				662CA893218460850061E49E /* Assets.xcassets in Resources */,
 				6617631D219B03CC00EAEE34 /* words.txt in Resources */,
 				66176339219B045D00EAEE34 /* MLCityListHeaderView.xib in Resources */,
+				66176342219B072D00EAEE34 /* AutoCutting.sh in Resources */,
 				6617633F219B045D00EAEE34 /* MLCityListViewController.xib in Resources */,
 				662CA891218460830061E49E /* Main.storyboard in Resources */,
 				6617633D219B045D00EAEE34 /* MLCityListTableViewCell.xib in Resources */,

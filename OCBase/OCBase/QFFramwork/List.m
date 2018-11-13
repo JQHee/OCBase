@@ -7,10 +7,10 @@
 //
 #pragma mark - 宏集合
 #ifdef DEBUG
-#define debugLog(...) NSLog(__VA_ARGS__)
+#define NSLog(...) NSLog(__VA_ARGS__)
 #define debugMethod NSLog(@"%s", __FUNCTION__)
 #else
-#define debugLog(...)
+#define NSLog(...)
 #define debugMethod()
 #endif
 #define APPWindow [UIApplication sharedApplication].keyWindow
@@ -54,6 +54,8 @@
 #import "NetworkVerification.h"
 #import "QFLocationInfo.h"
 #import "UIScrollView+Core.h"
+#import "Singleton.h"
+#import "MainThread.h"
 
 #pragma mark - 库集合
 #import "DateTools.h"

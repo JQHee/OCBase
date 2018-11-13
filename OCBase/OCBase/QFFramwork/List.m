@@ -56,6 +56,7 @@
 #import "UIScrollView+Core.h"
 #import "Singleton.h"
 #import "MainThread.h"
+#import "Global.h"
 
 #pragma mark - 库集合
 #import "DateTools.h"

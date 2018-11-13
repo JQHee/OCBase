@@ -132,6 +132,7 @@
 		66176341219B072D00EAEE34 /* AutoCutting.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = AutoCutting.sh; sourceTree = "<group>"; };
 		66176343219B0C2E00EAEE34 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		66176344219B0CF700EAEE34 /* MainThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainThread.h; sourceTree = "<group>"; };
+		66176345219B0E7C00EAEE34 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		662CA886218460830061E49E /* OCBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		662CA889218460830061E49E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		662CA88A218460830061E49E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -463,6 +464,7 @@
 				662CA901218464A30061E49E /* QFTools */,
 				66176343219B0C2E00EAEE34 /* Singleton.h */,
 				66176344219B0CF700EAEE34 /* MainThread.h */,
+				66176345219B0E7C00EAEE34 /* Global.h */,
 			);
 			path = QFFramwork;
 			sourceTree = "<group>";

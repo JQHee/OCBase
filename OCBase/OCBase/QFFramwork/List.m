@@ -57,6 +57,7 @@
 #import "Singleton.h"
 #import "MainThread.h"
 #import "Global.h"
+#import "GCDTool.h"
 
 #pragma mark - 库集合
 #import "DateTools.h"

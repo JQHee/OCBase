@@ -1,0 +1,15 @@
+//
+//  OCBase_header.pch
+//  OCBase
+//
+//  Created by HJQ on 2018/11/18.
+//  Copyright © 2018 HJQ. All rights reserved.
+//
+
+#ifndef OCBase_header_pch
+#define OCBase_header_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#endif /* OCBase_header_pch */

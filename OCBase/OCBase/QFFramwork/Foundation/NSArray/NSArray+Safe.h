@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSMutableArray (Safe)
+@interface NSArray (Safe)
 
 @end

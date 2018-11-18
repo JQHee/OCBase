@@ -6,10 +6,10 @@
 //  Copyright © 2016年 GFB Network Technology Co.,Ltd. All rights reserved.
 //
 
-#import "NSMutableArray+Safe.h"
+#import "NSArray+Safe.h"
 #import <objc/runtime.h>
 
-@implementation NSMutableArray (Safe)
+@implementation NSArray (Safe)
 
 + (void)load {
     static dispatch_once_t onceToken;

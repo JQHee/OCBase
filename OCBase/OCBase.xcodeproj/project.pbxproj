@@ -137,6 +137,8 @@
 		66E16AEC21A163FA002C1F83 /* multipy_unicode.dat in Resources */ = {isa = PBXBuildFile; fileRef = 66E16AE821A163FA002C1F83 /* multipy_unicode.dat */; };
 		66E16AED21A163FA002C1F83 /* SearchCoreManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66E16AE921A163FA002C1F83 /* SearchCoreManager.mm */; };
 		66E16AF421A16629002C1F83 /* CitysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E16AF321A16629002C1F83 /* CitysViewController.m */; };
+		66E16AF721A17442002C1F83 /* UIView+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E16AF621A17442002C1F83 /* UIView+Core.m */; };
+		66E16AFA21A175FA002C1F83 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E16AF921A175FA002C1F83 /* UIView+Animation.m */; };
 		7C7CDF23E4307D801909F316 /* libPods-OCBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFEFA846E8CBF14A5F3484B /* libPods-OCBase.a */; };
 /* End PBXBuildFile section */
 
@@ -417,6 +419,10 @@
 		66E16AF121A16540002C1F83 /* OCBase_header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBase_header.pch; sourceTree = "<group>"; };
 		66E16AF221A16629002C1F83 /* CitysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitysViewController.h; sourceTree = "<group>"; };
 		66E16AF321A16629002C1F83 /* CitysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitysViewController.m; sourceTree = "<group>"; };
+		66E16AF521A17442002C1F83 /* UIView+Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Core.h"; sourceTree = "<group>"; };
+		66E16AF621A17442002C1F83 /* UIView+Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Core.m"; sourceTree = "<group>"; };
+		66E16AF821A175FA002C1F83 /* UIView+Animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		66E16AF921A175FA002C1F83 /* UIView+Animation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 		DCFEFA846E8CBF14A5F3484B /* libPods-OCBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -972,6 +978,10 @@
 				662F6A552197F2A900FD5231 /* UIView+BFAddTapGestureRecognizer.m */,
 				662CA929218464A30061E49E /* UIViewExt.h */,
 				662CA916218464A30061E49E /* UIViewExt.m */,
+				66E16AF521A17442002C1F83 /* UIView+Core.h */,
+				66E16AF621A17442002C1F83 /* UIView+Core.m */,
+				66E16AF821A175FA002C1F83 /* UIView+Animation.h */,
+				66E16AF921A175FA002C1F83 /* UIView+Animation.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1426,6 +1436,7 @@
 				662F6AA421980CC800FD5231 /* UIViewController+YINNav.m in Sources */,
 				662CA932218464A30061E49E /* CALayer+RumtimeAttribute.m in Sources */,
 				66C59B86218EF10D006D2C66 /* QRViewController.m in Sources */,
+				66E16AFA21A175FA002C1F83 /* UIView+Animation.m in Sources */,
 				662CA88E218460830061E49E /* ViewController.m in Sources */,
 				662CA952218464A40061E49E /* QFPhoneManagerVC.m in Sources */,
 				66B48E83218B3BC3005A7BF2 /* UIDevice+Core.m in Sources */,
@@ -1442,6 +1453,7 @@
 				662CA935218464A30061E49E /* QFBaseViewController.m in Sources */,
 				66E16A5421A15C98002C1F83 /* DefaultNotificationCenter.m in Sources */,
 				662CA953218464A40061E49E /* QFNetworking.m in Sources */,
+				66E16AF721A17442002C1F83 /* UIView+Core.m in Sources */,
 				66E16AEA21A163FA002C1F83 /* SearchCore.mm in Sources */,
 				66B2B721218DD47500F028FF /* NSObject+SkyHUD.m in Sources */,
 				662CA95A218464A40061E49E /* GTMBase64.m in Sources */,

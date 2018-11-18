@@ -64,6 +64,11 @@ target 'OCBase' do
     # 面向切面编程
     pod 'Aspects'
 
+    # 边下边播的音频播放器
+    # pod 'WTAudioPlayer', '~> 1.0.4'
+    # SVGA文件播放
+    # pod 'SVGAPlayer'
+
     # 指纹校验：https://www.jianshu.com/p/4a0bec497ebd
     # iCloud开发：https://www.jianshu.com/p/33ebab1c2ee1
     # 登录成功后，重新请求网络：https://www.jianshu.com/p/6c5f711a0252
@@ -71,8 +76,10 @@ target 'OCBase' do
     # TableView加载图片的优化方案：https://www.jianshu.com/p/328e503900d0
     # CollectionView加载图片优化方案: https://www.jianshu.com/p/32fe33caca3f
     # 好多叠在一起的button常见直播：https://www.jianshu.com/p/b1f715035adc
+    # 表格控件 https://github.com/sabersensen/ZSXChartDemo
 
     # 动画相关：https://www.kancloud.cn/manual/ios/97759
     # 一句话实现转场动画：https://github.com/308823810/SS_AnimationTransition
+    # 好用动画： https://github.com/Abnerzj/ZJAnimationPopView
 
 end

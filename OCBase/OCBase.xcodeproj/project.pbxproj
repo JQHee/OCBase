@@ -88,6 +88,7 @@
 		66D569C22198415D00D9EBD5 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D569C12198415D00D9EBD5 /* BaseViewModel.m */; };
 		66D569C52198446D00D9EBD5 /* TestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D569C42198446D00D9EBD5 /* TestViewModel.m */; };
 		66D569C92198497C00D9EBD5 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D569C82198497C00D9EBD5 /* ArrayDataSource.m */; };
+		66D96CF421A2EC71005F4493 /* SQPrintJsonLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D96CF321A2EC71005F4493 /* SQPrintJsonLog.m */; };
 		66E16A5021A15BA5002C1F83 /* NSDictionary+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E16A4F21A15BA5002C1F83 /* NSDictionary+Core.m */; };
 		66E16A5421A15C98002C1F83 /* DefaultNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E16A5321A15C98002C1F83 /* DefaultNotificationCenter.m */; };
 		66E16A5721A15D33002C1F83 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E16A5621A15D33002C1F83 /* NSArray+Block.m */; };
@@ -319,6 +320,8 @@
 		66D569C42198446D00D9EBD5 /* TestViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewModel.m; sourceTree = "<group>"; };
 		66D569C72198497C00D9EBD5 /* ArrayDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
 		66D569C82198497C00D9EBD5 /* ArrayDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
+		66D96CF221A2EC71005F4493 /* SQPrintJsonLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQPrintJsonLog.h; sourceTree = "<group>"; };
+		66D96CF321A2EC71005F4493 /* SQPrintJsonLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQPrintJsonLog.m; sourceTree = "<group>"; };
 		66E16A4E21A15BA5002C1F83 /* NSDictionary+Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Core.h"; sourceTree = "<group>"; };
 		66E16A4F21A15BA5002C1F83 /* NSDictionary+Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Core.m"; sourceTree = "<group>"; };
 		66E16A5221A15C98002C1F83 /* DefaultNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultNotificationCenter.h; sourceTree = "<group>"; };
@@ -1015,6 +1018,8 @@
 		66E16A4D21A15B88002C1F83 /* NSDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				66D96CF221A2EC71005F4493 /* SQPrintJsonLog.h */,
+				66D96CF321A2EC71005F4493 /* SQPrintJsonLog.m */,
 				66E16A4E21A15BA5002C1F83 /* NSDictionary+Core.h */,
 				66E16A4F21A15BA5002C1F83 /* NSDictionary+Core.m */,
 			);
@@ -1433,6 +1438,7 @@
 				66B48E80218B3A0F005A7BF2 /* MBProgressHUD+Core.m in Sources */,
 				66E16AC921A162A3002C1F83 /* UIPlaceholderTextView.m in Sources */,
 				66E16AB421A161D5002C1F83 /* UINavigationItem+Margin.m in Sources */,
+				66D96CF421A2EC71005F4493 /* SQPrintJsonLog.m in Sources */,
 				662F6AA421980CC800FD5231 /* UIViewController+YINNav.m in Sources */,
 				662CA932218464A30061E49E /* CALayer+RumtimeAttribute.m in Sources */,
 				66C59B86218EF10D006D2C66 /* QRViewController.m in Sources */,

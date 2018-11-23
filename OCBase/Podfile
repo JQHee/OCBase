@@ -15,9 +15,13 @@ target 'OCBase' do
     pod 'AFNetworking'
     pod 'FDStackView'
     pod "CYLTabBarController", "~>1.11.0"
+    # 导航控制器（可以全屏返回）
+    # pod "RTRootNavigationController"
     # 分页查看器
     # pod 'TYPagerController'
     # pod 'VTMagic', '~> 1.2.4'
+    # pod 'JXCategoryView'
+
     # 全屏返回框架
     # pod 'FDFullscreenPopGesture', '1.1'
     # pod 'WRNavigationBar'
@@ -33,6 +37,9 @@ target 'OCBase' do
     # 解压工具
     # pod 'SSZipArchive'
 
+    # 防护框架
+    # pod 'JJException', '~> 0.1.2'
+
     # 商店跳转评分
     # pod 'Appirater', '~> 2.3.1'
 
@@ -47,7 +54,11 @@ target 'OCBase' do
     # 不需要写sql语句，通过model操作数据库
     # pod 'YIIFMDB'
 
+    # 图片选择器
     # pod 'TZImagePickerController'
+    # pod 'HXPhotoPicker', '~> 2.2.3'
+    # pod 'LBPhotoBrowser', '~> 2.2.2'
+
     # 已经很久没有维护了
     # pod 'LPPhotoViewer', '~> 0.0.7’
     # 角标
@@ -63,6 +74,9 @@ target 'OCBase' do
 
     # 面向切面编程
     pod 'Aspects'
+
+    # 分类框架
+    # pod 'JKCategories'
 
     # 边下边播的音频播放器
     # pod 'WTAudioPlayer', '~> 1.0.4'
@@ -81,5 +95,7 @@ target 'OCBase' do
     # 动画相关：https://www.kancloud.cn/manual/ios/97759
     # 一句话实现转场动画：https://github.com/308823810/SS_AnimationTransition
     # 好用动画： https://github.com/Abnerzj/ZJAnimationPopView
+    # 转场动画： https://www.jianshu.com/p/ec08f43808aa
+    # 弹窗动画： https://www.jianshu.com/p/6f87ba558279
 
 end

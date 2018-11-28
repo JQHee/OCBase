@@ -63,3 +63,17 @@
 #define kDegreesToRadian(x)      (M_PI * (x) / 180.0)
 //由弧度转换角度
 #define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
+
+#import "LogManager.h"
+// 记录本地日志
+
+#define LLFileName [[NSString stringWithFormat:@"%s",__FILE__] lastPathComponent]
+#define LLFileLine [NSString stringWithFormat:@"%d",__LINE__]
+#define LLFileActionName [NSString stringWithFormat:@"%@",NSStringFromSelector(_cmd)]
+#define LLFileInfo(type) [NSString stringWithFormat:@"%@ ->【%@ 方法名：%@ 第%@行】 logInfo:\n", type, LLFileName,LLFileActionName, LLFileLine]
+#define LLog(module, ...) [[LogManager sharedInstance] logInfo:module logStr:__VA_ARGS__,nil]
+#define LLogError(module, ...) LLog(module, LLFileInfo(@"Error"), __VA_ARGS__)
+#define LLogSuccess(module, ...) LLog(module, LLFileInfo(@"Success"), __VA_ARGS__)
+#define LLogWarning(module, ...) LLog(module, LLFileInfo(@"Warning"), __VA_ARGS__)
+#define LLogInfo(module, ...) LLog(module, LLFileInfo(@"Info"), __VA_ARGS__)
+#define LLogCrash(module, ...) LLog(module, LLFileInfo(@"Crash"), __VA_ARGS__)

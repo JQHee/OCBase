@@ -83,6 +83,10 @@ target 'OCBase' do
     # SVGA文件播放
     # pod 'SVGAPlayer'
 
+    # 文件解压缩
+    # pod 'SSZipArchive'
+    pod 'ZipArchive', '~> 1.4.0',:inhibit_warnings => true
+
     # 指纹校验：https://www.jianshu.com/p/4a0bec497ebd
     # iCloud开发：https://www.jianshu.com/p/33ebab1c2ee1
     # 登录成功后，重新请求网络：https://www.jianshu.com/p/6c5f711a0252

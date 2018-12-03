@@ -13,6 +13,8 @@
 		5E7328A121B50114007157E4 /* UIControl+userStatics.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328A021B50114007157E4 /* UIControl+userStatics.m */; };
 		5E7328A421B50251007157E4 /* FontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328A321B50251007157E4 /* FontSize.m */; };
 		5E7328A721B50AA0007157E4 /* UIButton+Click.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328A621B50AA0007157E4 /* UIButton+Click.m */; };
+		5E7328B121B515E3007157E4 /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328B021B515E3007157E4 /* BrowserViewController.m */; };
+		5E7328B421B51657007157E4 /* WeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328B321B51657007157E4 /* WeakScriptMessageDelegate.m */; };
 		6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6617631A219B03CC00EAEE34 /* WordFilter.m */; };
 		6617631D219B03CC00EAEE34 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6617631B219B03CC00EAEE34 /* words.txt */; };
 		66176335219B045D00EAEE34 /* MLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66176321219B045D00EAEE34 /* MLLocationManager.m */; };
@@ -183,6 +185,10 @@
 		5E7328A321B50251007157E4 /* FontSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontSize.m; sourceTree = "<group>"; };
 		5E7328A521B50AA0007157E4 /* UIButton+Click.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Click.h"; sourceTree = "<group>"; };
 		5E7328A621B50AA0007157E4 /* UIButton+Click.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Click.m"; sourceTree = "<group>"; };
+		5E7328AF21B515E3007157E4 /* BrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowserViewController.h; sourceTree = "<group>"; };
+		5E7328B021B515E3007157E4 /* BrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
+		5E7328B221B51656007157E4 /* WeakScriptMessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakScriptMessageDelegate.h; sourceTree = "<group>"; };
+		5E7328B321B51657007157E4 /* WeakScriptMessageDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakScriptMessageDelegate.m; sourceTree = "<group>"; };
 		66176319219B03CB00EAEE34 /* WordFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordFilter.h; sourceTree = "<group>"; };
 		6617631A219B03CC00EAEE34 /* WordFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordFilter.m; sourceTree = "<group>"; };
 		6617631B219B03CC00EAEE34 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
@@ -517,6 +523,17 @@
 			path = Hook;
 			sourceTree = "<group>";
 		};
+		5E7328AE21B51544007157E4 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				5E7328B221B51656007157E4 /* WeakScriptMessageDelegate.h */,
+				5E7328B321B51657007157E4 /* WeakScriptMessageDelegate.m */,
+				5E7328AF21B515E3007157E4 /* BrowserViewController.h */,
+				5E7328B021B515E3007157E4 /* BrowserViewController.m */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
 		66176318219B03C000EAEE34 /* WordFilter */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,6 +547,7 @@
 		6617631E219B044700EAEE34 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5E7328AE21B51544007157E4 /* Browser */,
 				5E73289821B50018007157E4 /* Hook */,
 				6617631F219B045D00EAEE34 /* CitySelector */,
 			);
@@ -1523,6 +1541,7 @@
 				66D8F85821A6E36C004D6D71 /* UIViewController+LoginStatus.m in Sources */,
 				66D96CF421A2EC71005F4493 /* SQPrintJsonLog.m in Sources */,
 				662F6AA421980CC800FD5231 /* UIViewController+YINNav.m in Sources */,
+				5E7328B421B51657007157E4 /* WeakScriptMessageDelegate.m in Sources */,
 				662CA932218464A30061E49E /* CALayer+RumtimeAttribute.m in Sources */,
 				66C59B86218EF10D006D2C66 /* QRViewController.m in Sources */,
 				66E16AFA21A175FA002C1F83 /* UIView+Animation.m in Sources */,
@@ -1532,6 +1551,7 @@
 				662CA899218460850061E49E /* main.m in Sources */,
 				66E16A9221A160A8002C1F83 /* UIControl+Block.m in Sources */,
 				662CA939218464A30061E49E /* ZJContentView.m in Sources */,
+				5E7328B121B515E3007157E4 /* BrowserViewController.m in Sources */,
 				66E16AC821A162A3002C1F83 /* UITextView+Placeholder.m in Sources */,
 				66B2B6D8218D8F9000F028FF /* UIScrollView+Core.m in Sources */,
 				66E16A5E21A15D6A002C1F83 /* NSDate+MacFormatter.m in Sources */,

@@ -25,14 +25,23 @@ target 'OCBase' do
     # 全屏返回框架
     # pod 'FDFullscreenPopGesture', '1.1'
     # pod 'WRNavigationBar'
-    # 最近不维护了
+    
+    # 自动布局 最近不维护了
     pod 'Masonry'
     # pod 'SDAutoLayout', '~> 2.1.3'
+    # pod 'PureLayout'
+    
+    
     # OC的稳定版本是2.5
     # pod 'ReactiveCocoa', '~> 2.5'
     # pod 'HYBImageCliped'
     # pod 'YYText', '~> 1.0.7'
-    #pod 'SDCycleScrollView', '~> 1.75'
+    # pod 'SDCycleScrollView', '~> 1.75'
+    
+    # 内存占用检测
+    # pod 'OOMDetector', '1.3'
+    # 检测内容泄漏
+    # pod 'MLeaksFinder', '~> 1.0.0'
 
     # 解压工具
     # pod 'SSZipArchive'

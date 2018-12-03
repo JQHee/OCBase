@@ -189,6 +189,7 @@
 		5E7328B021B515E3007157E4 /* BrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
 		5E7328B221B51656007157E4 /* WeakScriptMessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakScriptMessageDelegate.h; sourceTree = "<group>"; };
 		5E7328B321B51657007157E4 /* WeakScriptMessageDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakScriptMessageDelegate.m; sourceTree = "<group>"; };
+		5E7328B521B530FE007157E4 /* ReadMe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadMe.h; sourceTree = "<group>"; };
 		66176319219B03CB00EAEE34 /* WordFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordFilter.h; sourceTree = "<group>"; };
 		6617631A219B03CC00EAEE34 /* WordFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordFilter.m; sourceTree = "<group>"; };
 		6617631B219B03CC00EAEE34 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
@@ -703,6 +704,7 @@
 				66176343219B0C2E00EAEE34 /* Singleton.h */,
 				66176344219B0CF700EAEE34 /* MainThread.h */,
 				66176345219B0E7C00EAEE34 /* Global.h */,
+				5E7328B521B530FE007157E4 /* ReadMe.h */,
 			);
 			path = QFFramwork;
 			sourceTree = "<group>";

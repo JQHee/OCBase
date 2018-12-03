@@ -98,6 +98,9 @@ target 'OCBase' do
     
     # 代码格式化
     # OBLint
+    
+    # 融360  Face++人脸识别及身份证、银行卡扫描
+    # https://www.jianshu.com/p/66a142505bc9
 
     # 指纹校验：https://www.jianshu.com/p/4a0bec497ebd
     # iCloud开发：https://www.jianshu.com/p/33ebab1c2ee1

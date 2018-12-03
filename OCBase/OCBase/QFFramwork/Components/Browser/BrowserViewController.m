@@ -51,8 +51,12 @@
         
         _wkWebView.allowsBackForwardNavigationGestures = YES;
         // 是否开启下拉刷新
-        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0 && _canDownRefresh) {
-            _wkWebView.scrollView.refreshControl = self.refreshControl;
+        if (_canDownRefresh) {
+            if (@available(iOS 10.0, *)) {
+                _wkWebView.scrollView.refreshControl = self.refreshControl;
+            } else {
+                // Fallback on earlier versions
+            }
         }
         // 添加进度监听
         [_wkWebView addObserver:self forKeyPath:@"estimatedProgress" options:(NSKeyValueObservingOptionNew) context:nil];
@@ -119,6 +123,9 @@
     
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = false;
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])  {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
     
     [self setupUI];
     [self loadRequest];
@@ -174,7 +181,7 @@
         _progress.progress = [change[@"new"] floatValue];
         if (_progress.progress == 1.0) {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                _progress.hidden = YES;
+                self->_progress.hidden = YES;
             });
         }
     }

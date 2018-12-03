@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E73289721B4FEAB007157E4 /* MyFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E73289621B4FEAB007157E4 /* MyFont.m */; };
+		5E73289B21B50032007157E4 /* HookUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E73289A21B50032007157E4 /* HookUtility.m */; };
+		5E73289E21B5009A007157E4 /* UIViewController+userStatics.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E73289D21B5009A007157E4 /* UIViewController+userStatics.m */; };
+		5E7328A121B50114007157E4 /* UIControl+userStatics.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328A021B50114007157E4 /* UIControl+userStatics.m */; };
+		5E7328A421B50251007157E4 /* FontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328A321B50251007157E4 /* FontSize.m */; };
 		6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6617631A219B03CC00EAEE34 /* WordFilter.m */; };
 		6617631D219B03CC00EAEE34 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6617631B219B03CC00EAEE34 /* words.txt */; };
 		66176335219B045D00EAEE34 /* MLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66176321219B045D00EAEE34 /* MLLocationManager.m */; };
@@ -165,6 +170,16 @@
 
 /* Begin PBXFileReference section */
 		5E15A478EEBF569E1D197D7F /* Pods-OCBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBase.debug.xcconfig"; path = "Target Support Files/Pods-OCBase/Pods-OCBase.debug.xcconfig"; sourceTree = "<group>"; };
+		5E73289521B4FEAB007157E4 /* MyFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFont.h; sourceTree = "<group>"; };
+		5E73289621B4FEAB007157E4 /* MyFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFont.m; sourceTree = "<group>"; };
+		5E73289921B50032007157E4 /* HookUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookUtility.h; sourceTree = "<group>"; };
+		5E73289A21B50032007157E4 /* HookUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookUtility.m; sourceTree = "<group>"; };
+		5E73289C21B5009A007157E4 /* UIViewController+userStatics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+userStatics.h"; sourceTree = "<group>"; };
+		5E73289D21B5009A007157E4 /* UIViewController+userStatics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+userStatics.m"; sourceTree = "<group>"; };
+		5E73289F21B50114007157E4 /* UIControl+userStatics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+userStatics.h"; sourceTree = "<group>"; };
+		5E7328A021B50114007157E4 /* UIControl+userStatics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+userStatics.m"; sourceTree = "<group>"; };
+		5E7328A221B50251007157E4 /* FontSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontSize.h; sourceTree = "<group>"; };
+		5E7328A321B50251007157E4 /* FontSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontSize.m; sourceTree = "<group>"; };
 		66176319219B03CB00EAEE34 /* WordFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordFilter.h; sourceTree = "<group>"; };
 		6617631A219B03CC00EAEE34 /* WordFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordFilter.m; sourceTree = "<group>"; };
 		6617631B219B03CC00EAEE34 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
@@ -473,6 +488,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5E73289421B4FE8A007157E4 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				5E73289521B4FEAB007157E4 /* MyFont.h */,
+				5E73289621B4FEAB007157E4 /* MyFont.m */,
+				5E7328A221B50251007157E4 /* FontSize.h */,
+				5E7328A321B50251007157E4 /* FontSize.m */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		5E73289821B50018007157E4 /* Hook */ = {
+			isa = PBXGroup;
+			children = (
+				5E73289921B50032007157E4 /* HookUtility.h */,
+				5E73289A21B50032007157E4 /* HookUtility.m */,
+				5E73289C21B5009A007157E4 /* UIViewController+userStatics.h */,
+				5E73289D21B5009A007157E4 /* UIViewController+userStatics.m */,
+				5E73289F21B50114007157E4 /* UIControl+userStatics.h */,
+				5E7328A021B50114007157E4 /* UIControl+userStatics.m */,
+			);
+			path = Hook;
+			sourceTree = "<group>";
+		};
 		66176318219B03C000EAEE34 /* WordFilter */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,6 +525,7 @@
 		6617631E219B044700EAEE34 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5E73289821B50018007157E4 /* Hook */,
 				6617631F219B045D00EAEE34 /* CitySelector */,
 			);
 			path = Components;
@@ -848,6 +888,7 @@
 		66B48E7C218B38D1005A7BF2 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				5E73289421B4FE8A007157E4 /* UIFont */,
 				66E16AC321A162A3002C1F83 /* UITextView */,
 				66E16ABF21A16277002C1F83 /* UITextField */,
 				66E16AB521A161F6002C1F83 /* UIResponder */,
@@ -1467,6 +1508,9 @@
 				66E16ADC21A163BB002C1F83 /* GCDGroup.m in Sources */,
 				662CA93B218464A30061E49E /* ZJSegmentStyle.m in Sources */,
 				66E16A7521A15F0E002C1F83 /* NSString+MAC.m in Sources */,
+				5E73289B21B50032007157E4 /* HookUtility.m in Sources */,
+				5E7328A121B50114007157E4 /* UIControl+userStatics.m in Sources */,
+				5E73289E21B5009A007157E4 /* UIViewController+userStatics.m in Sources */,
 				66B48E80218B3A0F005A7BF2 /* MBProgressHUD+Core.m in Sources */,
 				66E16AC921A162A3002C1F83 /* UIPlaceholderTextView.m in Sources */,
 				66E16AB421A161D5002C1F83 /* UINavigationItem+Margin.m in Sources */,
@@ -1513,6 +1557,7 @@
 				66E16A8C21A16067002C1F83 /* UIButton+TouchAreaInsets.m in Sources */,
 				66E16A6621A15E8A002C1F83 /* ChineseToPinyin.m in Sources */,
 				66E16A9C21A1614B002C1F83 /* UIImageView+Letters.m in Sources */,
+				5E7328A421B50251007157E4 /* FontSize.m in Sources */,
 				6617633B219B045D00EAEE34 /* MLCityListHeaderView.m in Sources */,
 				66176336219B045D00EAEE34 /* MLCityListHotCell.m in Sources */,
 				66E16ADB21A163BB002C1F83 /* GCDTimer.m in Sources */,
@@ -1549,6 +1594,7 @@
 				662F6A592197F38F00FD5231 /* UIButton+Block.m in Sources */,
 				662CA951218464A40061E49E /* UIViewExt.m in Sources */,
 				6617633A219B045D00EAEE34 /* MLCityListHotTableViewCell.m in Sources */,
+				5E73289721B4FEAB007157E4 /* MyFont.m in Sources */,
 				66E16A8621A1603D002C1F83 /* UIButton+Indicator.m in Sources */,
 				66B2B722218DD47500F028FF /* NSObject+SkyToast.m in Sources */,
 				662CA94B218464A40061E49E /* NSString+check.m in Sources */,
@@ -1724,6 +1770,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SYZGGW5E8S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OCBase/OCBase_header.pch;
 				INFOPLIST_FILE = OCBase/Info.plist;
@@ -1743,6 +1790,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SYZGGW5E8S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OCBase/OCBase_header.pch;
 				INFOPLIST_FILE = OCBase/Info.plist;

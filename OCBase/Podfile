@@ -86,6 +86,9 @@ target 'OCBase' do
     # 文件解压缩
     # pod 'SSZipArchive'
     pod 'ZipArchive', '~> 1.4.0',:inhibit_warnings => true
+    
+    # 代码格式化
+    # OBLint
 
     # 指纹校验：https://www.jianshu.com/p/4a0bec497ebd
     # iCloud开发：https://www.jianshu.com/p/33ebab1c2ee1
@@ -101,5 +104,9 @@ target 'OCBase' do
     # 好用动画： https://github.com/Abnerzj/ZJAnimationPopView
     # 转场动画： https://www.jianshu.com/p/ec08f43808aa
     # 弹窗动画： https://www.jianshu.com/p/6f87ba558279
+    # 炫酷动画： https://github.com/Yalantis/StarWars.iOS
+    # 物联网 SmartConfig 一键配网     GCDSocketManager 长连接
+    # 国家/地区选择器 https://www.jianshu.com/p/48ca8cbe561b
+    # app禁止截屏： https://www.jianshu.com/p/1823499b7499
 
 end

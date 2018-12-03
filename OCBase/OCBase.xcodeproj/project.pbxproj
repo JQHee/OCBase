@@ -12,6 +12,7 @@
 		5E73289E21B5009A007157E4 /* UIViewController+userStatics.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E73289D21B5009A007157E4 /* UIViewController+userStatics.m */; };
 		5E7328A121B50114007157E4 /* UIControl+userStatics.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328A021B50114007157E4 /* UIControl+userStatics.m */; };
 		5E7328A421B50251007157E4 /* FontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328A321B50251007157E4 /* FontSize.m */; };
+		5E7328A721B50AA0007157E4 /* UIButton+Click.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328A621B50AA0007157E4 /* UIButton+Click.m */; };
 		6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6617631A219B03CC00EAEE34 /* WordFilter.m */; };
 		6617631D219B03CC00EAEE34 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6617631B219B03CC00EAEE34 /* words.txt */; };
 		66176335219B045D00EAEE34 /* MLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66176321219B045D00EAEE34 /* MLLocationManager.m */; };
@@ -180,6 +181,8 @@
 		5E7328A021B50114007157E4 /* UIControl+userStatics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+userStatics.m"; sourceTree = "<group>"; };
 		5E7328A221B50251007157E4 /* FontSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontSize.h; sourceTree = "<group>"; };
 		5E7328A321B50251007157E4 /* FontSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontSize.m; sourceTree = "<group>"; };
+		5E7328A521B50AA0007157E4 /* UIButton+Click.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Click.h"; sourceTree = "<group>"; };
+		5E7328A621B50AA0007157E4 /* UIButton+Click.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Click.m"; sourceTree = "<group>"; };
 		66176319219B03CB00EAEE34 /* WordFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordFilter.h; sourceTree = "<group>"; };
 		6617631A219B03CC00EAEE34 /* WordFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordFilter.m; sourceTree = "<group>"; };
 		6617631B219B03CC00EAEE34 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
@@ -508,6 +511,8 @@
 				5E73289D21B5009A007157E4 /* UIViewController+userStatics.m */,
 				5E73289F21B50114007157E4 /* UIControl+userStatics.h */,
 				5E7328A021B50114007157E4 /* UIControl+userStatics.m */,
+				5E7328A521B50AA0007157E4 /* UIButton+Click.h */,
+				5E7328A621B50AA0007157E4 /* UIButton+Click.m */,
 			);
 			path = Hook;
 			sourceTree = "<group>";
@@ -1488,6 +1493,7 @@
 				662CA956218464A40061E49E /* QFLocationInfo.m in Sources */,
 				662F6A532197EE1A00FD5231 /* UIImage+ImageEffects.m in Sources */,
 				66E16ABC21A161F6002C1F83 /* UIResponder+FirstResponder.m in Sources */,
+				5E7328A721B50AA0007157E4 /* UIButton+Click.m in Sources */,
 				66E16ABD21A161F6002C1F83 /* UIResponder+UIAdapt.m in Sources */,
 				66E16AED21A163FA002C1F83 /* SearchCoreManager.mm in Sources */,
 				662CA946218464A30061E49E /* UITextField+YSBTextFieldDelegate.m in Sources */,

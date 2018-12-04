@@ -85,6 +85,7 @@
 		6632CD30218C8A4600F65829 /* MLFunctionPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6632CD2E218C8A4600F65829 /* MLFunctionPageView.m */; };
 		6632CD33218C8A5800F65829 /* MLApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6632CD32218C8A5800F65829 /* MLApplication.m */; };
 		669455FE21AEC0D300C319FB /* LogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 669455FC21AEC0D200C319FB /* LogManager.m */; };
+		66A1510021B6B2F000BD28B6 /* LZImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A150FF21B6B2F000BD28B6 /* LZImageCropper.m */; };
 		66B2B6D8218D8F9000F028FF /* UIScrollView+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2B6D7218D8F9000F028FF /* UIScrollView+Core.m */; };
 		66B2B719218DD3A600F028FF /* UIImageView+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2B718218DD3A600F028FF /* UIImageView+Core.m */; };
 		66B2B721218DD47500F028FF /* NSObject+SkyHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2B71D218DD47400F028FF /* NSObject+SkyHUD.m */; };
@@ -325,6 +326,8 @@
 		6632CD32218C8A5800F65829 /* MLApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLApplication.m; sourceTree = "<group>"; };
 		669455FC21AEC0D200C319FB /* LogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogManager.m; sourceTree = "<group>"; };
 		669455FD21AEC0D200C319FB /* LogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogManager.h; sourceTree = "<group>"; };
+		66A150FE21B6B2F000BD28B6 /* LZImageCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZImageCropper.h; sourceTree = "<group>"; };
+		66A150FF21B6B2F000BD28B6 /* LZImageCropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZImageCropper.m; sourceTree = "<group>"; };
 		66B2B6D6218D8F9000F028FF /* UIScrollView+Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Core.h"; sourceTree = "<group>"; };
 		66B2B6D7218D8F9000F028FF /* UIScrollView+Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Core.m"; sourceTree = "<group>"; };
 		66B2B717218DD3A600F028FF /* UIImageView+Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Core.h"; sourceTree = "<group>"; };
@@ -548,6 +551,7 @@
 		6617631E219B044700EAEE34 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				66A150FD21B6B2E400BD28B6 /* CropImage */,
 				5E7328AE21B51544007157E4 /* Browser */,
 				5E73289821B50018007157E4 /* Hook */,
 				6617631F219B045D00EAEE34 /* CitySelector */,
@@ -859,6 +863,15 @@
 				669455FD21AEC0D200C319FB /* LogManager.h */,
 			);
 			path = LogManager;
+			sourceTree = "<group>";
+		};
+		66A150FD21B6B2E400BD28B6 /* CropImage */ = {
+			isa = PBXGroup;
+			children = (
+				66A150FE21B6B2F000BD28B6 /* LZImageCropper.h */,
+				66A150FF21B6B2F000BD28B6 /* LZImageCropper.m */,
+			);
+			path = CropImage;
 			sourceTree = "<group>";
 		};
 		66B2B6D5218D8F7700F028FF /* Refresh */ = {
@@ -1590,6 +1603,7 @@
 				66176336219B045D00EAEE34 /* MLCityListHotCell.m in Sources */,
 				66E16ADB21A163BB002C1F83 /* GCDTimer.m in Sources */,
 				66B2B719218DD3A600F028FF /* UIImageView+Core.m in Sources */,
+				66A1510021B6B2F000BD28B6 /* LZImageCropper.m in Sources */,
 				6632CD30218C8A4600F65829 /* MLFunctionPageView.m in Sources */,
 				66E16AAA21A16194002C1F83 /* UINavigationController+MAC.m in Sources */,
 				662CA88B218460830061E49E /* AppDelegate.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TestRequest.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +20,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    TestRequest *request = [TestRequest new];
+    NSString *test = [request testMethod];
+    NSLog(@"%@", test);
     return YES;
 }
 

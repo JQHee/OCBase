@@ -15,6 +15,8 @@
 		5E7328A721B50AA0007157E4 /* UIButton+Click.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328A621B50AA0007157E4 /* UIButton+Click.m */; };
 		5E7328B121B515E3007157E4 /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328B021B515E3007157E4 /* BrowserViewController.m */; };
 		5E7328B421B51657007157E4 /* WeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328B321B51657007157E4 /* WeakScriptMessageDelegate.m */; };
+		5E7B5B1621B77E6B00B79747 /* DTBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B5B1321B77E6B00B79747 /* DTBaseAlertView.m */; };
+		5E7B5B1721B77E6B00B79747 /* DTNormalAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B5B1421B77E6B00B79747 /* DTNormalAlert.m */; };
 		6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6617631A219B03CC00EAEE34 /* WordFilter.m */; };
 		6617631D219B03CC00EAEE34 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6617631B219B03CC00EAEE34 /* words.txt */; };
 		66176335219B045D00EAEE34 /* MLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66176321219B045D00EAEE34 /* MLLocationManager.m */; };
@@ -191,6 +193,10 @@
 		5E7328B221B51656007157E4 /* WeakScriptMessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakScriptMessageDelegate.h; sourceTree = "<group>"; };
 		5E7328B321B51657007157E4 /* WeakScriptMessageDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakScriptMessageDelegate.m; sourceTree = "<group>"; };
 		5E7328B521B530FE007157E4 /* ReadMe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadMe.h; sourceTree = "<group>"; };
+		5E7B5B1221B77E6A00B79747 /* DTBaseAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBaseAlertView.h; sourceTree = "<group>"; };
+		5E7B5B1321B77E6B00B79747 /* DTBaseAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBaseAlertView.m; sourceTree = "<group>"; };
+		5E7B5B1421B77E6B00B79747 /* DTNormalAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTNormalAlert.m; sourceTree = "<group>"; };
+		5E7B5B1521B77E6B00B79747 /* DTNormalAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTNormalAlert.h; sourceTree = "<group>"; };
 		66176319219B03CB00EAEE34 /* WordFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordFilter.h; sourceTree = "<group>"; };
 		6617631A219B03CC00EAEE34 /* WordFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordFilter.m; sourceTree = "<group>"; };
 		6617631B219B03CC00EAEE34 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
@@ -538,6 +544,17 @@
 			path = Browser;
 			sourceTree = "<group>";
 		};
+		5E7B5B1121B77E5B00B79747 /* BaseAlert */ = {
+			isa = PBXGroup;
+			children = (
+				5E7B5B1221B77E6A00B79747 /* DTBaseAlertView.h */,
+				5E7B5B1321B77E6B00B79747 /* DTBaseAlertView.m */,
+				5E7B5B1521B77E6B00B79747 /* DTNormalAlert.h */,
+				5E7B5B1421B77E6B00B79747 /* DTNormalAlert.m */,
+			);
+			path = BaseAlert;
+			sourceTree = "<group>";
+		};
 		66176318219B03C000EAEE34 /* WordFilter */ = {
 			isa = PBXGroup;
 			children = (
@@ -551,6 +568,7 @@
 		6617631E219B044700EAEE34 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5E7B5B1121B77E5B00B79747 /* BaseAlert */,
 				66A150FD21B6B2E400BD28B6 /* CropImage */,
 				5E7328AE21B51544007157E4 /* Browser */,
 				5E73289821B50018007157E4 /* Hook */,
@@ -1533,6 +1551,8 @@
 				66E16AC221A16280002C1F83 /* UITextField+JKShake.m in Sources */,
 				66E16A9B21A1614B002C1F83 /* UIImageView+Reflect.m in Sources */,
 				662CA93F218464A30061E49E /* Reachability.m in Sources */,
+				5E7B5B1721B77E6B00B79747 /* DTNormalAlert.m in Sources */,
+				5E7B5B1621B77E6B00B79747 /* DTBaseAlertView.m in Sources */,
 				66E16A8321A15FD7002C1F83 /* AppleSystemService.m in Sources */,
 				66E16A8221A15FD7002C1F83 /* UIApplication+AppInfo.m in Sources */,
 				66E16ADA21A163BB002C1F83 /* GCDQueue.m in Sources */,

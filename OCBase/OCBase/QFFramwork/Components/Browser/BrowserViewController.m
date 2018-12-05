@@ -176,6 +176,7 @@
 }
 
 #pragma mark KVO
+/*
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
     if ([keyPath isEqualToString:@"estimatedProgress"]) {
         _progress.progress = [change[@"new"] floatValue];
@@ -183,6 +184,29 @@
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 self->_progress.hidden = YES;
             });
+        }
+    }
+}
+*/
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
+    if ([self->_progress isDescendantOfView:self.wkWebView]) {
+        if ([keyPath isEqualToString:@"estimatedProgress"]) {
+            self->_progress.progress = self.wkWebView.estimatedProgress;
+            if (self->_progress.progress == 1) {
+                /*
+                 *添加一个简单的动画，将progressView的Height变为1.4倍，在开始加载网页的代理中会恢复为1.5倍
+                 *动画时长0.25s，延时0.3s后开始动画
+                 *动画结束后将progressView隐藏
+                 */
+                [UIView animateWithDuration:0.25f delay:0.3f options:UIViewAnimationOptionCurveEaseOut animations:^{
+                    self->_progress.transform = CGAffineTransformMakeScale(1.0f, 1.4f);
+                } completion:^(BOOL finished) {
+                    self->_progress.hidden = YES;
+                }];
+            }
+        } else {
+            [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
         }
     }
 }

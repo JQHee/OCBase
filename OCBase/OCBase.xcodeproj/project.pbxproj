@@ -197,6 +197,8 @@
 		5E7B5B1321B77E6B00B79747 /* DTBaseAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBaseAlertView.m; sourceTree = "<group>"; };
 		5E7B5B1421B77E6B00B79747 /* DTNormalAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTNormalAlert.m; sourceTree = "<group>"; };
 		5E7B5B1521B77E6B00B79747 /* DTNormalAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTNormalAlert.h; sourceTree = "<group>"; };
+		5E7B5B1921B7806300B79747 /* log4cplus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log4cplus.h; sourceTree = "<group>"; };
+		5E7B5B1A21B7807600B79747 /* ReadMe.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ReadMe.mm; sourceTree = "<group>"; };
 		66176319219B03CB00EAEE34 /* WordFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordFilter.h; sourceTree = "<group>"; };
 		6617631A219B03CC00EAEE34 /* WordFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordFilter.m; sourceTree = "<group>"; };
 		6617631B219B03CC00EAEE34 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
@@ -555,6 +557,15 @@
 			path = BaseAlert;
 			sourceTree = "<group>";
 		};
+		5E7B5B1821B7805800B79747 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				5E7B5B1921B7806300B79747 /* log4cplus.h */,
+				5E7B5B1A21B7807600B79747 /* ReadMe.mm */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
 		66176318219B03C000EAEE34 /* WordFilter */ = {
 			isa = PBXGroup;
 			children = (
@@ -568,6 +579,7 @@
 		6617631E219B044700EAEE34 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5E7B5B1821B7805800B79747 /* Log */,
 				5E7B5B1121B77E5B00B79747 /* BaseAlert */,
 				66A150FD21B6B2E400BD28B6 /* CropImage */,
 				5E7328AE21B51544007157E4 /* Browser */,

@@ -13,12 +13,22 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, NetworkReachabilityStatus) {
+    unknown          = -1, //未知
+    notReachable     = 0,  //无连接
+    reachableViaWWAN = 1,  //3G
+    reachableViaWiFi = 2,  //WIFI
+};
+
 @class ClientData;
 @interface HTTPClient : NSObject
 
 @property(nonatomic,strong) AFHTTPSessionManager *sessionManager;
 
 + (instancetype) shareInstance;
+
+// 使用网络监听器 如果需要同步获取请使用 Reachability框架
+- (void) startNetworkListening:(void(^)(NetworkReachabilityStatus status)) networkBlock;
 
 // 超时时间
 - (void) setrRequestTimeout: (CGFloat)time;

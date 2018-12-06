@@ -32,6 +32,48 @@ static HTTPClient *_instance = nil;
     return _instance;
 }
 
+- (void) startNetworkListening:(void(^)(NetworkReachabilityStatus status)) networkBlock {
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown:
+            {
+                // 未知网络
+                if (networkBlock) {
+                    networkBlock(unknown);
+                }
+            }
+                break;
+            case AFNetworkReachabilityStatusNotReachable:
+            {
+                // 无法联网
+                if (networkBlock) {
+                    networkBlock(notReachable);
+                }
+            }
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+            {
+                //手机自带网络
+                if (networkBlock) {
+                    networkBlock(reachableViaWWAN);
+                }
+            }
+                break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+            {
+                // WIFI
+                if (networkBlock) {
+                    networkBlock(reachableViaWiFi);
+                }
+            }
+                
+        }
+    }];
+    [manager startMonitoring];
+}
+
 - (void) setRequestSerializer: (NSDictionary *)header {
     if (header) {
         AFJSONRequestSerializer *requestSerializer = [[AFJSONRequestSerializer alloc] init];

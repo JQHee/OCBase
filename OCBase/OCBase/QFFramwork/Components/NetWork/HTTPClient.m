@@ -2,11 +2,23 @@
 //  HTTPClient.m
 //  OCBase
 //
-//  Created by midland on 2018/12/6.
+//  Created by HJQ on 2018/12/6.
 //  Copyright © 2018年 HJQ. All rights reserved.
 //
 
 #import "HTTPClient.h"
+
+/*! 主线程异步队列 */
+#define network_dispatch_main_async_safe(block)        \
+if ([NSThread isMainThread]) {                 \
+block();                                       \
+} else {                                       \
+dispatch_async(dispatch_get_main_queue(), block);\
+}
+
+@interface HTTPClient()
+
+@end
 
 @implementation HTTPClient
 
@@ -34,7 +46,7 @@ static HTTPClient *_instance = nil;
     self.sessionManager.responseSerializer.acceptableContentTypes = set;
 }
 
-- (void) setTimeout: (CGFloat)time {
+- (void) setrRequestTimeout: (CGFloat)time {
     if (time > 0) {
         [self.sessionManager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
         self.sessionManager.requestSerializer.timeoutInterval = time;
@@ -46,7 +58,9 @@ static HTTPClient *_instance = nil;
                                   progress:(void(^)(NSProgress *progress))progress
                                    success:(void(^)(NSURLSessionDataTask *task, id response))success
                                    failure:(void(^)(NSError *error))failer {
-    
+    network_dispatch_main_async_safe(^{
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    })
     data.baseURL = data.baseURL ? : @"";
     data.methodName = data.methodName ? : @"";
     NSString *requestURL = [NSString stringWithFormat:@"%@%@", data.baseURL, data.methodName];
@@ -55,10 +69,16 @@ static HTTPClient *_instance = nil;
             progress (uploadProgress);
         }
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        network_dispatch_main_async_safe(^{
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        })
         if (success) {
             success (task, responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        network_dispatch_main_async_safe(^{
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        })
         if (failer) {
             failer(error);
         }
@@ -70,6 +90,9 @@ static HTTPClient *_instance = nil;
                                  progress:(void(^)(NSProgress *progress))progress
                                   success:(void(^)(NSURLSessionDataTask *task, id response))success
                                   failure:(void(^)(NSError *error))failer {
+    network_dispatch_main_async_safe(^{
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    })
     data.baseURL = data.baseURL ? : @"";
     data.methodName = data.methodName ? : @"";
     NSString *requestURL = [NSString stringWithFormat:@"%@%@", data.baseURL, data.methodName];
@@ -78,10 +101,16 @@ static HTTPClient *_instance = nil;
             progress (uploadProgress);
         }
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        network_dispatch_main_async_safe(^{
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        })
         if (success) {
             success (task, responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        network_dispatch_main_async_safe(^{
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        })
         if (failer) {
             failer(error);
         }
@@ -93,6 +122,9 @@ static HTTPClient *_instance = nil;
                                     progress:(void(^)(NSProgress *progress))progress
                                      success:(void(^)(NSURLSessionDataTask *task, id response))success
                                      failure:(void(^)(NSError *error))failer {
+    network_dispatch_main_async_safe(^{
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    })
     data.baseURL = data.baseURL ? : @"";
     data.methodName = data.methodName ? : @"";
     NSString *requestURL = [NSString stringWithFormat:@"%@%@", data.baseURL, data.methodName];
@@ -113,10 +145,16 @@ static HTTPClient *_instance = nil;
             progress (uploadProgress);
         }
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        network_dispatch_main_async_safe(^{
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        })
         if (success) {
             success (task, responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        network_dispatch_main_async_safe(^{
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        })
         if (failer) {
             failer(error);
         }
@@ -129,6 +167,9 @@ static HTTPClient *_instance = nil;
                                   progress:(void(^)(NSProgress *progress))progress
                                    success:(void(^)(NSURLSessionDataTask *task, id response))success
                                    failure:(void(^)(NSError *error))failer {
+    network_dispatch_main_async_safe(^{
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    })
     data.baseURL = data.baseURL ? : @"";
     data.methodName = data.methodName ? : @"";
     NSString *requestURL = [NSString stringWithFormat:@"%@%@", data.baseURL, data.methodName];
@@ -153,10 +194,16 @@ static HTTPClient *_instance = nil;
             progress (uploadProgress);
         }
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        network_dispatch_main_async_safe(^{
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        })
         if (success) {
             success (task, responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        network_dispatch_main_async_safe(^{
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        })
         if (failer) {
             failer(error);
         }
@@ -176,7 +223,6 @@ static HTTPClient *_instance = nil;
 - (AFHTTPSessionManager *)sessionManager
 {
     if (!_sessionManager) {
-        
         _sessionManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     }
     return _sessionManager;

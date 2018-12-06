@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E66F0C221B8A7A600950BB8 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66F0C121B8A7A600950BB8 /* HTTPClient.m */; };
 		5E66F0C621B8B56900950BB8 /* ClientData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66F0C521B8B56900950BB8 /* ClientData.m */; };
+		5E66F0C921B8F70400950BB8 /* UploadFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66F0C821B8F70400950BB8 /* UploadFileRequest.m */; };
 		5E73289721B4FEAB007157E4 /* MyFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E73289621B4FEAB007157E4 /* MyFont.m */; };
 		5E73289B21B50032007157E4 /* HookUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E73289A21B50032007157E4 /* HookUtility.m */; };
 		5E73289E21B5009A007157E4 /* UIViewController+userStatics.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E73289D21B5009A007157E4 /* UIViewController+userStatics.m */; };
@@ -185,6 +186,8 @@
 		5E66F0C121B8A7A600950BB8 /* HTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
 		5E66F0C421B8B56900950BB8 /* ClientData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientData.h; sourceTree = "<group>"; };
 		5E66F0C521B8B56900950BB8 /* ClientData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClientData.m; sourceTree = "<group>"; };
+		5E66F0C721B8F70400950BB8 /* UploadFileRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadFileRequest.h; sourceTree = "<group>"; };
+		5E66F0C821B8F70400950BB8 /* UploadFileRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadFileRequest.m; sourceTree = "<group>"; };
 		5E73289521B4FEAB007157E4 /* MyFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFont.h; sourceTree = "<group>"; };
 		5E73289621B4FEAB007157E4 /* MyFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFont.m; sourceTree = "<group>"; };
 		5E73289921B50032007157E4 /* HookUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookUtility.h; sourceTree = "<group>"; };
@@ -523,6 +526,26 @@
 				66D1CA478F5529CE254F37EB /* Pods-OCBase.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5E66F0CA21B8F89900950BB8 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				6651660E21B7ED2900F97AF9 /* BaseRequest.h */,
+				6651660F21B7ED2900F97AF9 /* BaseRequest.m */,
+				5E66F0C721B8F70400950BB8 /* UploadFileRequest.h */,
+				5E66F0C821B8F70400950BB8 /* UploadFileRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		5E66F0CB21B8F8C300950BB8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6651661121B7F4EC00F97AF9 /* FileContentData.h */,
+				6651661221B7F4EC00F97AF9 /* FileContentData.m */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		5E73289421B4FE8A007157E4 /* UIFont */ = {
@@ -907,15 +930,13 @@
 		6651660D21B7ED0600F97AF9 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				6651660E21B7ED2900F97AF9 /* BaseRequest.h */,
-				6651660F21B7ED2900F97AF9 /* BaseRequest.m */,
-				6651661121B7F4EC00F97AF9 /* FileContentData.h */,
-				6651661221B7F4EC00F97AF9 /* FileContentData.m */,
+				5E66F0CB21B8F8C300950BB8 /* Data */,
+				5E66F0CA21B8F89900950BB8 /* Request */,
 				6651661421B7FE6800F97AF9 /* NetWorkHeader.h */,
-				5E66F0C021B8A7A600950BB8 /* HTTPClient.h */,
-				5E66F0C121B8A7A600950BB8 /* HTTPClient.m */,
 				5E66F0C421B8B56900950BB8 /* ClientData.h */,
 				5E66F0C521B8B56900950BB8 /* ClientData.m */,
+				5E66F0C021B8A7A600950BB8 /* HTTPClient.h */,
+				5E66F0C121B8A7A600950BB8 /* HTTPClient.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -1653,6 +1674,7 @@
 				66E16AE121A163E0002C1F83 /* LocalPushCenter.m in Sources */,
 				6632CD2F218C8A4600F65829 /* MLFunctionPageItemView.m in Sources */,
 				662CA935218464A30061E49E /* QFBaseViewController.m in Sources */,
+				5E66F0C921B8F70400950BB8 /* UploadFileRequest.m in Sources */,
 				66E16A5421A15C98002C1F83 /* DefaultNotificationCenter.m in Sources */,
 				662CA953218464A40061E49E /* QFNetworking.m in Sources */,
 				66E16AF721A17442002C1F83 /* UIView+Core.m in Sources */,

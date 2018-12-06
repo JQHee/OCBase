@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class FileContentData;
 
 @interface BaseRequest : NSObject
+
 // 请求基本链接
 @property (nonatomic, strong) NSString *baseURL;
 // 请求方法名
@@ -24,11 +25,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSArray <FileContentData *> *files;
 
 // 超时时间
-- (void) setTimeout: (CGFloat)time;
-// 设置请求头 {"key": "value"}
-- (void) setRequestSerializer: (NSDictionary *)header;
+@property (nonatomic, assign) CGFloat timeout;
+// 请求头
+@property (nonatomic, strong) NSDictionary *header;
 // 响应类型
-- (void) setAcceptableContentTypes: (NSSet <NSString *>*) set;
+@property (nonatomic, strong) NSSet <NSString *> *set;
 
 // POST 请求
 - (NSURLSessionDataTask *)sendPostWithProgress:(void(^)(NSProgress *progress))progress

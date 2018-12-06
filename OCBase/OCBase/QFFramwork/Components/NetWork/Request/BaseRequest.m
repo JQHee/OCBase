@@ -23,16 +23,10 @@
     return self;
 }
 
-- (void) setRequestSerializer: (NSDictionary *)header {
-    [[HTTPClient shareInstance] setRequestSerializer:header];
-}
-
-- (void) setAcceptableContentTypes: (NSSet <NSString *>*) set {
-    [[HTTPClient shareInstance] setAcceptableContentTypes:set];
-}
-
-- (void) setTimeout: (CGFloat)time {
-    [[HTTPClient shareInstance] setTimeout:time];
+- (void) config {
+    [[HTTPClient shareInstance] setrRequestTimeout:self.timeout];
+    [[HTTPClient shareInstance] setRequestSerializer:self.header];
+    [[HTTPClient shareInstance] setAcceptableContentTypes:self.set];
 }
 
 // POST 请求
@@ -40,6 +34,7 @@
                                        success:(void(^)(NSURLSessionDataTask *task, id response))success
                                        failure:(void(^)(NSError *error))failer {
 
+    [self config];
     ClientData *data = [[ClientData alloc]init];
     data.baseURL = self.baseURL;
     data.methodName = self.methodName;
@@ -50,6 +45,7 @@
 - (NSURLSessionDataTask *)sendGetWithProgress:(void(^)(NSProgress *progress))progress
                                       success:(void(^)(NSURLSessionDataTask *task, id response))success
                                       failure:(void(^)(NSError *error))failer {
+    [self config];
     ClientData *data = [[ClientData alloc]init];
     data.baseURL = self.baseURL;
     data.methodName = self.methodName;
@@ -60,6 +56,7 @@
 - (NSURLSessionDataTask *)uploadFileWithProgress:(void(^)(NSProgress *progress))progress
                                          success:(void(^)(NSURLSessionDataTask *task, id response))success
                                          failure:(void(^)(NSError *error))failer {
+    [self config];
     ClientData *data = [[ClientData alloc]init];
     data.baseURL = self.baseURL;
     data.methodName = self.methodName;
@@ -72,6 +69,7 @@
 - (NSURLSessionDataTask *)sendFormWithProgress:(void(^)(NSProgress *progress))progress
                                        success:(void(^)(NSURLSessionDataTask *task, id response))success
                                        failure:(void(^)(NSError *error))failer {
+    [self config];
     ClientData *data = [[ClientData alloc]init];
     data.baseURL = self.baseURL;
     data.methodName = self.methodName;
@@ -86,6 +84,21 @@
 
 - (NSDictionary *) getDefaultHTTPRequestHeaders {
     return [[HTTPClient shareInstance] getDefaultHTTPRequestHeaders];
+}
+
+#pragma - Getter And Setter
+- (CGFloat)timeout {
+    return 15.0f;
+}
+
+- (NSDictionary *)header {
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"Content-Type"] = @"application/json";
+    return [dict copy];
+}
+
+- (NSSet<NSString *> *)set {
+    return [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain",@"image/jpg", nil];
 }
 
 @end

@@ -20,6 +20,20 @@
     return self;
 }
 
+- (NSString *)baseURL {
+    return @"https://www.baidu.com";
+}
+
+- (NSString *)methodName {
+    return @"/test";
+}
+
+- (NSDictionary *)parameters {
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"test"] = [NSString stringWithFormat:@"%d", self.set];
+    return [dict copy];
+}
+
 - (NSDictionary *)testMethod: (Class)class {
 
     //声明一个字典

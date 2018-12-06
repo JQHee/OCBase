@@ -120,5 +120,6 @@ target 'OCBase' do
     # 物联网 SmartConfig 一键配网     GCDSocketManager 长连接
     # 国家/地区选择器 https://www.jianshu.com/p/48ca8cbe561b
     # app禁止截屏： https://www.jianshu.com/p/1823499b7499
+    # 线程安全写文件：https://www.cnblogs.com/bomo/p/4668599.html
 
 end

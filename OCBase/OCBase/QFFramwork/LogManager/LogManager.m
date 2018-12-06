@@ -16,7 +16,14 @@ static const NSString* LogFilePath = @"/Documents/OTKLog/";
 // 日志压缩包文件名
 static NSString* ZipFileName = @"OTKLog.zip";
 
+//线程队列名称
+static char *queueName = "fileManagerQueue";
+
 @interface LogManager()
+{
+    //读写队列
+    dispatch_queue_t _queue;
+}
 
 // 日期格式化
 @property (nonatomic,retain) NSDateFormatter* dateFormatter;
@@ -84,6 +91,8 @@ static NSString* ZipFileName = @"OTKLog.zip";
         
         // 日志的目录路径
         self.basePath = [NSString stringWithFormat:@"%@%@",NSHomeDirectory(),LogFilePath];
+        
+        _queue = dispatch_queue_create(queueName, DISPATCH_QUEUE_CONCURRENT);
     }
     return self;
 }
@@ -379,37 +388,38 @@ static NSString* ZipFileName = @"OTKLog.zip";
  */
 - (void)writeFile:(NSString*)filePath stringData:(NSString*)stringData{
     
-    // 待写入的数据
-    NSData* writeData = [stringData dataUsingEncoding:NSUTF8StringEncoding];
-    
-    // NSFileManager 用于处理文件
-    BOOL createPathOk = YES;
-    if (![[NSFileManager defaultManager] fileExistsAtPath:[filePath stringByDeletingLastPathComponent] isDirectory:&createPathOk]) {
-        // 目录不存先创建
-        [[NSFileManager defaultManager] createDirectoryAtPath:[filePath stringByDeletingLastPathComponent] withIntermediateDirectories:YES attributes:nil error:nil];
-    }
-    if(![[NSFileManager defaultManager] fileExistsAtPath:filePath]){
-        // 文件不存在，直接创建文件并写入
-        //[writeData writeToFile:filePath atomically:NO];
-        self.outputStream = [[NSOutputStream alloc] initToFileAtPath:filePath append:NO];
-        [self.outputStream open];
-        [self.outputStream write:[writeData bytes]  maxLength:writeData.length];
-         [self.outputStream close];
-    }else{
-        self.outputStream = [[NSOutputStream alloc] initToFileAtPath:filePath append:YES];
-        [self.outputStream open];
-        [self.outputStream write:[writeData bytes]  maxLength:writeData.length];
-        [self.outputStream close];
-        // NSFileHandle 用于处理文件内容
-        // 读取文件到上下文，并且是更新模式
-//        NSFileHandle* fileHandler = [NSFileHandle fileHandleForUpdatingAtPath:filePath];
-//        // 跳到文件末尾
-//        [fileHandler seekToEndOfFile];
-//        // 追加数据
-//        [fileHandler writeData:writeData];
-//        // 关闭文件
-//        [fileHandler closeFile];
-    }
+    dispatch_barrier_sync(_queue, ^{
+        // 待写入的数据
+        NSData* writeData = [stringData dataUsingEncoding:NSUTF8StringEncoding];
+        // NSFileManager 用于处理文件
+        BOOL createPathOk = YES;
+        if (![[NSFileManager defaultManager] fileExistsAtPath:[filePath stringByDeletingLastPathComponent] isDirectory:&createPathOk]) {
+            // 目录不存先创建
+            [[NSFileManager defaultManager] createDirectoryAtPath:[filePath stringByDeletingLastPathComponent] withIntermediateDirectories:YES attributes:nil error:nil];
+        }
+        if(![[NSFileManager defaultManager] fileExistsAtPath:filePath]){
+            // 文件不存在，直接创建文件并写入
+            //[writeData writeToFile:filePath atomically:NO];
+            self.outputStream = [[NSOutputStream alloc] initToFileAtPath:filePath append:NO];
+            [self.outputStream open];
+            [self.outputStream write:[writeData bytes]  maxLength:writeData.length];
+             [self.outputStream close];
+        }else{
+            self.outputStream = [[NSOutputStream alloc] initToFileAtPath:filePath append:YES];
+            [self.outputStream open];
+            [self.outputStream write:[writeData bytes]  maxLength:writeData.length];
+            [self.outputStream close];
+            // NSFileHandle 用于处理文件内容
+            // 读取文件到上下文，并且是更新模式
+    //        NSFileHandle* fileHandler = [NSFileHandle fileHandleForUpdatingAtPath:filePath];
+    //        // 跳到文件末尾
+    //        [fileHandler seekToEndOfFile];
+    //        // 追加数据
+    //        [fileHandler writeData:writeData];
+    //        // 关闭文件
+    //        [fileHandler closeFile];
+        }
+    });
 }
 
 

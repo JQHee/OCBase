@@ -29,6 +29,10 @@
 　　一般压缩的功能我们可以使用zip压缩，OC中有开源的插件 ZipArchive 地址：http://code.google.com/p/ziparchive/ （需要FQ）
  */
 
+/*
+ 基本配置在Global文件中
+ */
+
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN

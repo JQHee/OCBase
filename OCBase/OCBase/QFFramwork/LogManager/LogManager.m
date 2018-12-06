@@ -12,7 +12,7 @@
 // 日志保留最大天数
 static const int LogMaxSaveDay = 3;
 // 日志文件保存目录
-static const NSString* LogFilePath = @"/Documents/OTKLog/";
+static const NSString* LogFilePath = @"/OTKLog/";
 // 日志压缩包文件名
 static NSString* ZipFileName = @"OTKLog.zip";
 
@@ -90,7 +90,8 @@ static char *queueName = "fileManagerQueue";
         self.timeFormatter = timeFormatter;
         
         // 日志的目录路径
-        self.basePath = [NSString stringWithFormat:@"%@%@",NSHomeDirectory(),LogFilePath];
+        NSString *cachesDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+        self.basePath = [NSString stringWithFormat:@"%@%@",cachesDir,LogFilePath];
         
         _queue = dispatch_queue_create(queueName, DISPATCH_QUEUE_CONCURRENT);
     }
@@ -139,7 +140,8 @@ static char *queueName = "fileManagerQueue";
     dispatch_async(dispatch_queue_create("writeLog", nil), ^{
         
         // 获取当前日期做为文件名
-        NSString* fileName = [self.dateFormatter stringFromDate:[NSDate date]];
+        // [self.dateFormatter stringFromDate:[NSDate date]]
+        NSString* fileName = [NSString stringWithFormat:@"%@.txt", [self.dateFormatter stringFromDate:[NSDate date]]];
         NSString* filePath = [NSString stringWithFormat:@"%@%@",self.basePath,fileName];
         
         // [时间]-[模块]-日志内容

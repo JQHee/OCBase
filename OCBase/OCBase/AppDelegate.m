@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TestRequest.h"
+#import "Global.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +22,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     TestRequest *request = [TestRequest new];
-
+    LLogWarning(@"warning", @"嘻嘻心心相惜");
+    [[LogManager sharedInstance] compressLog:nil];
     return YES;
 }
 

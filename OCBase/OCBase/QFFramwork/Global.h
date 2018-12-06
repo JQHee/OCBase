@@ -65,8 +65,8 @@
 #define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
 
 #import "LogManager.h"
-// 记录本地日志
 
+// 记录本地日志
 #define LLFileName [[NSString stringWithFormat:@"%s",__FILE__] lastPathComponent]
 #define LLFileLine [NSString stringWithFormat:@"%d",__LINE__]
 #define LLFileActionName [NSString stringWithFormat:@"%@",NSStringFromSelector(_cmd)]

@@ -23,7 +23,9 @@ typedef NS_ENUM(NSInteger, NetworkReachabilityStatus) {
 @class ClientData;
 @interface HTTPClient : NSObject
 
-@property(nonatomic,strong) AFHTTPSessionManager *sessionManager;
+@property(nonatomic, strong) AFHTTPSessionManager *sessionManager;
+// 是否是配置证书的HTTPS请求
+@property(nonatomic, copy) NSString *securityPolicyCerPath;
 
 + (instancetype) shareInstance;
 

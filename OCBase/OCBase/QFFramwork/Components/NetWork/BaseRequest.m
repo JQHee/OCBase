@@ -7,12 +7,9 @@
 //
 
 #import "BaseRequest.h"
-#import <AFNetworking.h>
-#import "FileContentData.h"
 
 @interface BaseRequest()
 
-@property(nonatomic,strong) AFHTTPSessionManager *sessionManager;
 
 @end
 
@@ -27,127 +24,68 @@
 }
 
 - (void) setRequestSerializer: (NSDictionary *)header {
-    if (header) {
-        AFJSONRequestSerializer *requestSerializer = [[AFJSONRequestSerializer alloc] init];
-        for (NSString *key in header) {
-            [requestSerializer setValue:header[key] forHTTPHeaderField:key];
-        }
-        self.sessionManager.requestSerializer = requestSerializer;
-    }
+    [[HTTPClient shareInstance] setRequestSerializer:header];
 }
 
 - (void) setAcceptableContentTypes: (NSSet <NSString *>*) set {
-    self.sessionManager.responseSerializer.acceptableContentTypes = set;
+    [[HTTPClient shareInstance] setAcceptableContentTypes:set];
 }
 
 - (void) setTimeout: (CGFloat)time {
-    if (time > 0) {
-        [self.sessionManager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
-        self.sessionManager.requestSerializer.timeoutInterval = time;
-        [self.sessionManager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
-    }
+    [[HTTPClient shareInstance] setTimeout:time];
 }
 
-- (NSURLSessionDataTask *)sendPostWithProgress:(ProgressHandler)progress
-                     success:(SucessHandler)success
-                     failure:(FailureHandler)failer {
+// POST 请求
+- (NSURLSessionDataTask *)sendPostWithProgress:(void(^)(NSProgress *progress))progress
+                                       success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                       failure:(void(^)(NSError *error))failer {
 
-    self.baseURL = self.baseURL ? : @"";
-    self.methodName = self.methodName ? : @"";
-    NSString *requestURL = [NSString stringWithFormat:@"%@%@", self.baseURL, self.methodName];
-    NSURLSessionDataTask *task = [_sessionManager POST:requestURL parameters:self.parameters progress:^(NSProgress * _Nonnull uploadProgress) {
-        if (progress) {
-            progress (uploadProgress);
-        }
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (success) {
-            success (task, responseObject);
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (failer) {
-            failer(error);
-        }
-    }];
-    return task;
+    ClientData *data = [[ClientData alloc]init];
+    data.baseURL = self.baseURL;
+    data.methodName = self.methodName;
+    data.parameters = self.parameters;
+    return [[HTTPClient shareInstance] sendPostWithData:data progress:progress success:success failure:failer];
 }
 
-- (NSURLSessionDataTask *)sendGetWithProgress:(ProgressHandler)progress
-                    success:(SucessHandler)success
-                    failure:(FailureHandler)failer {
-    self.baseURL = self.baseURL ? : @"";
-    self.methodName = self.methodName ? : @"";
-    NSString *requestURL = [NSString stringWithFormat:@"%@%@", self.baseURL, self.methodName];
-    NSURLSessionDataTask *task = [_sessionManager GET:requestURL parameters:self.parameters progress:^(NSProgress * _Nonnull uploadProgress) {
-        if (progress) {
-            progress (uploadProgress);
-        }
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (success) {
-            success (task, responseObject);
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (failer) {
-            failer(error);
-        }
-    }];
-    return task;
+- (NSURLSessionDataTask *)sendGetWithProgress:(void(^)(NSProgress *progress))progress
+                                      success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                      failure:(void(^)(NSError *error))failer {
+    ClientData *data = [[ClientData alloc]init];
+    data.baseURL = self.baseURL;
+    data.methodName = self.methodName;
+    data.parameters = self.parameters;
+    return [[HTTPClient shareInstance] sendGetWithData:data progress:progress success:success failure:failer];
 }
 
--(NSURLSessionDataTask *)uploadFileWithProgress:(ProgressHandler)progress
-                      success:(SucessHandler)success
-                      failure:(FailureHandler)failer {
-    self.baseURL = self.baseURL ? : @"";
-    self.methodName = self.methodName ? : @"";
-    NSString *requestURL = [NSString stringWithFormat:@"%@%@", self.baseURL, self.methodName];
-    NSURLSessionDataTask *task = [_sessionManager POST:requestURL parameters:self.parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        if (self.files) {
-            for (FileContentData *file in self.files) {
-                if (file.fileData) {
-                    [formData appendPartWithFileData:file.fileData name:file.name fileName:file.fileName mimeType:file.mimeType];
-                } else {
-                    [formData appendPartWithFileURL:file.fileURL name:file.name fileName:file.fileName mimeType:file.mimeType error:nil];
-                }
+- (NSURLSessionDataTask *)uploadFileWithProgress:(void(^)(NSProgress *progress))progress
+                                         success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                         failure:(void(^)(NSError *error))failer {
+    ClientData *data = [[ClientData alloc]init];
+    data.baseURL = self.baseURL;
+    data.methodName = self.methodName;
+    data.parameters = self.parameters;
+    data.files = self.files;
+    return [[HTTPClient shareInstance] uploadFileWithData:data progress:progress success:success failure:failer];
 
-            }
-        }
+}
 
-    } progress:^(NSProgress * _Nonnull uploadProgress) {
-        if (progress) {
-            progress (uploadProgress);
-        }
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (success) {
-            success (task, responseObject);
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (failer) {
-            failer(error);
-        }
-    }];
-    return task;
-
+- (NSURLSessionDataTask *)sendFormWithProgress:(void(^)(NSProgress *progress))progress
+                                       success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                       failure:(void(^)(NSError *error))failer {
+    ClientData *data = [[ClientData alloc]init];
+    data.baseURL = self.baseURL;
+    data.methodName = self.methodName;
+    data.parameters = self.parameters;
+    data.files = self.files;
+    return [[HTTPClient shareInstance] sendFormWithData:data progress:progress success:success failure:failer];
 }
 
 - (void)cancelAsynRequest {
-    [self.sessionManager invalidateSessionCancelingTasks:YES];
-}
-
-#pragma - Setter And Getter
-- (AFHTTPSessionManager *)sessionManager
-{
-    if (!_sessionManager) {
-
-        AFJSONRequestSerializer *requestSerializer = [[AFJSONRequestSerializer alloc] init];
-        [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-
-        _sessionManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-        _sessionManager.requestSerializer = requestSerializer;
-    }
-    return _sessionManager;
+    [[HTTPClient shareInstance] cancelAsynRequest];
 }
 
 - (NSDictionary *) getDefaultHTTPRequestHeaders {
-    return self.sessionManager.requestSerializer.HTTPRequestHeaders;
+    return [[HTTPClient shareInstance] getDefaultHTTPRequestHeaders];
 }
 
 @end

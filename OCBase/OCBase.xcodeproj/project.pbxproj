@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E66F0C221B8A7A600950BB8 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66F0C121B8A7A600950BB8 /* HTTPClient.m */; };
+		5E66F0C621B8B56900950BB8 /* ClientData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66F0C521B8B56900950BB8 /* ClientData.m */; };
 		5E73289721B4FEAB007157E4 /* MyFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E73289621B4FEAB007157E4 /* MyFont.m */; };
 		5E73289B21B50032007157E4 /* HookUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E73289A21B50032007157E4 /* HookUtility.m */; };
 		5E73289E21B5009A007157E4 /* UIViewController+userStatics.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E73289D21B5009A007157E4 /* UIViewController+userStatics.m */; };
@@ -179,6 +181,10 @@
 
 /* Begin PBXFileReference section */
 		5E15A478EEBF569E1D197D7F /* Pods-OCBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBase.debug.xcconfig"; path = "Target Support Files/Pods-OCBase/Pods-OCBase.debug.xcconfig"; sourceTree = "<group>"; };
+		5E66F0C021B8A7A600950BB8 /* HTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
+		5E66F0C121B8A7A600950BB8 /* HTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
+		5E66F0C421B8B56900950BB8 /* ClientData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientData.h; sourceTree = "<group>"; };
+		5E66F0C521B8B56900950BB8 /* ClientData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClientData.m; sourceTree = "<group>"; };
 		5E73289521B4FEAB007157E4 /* MyFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFont.h; sourceTree = "<group>"; };
 		5E73289621B4FEAB007157E4 /* MyFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFont.m; sourceTree = "<group>"; };
 		5E73289921B50032007157E4 /* HookUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookUtility.h; sourceTree = "<group>"; };
@@ -906,6 +912,10 @@
 				6651661121B7F4EC00F97AF9 /* FileContentData.h */,
 				6651661221B7F4EC00F97AF9 /* FileContentData.m */,
 				6651661421B7FE6800F97AF9 /* NetWorkHeader.h */,
+				5E66F0C021B8A7A600950BB8 /* HTTPClient.h */,
+				5E66F0C121B8A7A600950BB8 /* HTTPClient.m */,
+				5E66F0C421B8B56900950BB8 /* ClientData.h */,
+				5E66F0C521B8B56900950BB8 /* ClientData.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -1573,6 +1583,7 @@
 			files = (
 				66B48E86218B3D7F005A7BF2 /* BFNavigationBarFit.m in Sources */,
 				66D569C92198497C00D9EBD5 /* ArrayDataSource.m in Sources */,
+				5E66F0C221B8A7A600950BB8 /* HTTPClient.m in Sources */,
 				66176337219B045D00EAEE34 /* MLCityListTableViewCell.m in Sources */,
 				66E16A7221A15EE2002C1F83 /* NSString+MacRegexCategory.m in Sources */,
 				66176348219B10C500EAEE34 /* GCDTool.m in Sources */,
@@ -1595,6 +1606,7 @@
 				662CA946218464A30061E49E /* UITextField+YSBTextFieldDelegate.m in Sources */,
 				6651661021B7ED2900F97AF9 /* BaseRequest.m in Sources */,
 				66E16AC221A16280002C1F83 /* UITextField+JKShake.m in Sources */,
+				5E66F0C621B8B56900950BB8 /* ClientData.m in Sources */,
 				66E16A9B21A1614B002C1F83 /* UIImageView+Reflect.m in Sources */,
 				662CA93F218464A30061E49E /* Reachability.m in Sources */,
 				5E7B5B1721B77E6B00B79747 /* DTNormalAlert.m in Sources */,

@@ -21,8 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     TestRequest *request = [TestRequest new];
-    NSString *test = [request testMethod];
-    NSLog(@"%@", test);
+
     return YES;
 }
 

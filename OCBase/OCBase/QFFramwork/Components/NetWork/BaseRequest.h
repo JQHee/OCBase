@@ -7,12 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NetWorkHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-typedef void(^SucessHandler)(NSURLSessionDataTask *task, id response);
-typedef void(^ProgressHandler)(NSProgress *progressBlock);
-typedef void(^FailureHandler)(NSError *error);
 
 @class FileContentData;
 
@@ -25,6 +22,7 @@ typedef void(^FailureHandler)(NSError *error);
 @property (nonatomic, strong) NSDictionary *parameters;
 // 文件数组
 @property (nonatomic, strong) NSArray <FileContentData *> *files;
+
 // 超时时间
 - (void) setTimeout: (CGFloat)time;
 // 设置请求头 {"key": "value"}
@@ -33,19 +31,25 @@ typedef void(^FailureHandler)(NSError *error);
 - (void) setAcceptableContentTypes: (NSSet <NSString *>*) set;
 
 // POST 请求
-- (NSURLSessionDataTask *)sendPostWithProgress:(ProgressHandler)progress
-                     success:(SucessHandler)success
-                     failure:(FailureHandler)failer;
+- (NSURLSessionDataTask *)sendPostWithProgress:(void(^)(NSProgress *progress))progress
+                     success:(void(^)(NSURLSessionDataTask *task, id response))success
+                     failure:(void(^)(NSError *error))failer;
 
 // GET请求
-- (NSURLSessionDataTask *)sendGetWithProgress:(ProgressHandler)progress
-                    success:(SucessHandler)success
-                    failure:(FailureHandler)failer;
+- (NSURLSessionDataTask *)sendGetWithProgress:(void(^)(NSProgress *progress))progress
+                    success:(void(^)(NSURLSessionDataTask *task, id response))success
+                    failure:(void(^)(NSError *error))failer;
 
 // 带文件上传
--(NSURLSessionDataTask *)uploadFileWithProgress:(ProgressHandler)progress
-                      success:(SucessHandler)success
-                      failure:(FailureHandler)failer;
+- (NSURLSessionDataTask *)uploadFileWithProgress:(void(^)(NSProgress *progress))progress
+                      success:(void(^)(NSURLSessionDataTask *task, id response))success
+                      failure:(void(^)(NSError *error))failer;
+
+// POST表单格式提交
+- (NSURLSessionDataTask *)sendFormWithProgress:(void(^)(NSProgress *progress))progress
+                                         success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                         failure:(void(^)(NSError *error))failer;
+
 // 取消网络请求
 - (void)cancelAsynRequest;
 

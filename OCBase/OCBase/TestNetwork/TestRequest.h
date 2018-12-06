@@ -12,9 +12,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TestRequest : BaseRequest
 
-@property (nonatomic, strong) NSString *test;
+//@property (nonatomic, strong) NSString *test;
+//
+//@property (nonatomic, strong) NSDictionary *dict;
+//
+//@property (nonatomic, assign) NSInteger page;
+//
+//@property (nonatomic, assign) NSNumber *pageSize;
 
-- (NSString *)testMethod;
+@property (nonatomic, assign) BOOL set;
+
+- (NSDictionary *)testMethod: (Class)class;
 
 @end
 

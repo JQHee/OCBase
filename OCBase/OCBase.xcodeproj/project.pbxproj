@@ -18,6 +18,7 @@
 		5E7328A721B50AA0007157E4 /* UIButton+Click.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328A621B50AA0007157E4 /* UIButton+Click.m */; };
 		5E7328B121B515E3007157E4 /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328B021B515E3007157E4 /* BrowserViewController.m */; };
 		5E7328B421B51657007157E4 /* WeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7328B321B51657007157E4 /* WeakScriptMessageDelegate.m */; };
+		5E7848EC21BA1F0400CFE8AD /* NetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7848EB21BA1F0300CFE8AD /* NetworkCache.m */; };
 		5E7B5B1621B77E6B00B79747 /* DTBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B5B1321B77E6B00B79747 /* DTBaseAlertView.m */; };
 		5E7B5B1721B77E6B00B79747 /* DTNormalAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B5B1421B77E6B00B79747 /* DTNormalAlert.m */; };
 		6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6617631A219B03CC00EAEE34 /* WordFilter.m */; };
@@ -205,6 +206,8 @@
 		5E7328B221B51656007157E4 /* WeakScriptMessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakScriptMessageDelegate.h; sourceTree = "<group>"; };
 		5E7328B321B51657007157E4 /* WeakScriptMessageDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakScriptMessageDelegate.m; sourceTree = "<group>"; };
 		5E7328B521B530FE007157E4 /* ReadMe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadMe.h; sourceTree = "<group>"; };
+		5E7848EA21BA1F0300CFE8AD /* NetworkCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkCache.h; sourceTree = "<group>"; };
+		5E7848EB21BA1F0300CFE8AD /* NetworkCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkCache.m; sourceTree = "<group>"; };
 		5E7B5B1221B77E6A00B79747 /* DTBaseAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBaseAlertView.h; sourceTree = "<group>"; };
 		5E7B5B1321B77E6B00B79747 /* DTBaseAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBaseAlertView.m; sourceTree = "<group>"; };
 		5E7B5B1421B77E6B00B79747 /* DTNormalAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTNormalAlert.m; sourceTree = "<group>"; };
@@ -490,6 +493,8 @@
 		66E16AF621A17442002C1F83 /* UIView+Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Core.m"; sourceTree = "<group>"; };
 		66E16AF821A175FA002C1F83 /* UIView+Animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
 		66E16AF921A175FA002C1F83 /* UIView+Animation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		880041B7C1A5DE6E146EC37A /* Pods-OCBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCBase/Pods-OCBase.debug.xcconfig"; sourceTree = "<group>"; };
+		CCC8E313EA63866461A190D4 /* Pods-OCBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCBase/Pods-OCBase.release.xcconfig"; sourceTree = "<group>"; };
 		DCFEFA846E8CBF14A5F3484B /* libPods-OCBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -524,6 +529,8 @@
 			children = (
 				5E15A478EEBF569E1D197D7F /* Pods-OCBase.debug.xcconfig */,
 				66D1CA478F5529CE254F37EB /* Pods-OCBase.release.xcconfig */,
+				880041B7C1A5DE6E146EC37A /* Pods-OCBase.debug.xcconfig */,
+				CCC8E313EA63866461A190D4 /* Pods-OCBase.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -583,6 +590,15 @@
 				5E7328B021B515E3007157E4 /* BrowserViewController.m */,
 			);
 			path = Browser;
+			sourceTree = "<group>";
+		};
+		5E7848E921BA1EE900CFE8AD /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				5E7848EA21BA1F0300CFE8AD /* NetworkCache.h */,
+				5E7848EB21BA1F0300CFE8AD /* NetworkCache.m */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 		5E7B5B1121B77E5B00B79747 /* BaseAlert */ = {
@@ -930,6 +946,7 @@
 		6651660D21B7ED0600F97AF9 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				5E7848E921BA1EE900CFE8AD /* Cache */,
 				5E66F0CB21B8F8C300950BB8 /* Data */,
 				5E66F0CA21B8F89900950BB8 /* Request */,
 				6651661421B7FE6800F97AF9 /* NetWorkHeader.h */,
@@ -1555,7 +1572,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OCBase/Pods-OCBase-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-OCBase/Pods-OCBase-resources.sh",
 				"${PODS_ROOT}/DateTools/DateTools/DateTools/DateTools.bundle",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
@@ -1570,7 +1587,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCBase/Pods-OCBase-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCBase/Pods-OCBase-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D6BC2BC1F95B8E5091652F3C /* [CP] Check Pods Manifest.lock */ = {
@@ -1670,6 +1687,7 @@
 				66B2B6D8218D8F9000F028FF /* UIScrollView+Core.m in Sources */,
 				66E16A5E21A15D6A002C1F83 /* NSDate+MacFormatter.m in Sources */,
 				6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */,
+				5E7848EC21BA1F0400CFE8AD /* NetworkCache.m in Sources */,
 				662CA948218464A30061E49E /* APIList.h in Sources */,
 				66E16AE121A163E0002C1F83 /* LocalPushCenter.m in Sources */,
 				6632CD2F218C8A4600F65829 /* MLFunctionPageItemView.m in Sources */,
@@ -1930,7 +1948,7 @@
 		};
 		662CA8B4218460850061E49E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66D1CA478F5529CE254F37EB /* Pods-OCBase.release.xcconfig */;
+			baseConfigurationReference = CCC8E313EA63866461A190D4 /* Pods-OCBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

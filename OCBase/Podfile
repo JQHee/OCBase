@@ -96,6 +96,10 @@ target 'OCBase' do
     # pod 'SSZipArchive'
     pod 'ZipArchive', '~> 1.4.0',:inhibit_warnings => true
     
+    # 添加网络缓存框架
+    pod 'PINCache', '~> 3.0.1-beta.7'
+    # pod 'YYCache', '~> 1.0.4'
+    
     # 代码格式化
     # OBLint
     

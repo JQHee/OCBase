@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSDictionary *header;
 // 响应类型
 @property (nonatomic, strong) NSSet <NSString *> *set;
+// 是否加载本地缓存
+@property (nonatomic, assign) BOOL isLoadLocalCache;
 
 // 同步请求
 

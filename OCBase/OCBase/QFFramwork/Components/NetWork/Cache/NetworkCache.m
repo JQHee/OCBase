@@ -19,7 +19,7 @@ static PINCache *pinCache = nil;
     NSString *cachePath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject;
     cachePath = [cachePath stringByAppendingPathComponent:@"com.cache.ocbase"];
     cachePath = [cachePath stringByAppendingPathComponent:name];
-    pinCache = [[PINCache sharedCache] initWithName:@"name" rootPath:cachePath];
+    pinCache = [[PINCache sharedCache] initWithName:name rootPath:cachePath];
 }
 
 + (void)saveResponseCache:(id <NSCoding>)responseCache forKey:(NSString *)key {
@@ -74,7 +74,7 @@ static PINCache *pinCache = nil;
     if (parameters) {
         cacheKey = [URL stringByAppendingString:[self convertJsonStringFromDictionaryOrArray:parameters]];
     }
-    if (responseCache) {
+    if (responseCache) { // 有缓存且网络错误
         responseCache([PGNetworkCache getResponseCacheForKey:cacheKey]);
     }
     AFHTTPSessionManager *manager = [self manager];

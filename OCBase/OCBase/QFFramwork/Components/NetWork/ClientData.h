@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSDictionary *parameters;
 // 文件数组
 @property (nonatomic, strong) NSArray <FileContentData *> *files;
+// 本地缓存
+@property (nonatomic, assign) BOOL isLoadLocalCache;
 
 @end
 

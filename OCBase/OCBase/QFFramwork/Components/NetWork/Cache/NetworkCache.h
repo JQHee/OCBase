@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- *  设置缓存路径
+ *  设置缓存路径 (如果是多用户，name最好设置为用户ID)
  *
  *  @param name 路径文件夹的名称
  */

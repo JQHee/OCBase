@@ -36,6 +36,7 @@ PODS:
   - SDWebImage (5.0.0-beta3):
     - SDWebImage/Core (= 5.0.0-beta3)
   - SDWebImage/Core (5.0.0-beta3)
+  - YYCache (1.0.4)
   - ZipArchive (1.4.0)
 
 DEPENDENCIES:
@@ -53,6 +54,7 @@ DEPENDENCIES:
   - PINCache (~> 3.0.1-beta.7)
   - pop (~> 1.0.10)
   - SDWebImage (~> 5.0.0-beta3)
+  - YYCache (~> 1.0.4)
   - ZipArchive (~> 1.4.0)
 
 SPEC REPOS:
@@ -72,6 +74,7 @@ SPEC REPOS:
     - PINOperation
     - pop
     - SDWebImage
+    - YYCache
     - ZipArchive
 
 SPEC CHECKSUMS:
@@ -90,8 +93,9 @@ SPEC CHECKSUMS:
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   SDWebImage: e52654ceef9fdc19f4c612d64a5b6d3f05dd81a4
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 8bb0d1d410434f89ec5ac16c0cd70a072ba8a04b
+PODFILE CHECKSUM: 1284df0451235e5d26e95880a08e511e3778f237
 
 COCOAPODS: 1.5.3

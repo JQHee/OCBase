@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TestRequest.h"
 #import "Global.h"
+#import <WebKit/WebKit.h>
 
 @interface AppDelegate ()
 
@@ -80,6 +81,35 @@
             self.bgTask = UIBackgroundTaskInvalid;
         }];
     }
+}
+
+// 设置wkwebview UserAgent
+- (void) setWKWebViewUserAgent {
+    
+    WKWebView *webView = [[WKWebView alloc]initWithFrame:CGRectZero configuration:[WKWebViewConfiguration new]];
+    if (@available(iOS 12.0, *)) {
+        NSString *baseAgent = [webView valueForKey:@"applicationNameForUserAgent"];
+        NSString *userAgent = [NSString stringWithFormat:@"%@ iOS_Client",baseAgent];
+        [webView setValue:userAgent forKey:@"applicationNameForUserAgent"];
+    }
+
+    [webView evaluateJavaScript:@"navigator.userAgent" completionHandler:^(id result, NSError *error) {
+        
+        NSString *oldAgent = result;
+        if ([oldAgent rangeOfString:@"iOS_Client"].location != NSNotFound) {
+            return ;
+        }
+        NSString *newAgent = [NSString stringWithFormat:@"%@ %@", oldAgent, @"iOS_Client"];
+        NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:newAgent, @"UserAgent", nil];
+        [[NSUserDefaults standardUserDefaults] registerDefaults:dictionary];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        if (@available(iOS 9.0, *)) {
+            [webView setCustomUserAgent:newAgent];
+        } else {
+            [webView setValue:newAgent forKey:@"applicationNameForUserAgent"];
+        }
+    }];
+
 }
 
 

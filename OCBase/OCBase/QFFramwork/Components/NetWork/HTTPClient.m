@@ -32,6 +32,18 @@ static HTTPClient *_instance = nil;
     return _instance;
 }
 
+- (BOOL)isReachable {
+    return [[AFNetworkReachabilityManager sharedManager] isReachable];
+}
+
+- (BOOL)isReachableViaWiFi {
+    return [[AFNetworkReachabilityManager sharedManager] isReachableViaWiFi];
+}
+
+- (BOOL) isReachableViaWWAN {
+    return [[AFNetworkReachabilityManager sharedManager] isReachableViaWWAN];
+}
+
 - (void) startNetworkListening:(void(^)(NetworkReachabilityStatus status)) networkBlock {
     AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
     [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
@@ -263,6 +275,31 @@ static HTTPClient *_instance = nil;
         }
     }];
     return task;
+}
+
+- (NSURLSessionDownloadTask *)downLoadWithData:(ClientData *)data
+                                   destination: (NSURL *(^)(NSURL *targetPath, NSURLResponse *response )) destination
+                                      progress:(void(^)(NSProgress *progress))progress
+                                downLoadFinish:(void(^)(NSURLResponse *response, NSURL *filePath, NSError *error))downLoadFinish {
+    /* 创建网络下载对象 */
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    /* 下载地址 */
+    NSURL *url = [NSURL URLWithString:data.baseURL ? : @" "];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    /* 下载路径 */
+    // NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+    // NSString *filePath = [path stringByAppendingPathComponent:url.lastPathComponent];
+    
+    /* 开始请求下载 */
+    NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
+        // NSLog(@"下载进度：%.0f％", downloadProgress.fractionCompleted * 100);
+        if (progress) {
+            progress (downloadProgress);
+        }
+    } destination:destination completionHandler:downLoadFinish];
+    [downloadTask resume];
+    return downloadTask;
 }
 
 - (void)cancelAsynRequest {

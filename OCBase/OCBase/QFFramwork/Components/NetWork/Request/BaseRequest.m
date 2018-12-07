@@ -78,6 +78,14 @@
     return [[HTTPClient shareInstance] sendFormWithData:data progress:progress success:success failure:failer];
 }
 
+- (NSURLSessionDownloadTask *)downLoadWithDestination: (NSURL *(^)(NSURL *targetPath, NSURLResponse *response )) destination
+                                             progress:(void(^)(NSProgress *progress))progress
+                                       downLoadFinish:(void(^)(NSURLResponse *response, NSURL *filePath, NSError *error))downLoadFinish {
+    ClientData *data = [[ClientData alloc]init];
+    data.baseURL = self.baseURL;
+    return [[HTTPClient shareInstance] downLoadWithData:data destination:destination progress:progress downLoadFinish:downLoadFinish];
+}
+
 - (void)cancelAsynRequest {
     [[HTTPClient shareInstance] cancelAsynRequest];
 }

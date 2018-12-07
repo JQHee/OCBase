@@ -29,6 +29,11 @@ typedef NS_ENUM(NSInteger, NetworkReachabilityStatus) {
 
 + (instancetype) shareInstance;
 
+// 同步方法获取当前的网络状态
+- (BOOL) isReachable;
+- (BOOL) isReachableViaWiFi;
+- (BOOL) isReachableViaWWAN;
+
 // 使用网络监听器 如果需要同步获取请使用 Reachability框架
 - (void) startNetworkListening:(void(^)(NetworkReachabilityStatus status)) networkBlock;
 
@@ -62,6 +67,12 @@ typedef NS_ENUM(NSInteger, NetworkReachabilityStatus) {
                                   progress:(void(^)(NSProgress *progress))progress
                                    success:(void(^)(NSURLSessionDataTask *task, id response))success
                                    failure:(void(^)(NSError *error))failer;
+
+// 文件下载
+- (NSURLSessionDownloadTask *)downLoadWithData:(ClientData *)data
+                                   destination: (NSURL *(^)(NSURL *targetPath, NSURLResponse *response )) destination
+                                      progress:(void(^)(NSProgress *progress))progress
+                                downLoadFinish:(void(^)(NSURLResponse *response, NSURL *filePath, NSError *error))downLoadFinish;
 // 取消网络请求
 - (void)cancelAsynRequest;
 

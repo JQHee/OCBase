@@ -51,6 +51,11 @@ NS_ASSUME_NONNULL_BEGIN
                                          success:(void(^)(NSURLSessionDataTask *task, id response))success
                                          failure:(void(^)(NSError *error))failer;
 
+// 文件下载
+- (NSURLSessionDownloadTask *)downLoadWithDestination: (NSURL *(^)(NSURL *targetPath, NSURLResponse *response )) destination
+                                             progress:(void(^)(NSProgress *progress))progress
+                                       downLoadFinish:(void(^)(NSURLResponse *response, NSURL *filePath, NSError *error))downLoadFinish;
+
 // 取消网络请求
 - (void)cancelAsynRequest;
 

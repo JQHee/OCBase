@@ -90,7 +90,7 @@ static char *queueName = "fileManagerQueue";
         self.timeFormatter = timeFormatter;
         
         // 日志的目录路径
-        NSString *cachesDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+        NSString *cachesDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
         self.basePath = [NSString stringWithFormat:@"%@%@",cachesDir,LogFilePath];
         
         _queue = dispatch_queue_create(queueName, DISPATCH_QUEUE_CONCURRENT);

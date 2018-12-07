@@ -7,6 +7,7 @@
 //
 
 #import "HTTPClient.h"
+#import "FileContentData.h"
 
 /*! 主线程异步队列 */
 #define network_dispatch_main_async_safe(block)        \

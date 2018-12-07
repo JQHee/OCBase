@@ -7,6 +7,8 @@
 //
 
 #import "BaseRequest.h"
+#import "HTTPClient.h"
+
 
 @interface BaseRequest()
 
@@ -32,15 +34,15 @@
 #pragma - 同步的网络请求
 // POST 请求
 - (NSURLSessionDataTask *)synchronouslyPostWithProgress:(void(^)(NSProgress *progress))progress
-                                       success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                       failure:(void(^)(NSError *error))failer
-                                  networkBlock:(void(^)(BOOL isNotNetwork))networkBlock {
-    // 无网络
-    if (![[HTTPClient shareInstance] isReachable]) {
-        if (networkBlock) {
-            networkBlock(true);
-            return nil;
-        }
+                                             cacheBlock:(void(^)(id response)) cacheBlock
+                                                success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                                failure:(void(^)(NSError *error))failer {
+    NSString *cacheKey = [NSString stringWithFormat:@"%@%@", self.baseURL, self.methodName ?: @""];
+    if (self.parameters) {
+        cacheKey = [cacheKey stringByAppendingString:[NSString convertJsonStringFromDictionaryOrArray:self.parameters]];
+    }
+    if (cacheBlock) {
+        cacheBlock([NetworkCache getResponseCacheForKey:cacheKey]);
     }
     
     [self config];
@@ -48,81 +50,105 @@
     data.baseURL = self.baseURL;
     data.methodName = self.methodName;
     data.parameters = self.parameters;
-    return [[HTTPClient shareInstance] synchronouslyPOSTWithData:data progress:progress success:success failure:failer];
+
+    return[[HTTPClient shareInstance] synchronouslyPOSTWithData:data progress:progress success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull response) {
+        if (self.isSaveCache && !response) {
+            [NetworkCache saveResponseCache:response forKey:cacheKey];
+        }
+        if (success) {
+            success (task, response);
+        }
+    } failure:failer];
 }
 
 - (NSURLSessionDataTask *)synchronouslyGetWithProgress:(void(^)(NSProgress *progress))progress
-                                      success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                      failure:(void(^)(NSError *error))failer
-                                 networkBlock:(void(^)(BOOL isNotNetwork))networkBlock {
-    // 无网络
-    if (![[HTTPClient shareInstance] isReachable]) {
-        if (networkBlock) {
-            networkBlock(true);
-            return nil;
-        }
+                                            cacheBlock: (void(^)(id response)) cacheBlock
+                                               success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                               failure:(void(^)(NSError *error))failer {
+    NSString *cacheKey = [NSString stringWithFormat:@"%@%@", self.baseURL, self.methodName ?: @""];
+    if (self.parameters) {
+        cacheKey = [cacheKey stringByAppendingString:[NSString convertJsonStringFromDictionaryOrArray:self.parameters]];
     }
+    if (cacheBlock) {
+        cacheBlock([NetworkCache getResponseCacheForKey:cacheKey]);
+    }
+    
     [self config];
     ClientData *data = [[ClientData alloc]init];
     data.baseURL = self.baseURL;
     data.methodName = self.methodName;
     data.parameters = self.parameters;
-    return [[HTTPClient shareInstance] synchronouslyGetWithData:data progress:progress success:success failure:failer];
+    return [[HTTPClient shareInstance] synchronouslyGetWithData:data progress:progress success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull response) {
+        if (self.isSaveCache && !response) {
+            [NetworkCache saveResponseCache:response forKey:cacheKey];
+        }
+        if (success) {
+            success (task, response);
+        }
+    } failure:failer];
 }
 
 #pragma -  异步网络请求
 
 // POST 请求
 - (NSURLSessionDataTask *)sendPostWithProgress:(void(^)(NSProgress *progress))progress
+                                    cacheBlock:(void(^)(id response)) cacheBlock
                                        success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                       failure:(void(^)(NSError *error))failer
-                                  networkBlock:(void(^)(BOOL isNotNetwork))networkBlock {
-    // 无网络
-    if (![[HTTPClient shareInstance] isReachable]) {
-        if (networkBlock) {
-            networkBlock(true);
-            return nil;
-        }
+                                       failure:(void(^)(NSError *error))failer {
+    NSString *cacheKey = [NSString stringWithFormat:@"%@%@", self.baseURL, self.methodName ?: @""];
+    if (self.parameters) {
+        cacheKey = [cacheKey stringByAppendingString:[NSString convertJsonStringFromDictionaryOrArray:self.parameters]];
     }
-
+    if (cacheBlock) {
+        cacheBlock([NetworkCache getResponseCacheForKey:cacheKey]);
+    }
+    
     [self config];
     ClientData *data = [[ClientData alloc]init];
     data.baseURL = self.baseURL;
     data.methodName = self.methodName;
     data.parameters = self.parameters;
-    return [[HTTPClient shareInstance] sendPostWithData:data progress:progress success:success failure:failer];
+    return [[HTTPClient shareInstance] sendPostWithData:data progress:progress success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull response) {
+        if (self.isSaveCache && !response) {
+            [NetworkCache saveResponseCache:response forKey:cacheKey];
+        }
+        if (success) {
+            success (task, response);
+        }
+    } failure:failer];
 }
 
 - (NSURLSessionDataTask *)sendGetWithProgress:(void(^)(NSProgress *progress))progress
+                                   cacheBlock:(void(^)(id response)) cacheBlock
                                       success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                      failure:(void(^)(NSError *error))failer
-                                 networkBlock:(void(^)(BOOL isNotNetwork))networkBlock {
-    // 无网络
-    if (![[HTTPClient shareInstance] isReachable]) {
-        if (networkBlock) {
-            networkBlock(true);
-            return nil;
-        }
+                                      failure:(void(^)(NSError *error))failer {
+    NSString *cacheKey = [NSString stringWithFormat:@"%@%@", self.baseURL, self.methodName ?: @""];
+    if (self.parameters) {
+        cacheKey = [cacheKey stringByAppendingString:[NSString convertJsonStringFromDictionaryOrArray:self.parameters]];
     }
+    if (cacheBlock) {
+        cacheBlock([NetworkCache getResponseCacheForKey:cacheKey]);
+    }
+
     [self config];
     ClientData *data = [[ClientData alloc]init];
     data.baseURL = self.baseURL;
     data.methodName = self.methodName;
     data.parameters = self.parameters;
-    return [[HTTPClient shareInstance] sendGetWithData:data progress:progress success:success failure:failer];
+    return [[HTTPClient shareInstance] sendGetWithData:data progress:progress success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull response) {
+        if (self.isSaveCache && !response) {
+            [NetworkCache saveResponseCache:response forKey:cacheKey];
+        }
+        if (success) {
+            success (task, response);
+        }
+    } failure:failer];
 }
 
 - (NSURLSessionDataTask *)uploadFileWithProgress:(void(^)(NSProgress *progress))progress
                                          success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                         failure:(void(^)(NSError *error))failer
-                                    networkBlock:(void(^)(BOOL isNotNetwork))networkBlock {
-    // 无网络
-    if (![[HTTPClient shareInstance] isReachable]) {
-        if (networkBlock) {
-            networkBlock(true);
-            return nil;
-        }
-    }
+                                         failure:(void(^)(NSError *error))failer{
+
     [self config];
     ClientData *data = [[ClientData alloc]init];
     data.baseURL = self.baseURL;
@@ -135,15 +161,7 @@
 
 - (NSURLSessionDataTask *)sendFormWithProgress:(void(^)(NSProgress *progress))progress
                                        success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                       failure:(void(^)(NSError *error))failer
-                                  networkBlock:(void(^)(BOOL isNotNetwork))networkBlock {
-    // 无网络
-    if (![[HTTPClient shareInstance] isReachable]) {
-        if (networkBlock) {
-            networkBlock(true);
-            return nil;
-        }
-    }
+                                       failure:(void(^)(NSError *error))failer {
     [self config];
     ClientData *data = [[ClientData alloc]init];
     data.baseURL = self.baseURL;
@@ -155,15 +173,8 @@
 
 - (NSURLSessionDownloadTask *)downLoadWithDestination: (NSURL *(^)(NSURL *targetPath, NSURLResponse *response )) destination
                                              progress:(void(^)(NSProgress *progress))progress
-                                       downLoadFinish:(void(^)(NSURLResponse *response, NSURL *filePath, NSError *error))downLoadFinish
-                                         networkBlock:(void(^)(BOOL isNotNetwork))networkBlock {
-    // 无网络
-    if (![[HTTPClient shareInstance] isReachable]) {
-        if (networkBlock) {
-            networkBlock(true);
-            return nil;
-        }
-    }
+                                       downLoadFinish:(void(^)(NSURLResponse *response, NSURL *filePath, NSError *error))downLoadFinish {
+
     ClientData *data = [[ClientData alloc]init];
     data.baseURL = self.baseURL;
     return [[HTTPClient shareInstance] downLoadWithData:data destination:destination progress:progress downLoadFinish:downLoadFinish];

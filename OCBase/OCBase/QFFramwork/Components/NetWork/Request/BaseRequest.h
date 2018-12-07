@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NetWorkHeader.h"
+#import "FileContentData.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,54 +30,51 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSDictionary *header;
 // 响应类型
 @property (nonatomic, strong) NSSet <NSString *> *set;
-// 是否加载本地缓存
-@property (nonatomic, assign) BOOL isLoadLocalCache;
+// 是否保存本地
+@property (nonatomic, assign) BOOL isSaveCache;
 
 // 同步请求
 
 // POST 请求
 - (NSURLSessionDataTask *)synchronouslyPostWithProgress:(void(^)(NSProgress *progress))progress
+                                             cacheBlock:(void(^)(id response)) cacheBlock
                                        success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                       failure:(void(^)(NSError *error))failer
-                                  networkBlock:(void(^)(BOOL isNotNetwork))networkBlock;
+                                       failure:(void(^)(NSError *error))failer;
 
 // GET请求
 - (NSURLSessionDataTask *)synchronouslyGetWithProgress:(void(^)(NSProgress *progress))progress
+                                            cacheBlock: (void(^)(id response)) cacheBlock
                                       success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                      failure:(void(^)(NSError *error))failer
-                                 networkBlock:(void(^)(BOOL isNotNetwork))networkBlock;
+                                      failure:(void(^)(NSError *error))failer;
 
 /// 异步请求
 
 // POST 请求
 - (NSURLSessionDataTask *)sendPostWithProgress:(void(^)(NSProgress *progress))progress
+                                    cacheBlock:(void(^)(id response)) cacheBlock
                                        success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                       failure:(void(^)(NSError *error))failer
-                                  networkBlock:(void(^)(BOOL isNotNetwork))networkBlock;
+                                       failure:(void(^)(NSError *error))failer;
 
 // GET请求
 - (NSURLSessionDataTask *)sendGetWithProgress:(void(^)(NSProgress *progress))progress
+                                   cacheBlock:(void(^)(id response)) cacheBlock
                                       success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                      failure:(void(^)(NSError *error))failer
-                                 networkBlock:(void(^)(BOOL isNotNetwork))networkBlock;
+                                      failure:(void(^)(NSError *error))failer;
 
 // 带文件上传
 - (NSURLSessionDataTask *)uploadFileWithProgress:(void(^)(NSProgress *progress))progress
                                          success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                         failure:(void(^)(NSError *error))failer
-                                    networkBlock:(void(^)(BOOL isNotNetwork))networkBlock;
+                                         failure:(void(^)(NSError *error))failer;
 
 // POST表单格式提交
 - (NSURLSessionDataTask *)sendFormWithProgress:(void(^)(NSProgress *progress))progress
                                        success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                       failure:(void(^)(NSError *error))failer
-                                  networkBlock:(void(^)(BOOL isNotNetwork))networkBlock;
+                                       failure:(void(^)(NSError *error))failer;
 
 // 文件下载
 - (NSURLSessionDownloadTask *)downLoadWithDestination: (NSURL *(^)(NSURL *targetPath, NSURLResponse *response )) destination
                                              progress:(void(^)(NSProgress *progress))progress
-                                       downLoadFinish:(void(^)(NSURLResponse *response, NSURL *filePath, NSError *error))downLoadFinish
-                                         networkBlock:(void(^)(BOOL isNotNetwork))networkBlock;
+                                       downLoadFinish:(void(^)(NSURLResponse *response, NSURL *filePath, NSError *error))downLoadFinish;
 
 // 取消网络请求
 - (void)cancelAsynRequest;

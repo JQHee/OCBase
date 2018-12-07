@@ -2,7 +2,7 @@
 //  NetworkCache.h
 //  OCBase
 //
-//  Created by midland on 2018/12/7.
+//  Created by HJQ on 2018/12/7.
 //  Copyright © 2018年 HJQ. All rights reserved.
 //
 
@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- *  设置缓存路径 (如果是多用户，name最好设置为用户ID)
+ *  设置缓存路径 (如果是多用户，name最好设置为用户ID 必须设置)
  *
  *  @param name 路径文件夹的名称
  */

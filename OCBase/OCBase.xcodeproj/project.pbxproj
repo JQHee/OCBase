@@ -21,6 +21,7 @@
 		5E7848EC21BA1F0400CFE8AD /* NetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7848EB21BA1F0300CFE8AD /* NetworkCache.m */; };
 		5E7848F021BA283800CFE8AD /* UITableView+MPreload.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7848EF21BA283800CFE8AD /* UITableView+MPreload.m */; };
 		5E7848F321BA284000CFE8AD /* TestTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7848F221BA283F00CFE8AD /* TestTableView.m */; };
+		5E78490921BA654A00CFE8AD /* NSString+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E78490821BA654A00CFE8AD /* NSString+Network.m */; };
 		5E7B5B1621B77E6B00B79747 /* DTBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B5B1321B77E6B00B79747 /* DTBaseAlertView.m */; };
 		5E7B5B1721B77E6B00B79747 /* DTNormalAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B5B1421B77E6B00B79747 /* DTNormalAlert.m */; };
 		6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6617631A219B03CC00EAEE34 /* WordFilter.m */; };
@@ -214,6 +215,8 @@
 		5E7848EF21BA283800CFE8AD /* UITableView+MPreload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+MPreload.m"; sourceTree = "<group>"; };
 		5E7848F121BA283F00CFE8AD /* TestTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableView.h; sourceTree = "<group>"; };
 		5E7848F221BA283F00CFE8AD /* TestTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableView.m; sourceTree = "<group>"; };
+		5E78490721BA654A00CFE8AD /* NSString+Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Network.h"; sourceTree = "<group>"; };
+		5E78490821BA654A00CFE8AD /* NSString+Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Network.m"; sourceTree = "<group>"; };
 		5E7B5B1221B77E6A00B79747 /* DTBaseAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBaseAlertView.h; sourceTree = "<group>"; };
 		5E7B5B1321B77E6B00B79747 /* DTBaseAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBaseAlertView.m; sourceTree = "<group>"; };
 		5E7B5B1421B77E6B00B79747 /* DTNormalAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTNormalAlert.m; sourceTree = "<group>"; };
@@ -618,6 +621,15 @@
 			path = TableViewPreLoad;
 			sourceTree = "<group>";
 		};
+		5E78490621BA652600CFE8AD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5E78490721BA654A00CFE8AD /* NSString+Network.h */,
+				5E78490821BA654A00CFE8AD /* NSString+Network.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		5E7B5B1121B77E5B00B79747 /* BaseAlert */ = {
 			isa = PBXGroup;
 			children = (
@@ -964,6 +976,7 @@
 		6651660D21B7ED0600F97AF9 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				5E78490621BA652600CFE8AD /* Tools */,
 				5E7848E921BA1EE900CFE8AD /* Cache */,
 				5E66F0CB21B8F8C300950BB8 /* Data */,
 				5E66F0CA21B8F89900950BB8 /* Request */,
@@ -1711,6 +1724,7 @@
 				6632CD2F218C8A4600F65829 /* MLFunctionPageItemView.m in Sources */,
 				662CA935218464A30061E49E /* QFBaseViewController.m in Sources */,
 				5E66F0C921B8F70400950BB8 /* UploadFileRequest.m in Sources */,
+				5E78490921BA654A00CFE8AD /* NSString+Network.m in Sources */,
 				66E16A5421A15C98002C1F83 /* DefaultNotificationCenter.m in Sources */,
 				662CA953218464A40061E49E /* QFNetworking.m in Sources */,
 				66E16AF721A17442002C1F83 /* UIView+Core.m in Sources */,

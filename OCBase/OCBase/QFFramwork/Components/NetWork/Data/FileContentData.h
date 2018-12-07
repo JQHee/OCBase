@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FileContentData : NSObject
 
-/* 文件的参数 */
+/* file params */
 @property (nonatomic, strong) NSString *mimeType;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *fileName;

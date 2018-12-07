@@ -32,7 +32,15 @@
 // POST 请求
 - (NSURLSessionDataTask *)sendPostWithProgress:(void(^)(NSProgress *progress))progress
                                        success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                       failure:(void(^)(NSError *error))failer {
+                                       failure:(void(^)(NSError *error))failer
+                                  networkBlock:(void(^)(BOOL isNotNetwork))networkBlock {
+    // 无网络
+    if (![[HTTPClient shareInstance] isReachable]) {
+        if (networkBlock) {
+            networkBlock(true);
+            return nil;
+        }
+    }
 
     [self config];
     ClientData *data = [[ClientData alloc]init];
@@ -44,7 +52,15 @@
 
 - (NSURLSessionDataTask *)sendGetWithProgress:(void(^)(NSProgress *progress))progress
                                       success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                      failure:(void(^)(NSError *error))failer {
+                                      failure:(void(^)(NSError *error))failer
+                                 networkBlock:(void(^)(BOOL isNotNetwork))networkBlock {
+    // 无网络
+    if (![[HTTPClient shareInstance] isReachable]) {
+        if (networkBlock) {
+            networkBlock(true);
+            return nil;
+        }
+    }
     [self config];
     ClientData *data = [[ClientData alloc]init];
     data.baseURL = self.baseURL;
@@ -55,7 +71,15 @@
 
 - (NSURLSessionDataTask *)uploadFileWithProgress:(void(^)(NSProgress *progress))progress
                                          success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                         failure:(void(^)(NSError *error))failer {
+                                         failure:(void(^)(NSError *error))failer
+                                    networkBlock:(void(^)(BOOL isNotNetwork))networkBlock {
+    // 无网络
+    if (![[HTTPClient shareInstance] isReachable]) {
+        if (networkBlock) {
+            networkBlock(true);
+            return nil;
+        }
+    }
     [self config];
     ClientData *data = [[ClientData alloc]init];
     data.baseURL = self.baseURL;
@@ -68,7 +92,15 @@
 
 - (NSURLSessionDataTask *)sendFormWithProgress:(void(^)(NSProgress *progress))progress
                                        success:(void(^)(NSURLSessionDataTask *task, id response))success
-                                       failure:(void(^)(NSError *error))failer {
+                                       failure:(void(^)(NSError *error))failer
+                                  networkBlock:(void(^)(BOOL isNotNetwork))networkBlock {
+    // 无网络
+    if (![[HTTPClient shareInstance] isReachable]) {
+        if (networkBlock) {
+            networkBlock(true);
+            return nil;
+        }
+    }
     [self config];
     ClientData *data = [[ClientData alloc]init];
     data.baseURL = self.baseURL;
@@ -80,7 +112,15 @@
 
 - (NSURLSessionDownloadTask *)downLoadWithDestination: (NSURL *(^)(NSURL *targetPath, NSURLResponse *response )) destination
                                              progress:(void(^)(NSProgress *progress))progress
-                                       downLoadFinish:(void(^)(NSURLResponse *response, NSURL *filePath, NSError *error))downLoadFinish {
+                                       downLoadFinish:(void(^)(NSURLResponse *response, NSURL *filePath, NSError *error))downLoadFinish
+                                         networkBlock:(void(^)(BOOL isNotNetwork))networkBlock {
+    // 无网络
+    if (![[HTTPClient shareInstance] isReachable]) {
+        if (networkBlock) {
+            networkBlock(true);
+            return nil;
+        }
+    }
     ClientData *data = [[ClientData alloc]init];
     data.baseURL = self.baseURL;
     return [[HTTPClient shareInstance] downLoadWithData:data destination:destination progress:progress downLoadFinish:downLoadFinish];

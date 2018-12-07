@@ -22,13 +22,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     TestRequest *request = [TestRequest new];
-    [request sendPostWithProgress:^(NSProgress * _Nonnull progress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull response) {
-        
-    } failure:^(NSError * _Nonnull error) {
-    
-    }];
+
     LLogWarning(@"warning", @"嘻嘻心心相惜");
     [[LogManager sharedInstance] compressLog:nil];
     return YES;

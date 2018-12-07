@@ -44,6 +44,20 @@ typedef NS_ENUM(NSInteger, NetworkReachabilityStatus) {
 // 响应类型
 - (void) setAcceptableContentTypes: (NSSet <NSString *>*) set;
 
+/// 同步的网络请求
+- (NSURLSessionDataTask *)synchronouslyPOSTWithData:(ClientData *)data
+                                       progress:(void(^)(NSProgress *progress))progress
+                                        success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                        failure:(void(^)(NSError *error))failer;
+
+- (NSURLSessionDataTask *)synchronouslyGetWithData:(ClientData *)data
+                                          progress:(void(^)(NSProgress *progress))progress
+                                           success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                           failure:(void(^)(NSError *error))failer;
+
+
+/// 异步的网络请求
+
 // POST 请求
 - (NSURLSessionDataTask *)sendPostWithData:(ClientData *)data
                                   progress:(void(^)(NSProgress *progress))progress

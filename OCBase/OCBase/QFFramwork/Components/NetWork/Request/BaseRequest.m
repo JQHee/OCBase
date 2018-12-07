@@ -29,6 +29,49 @@
     [[HTTPClient shareInstance] setAcceptableContentTypes:self.set];
 }
 
+/// 同步的网络请求
+// POST 请求
+- (NSURLSessionDataTask *)synchronouslyPostWithProgress:(void(^)(NSProgress *progress))progress
+                                       success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                       failure:(void(^)(NSError *error))failer
+                                  networkBlock:(void(^)(BOOL isNotNetwork))networkBlock {
+    // 无网络
+    if (![[HTTPClient shareInstance] isReachable]) {
+        if (networkBlock) {
+            networkBlock(true);
+            return nil;
+        }
+    }
+    
+    [self config];
+    ClientData *data = [[ClientData alloc]init];
+    data.baseURL = self.baseURL;
+    data.methodName = self.methodName;
+    data.parameters = self.parameters;
+    return [[HTTPClient shareInstance] synchronouslyPOSTWithData:data progress:progress success:success failure:failer];
+}
+
+- (NSURLSessionDataTask *)synchronouslyGetWithProgress:(void(^)(NSProgress *progress))progress
+                                      success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                      failure:(void(^)(NSError *error))failer
+                                 networkBlock:(void(^)(BOOL isNotNetwork))networkBlock {
+    // 无网络
+    if (![[HTTPClient shareInstance] isReachable]) {
+        if (networkBlock) {
+            networkBlock(true);
+            return nil;
+        }
+    }
+    [self config];
+    ClientData *data = [[ClientData alloc]init];
+    data.baseURL = self.baseURL;
+    data.methodName = self.methodName;
+    data.parameters = self.parameters;
+    return [[HTTPClient shareInstance] synchronouslyGetWithData:data progress:progress success:success failure:failer];
+}
+
+/// 异步网络请求
+
 // POST 请求
 - (NSURLSessionDataTask *)sendPostWithProgress:(void(^)(NSProgress *progress))progress
                                        success:(void(^)(NSURLSessionDataTask *task, id response))success

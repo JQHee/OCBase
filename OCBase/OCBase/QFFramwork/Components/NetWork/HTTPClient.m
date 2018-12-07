@@ -108,6 +108,88 @@ static HTTPClient *_instance = nil;
     }
 }
 
+/// 同步的网络请求
+
+- (NSURLSessionDataTask *)synchronouslyPOSTWithData:(ClientData *)data
+                                       progress:(void(^)(NSProgress *progress))progress
+                                        success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                        failure:(void(^)(NSError *error))failer {
+    network_dispatch_main_async_safe(^{
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    })
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    data.baseURL = data.baseURL ? : @"";
+    data.methodName = data.methodName ? : @"";
+    NSString *requestURL = [NSString stringWithFormat:@"%@%@", data.baseURL, data.methodName];
+    if (self.securityPolicyCerPath) {
+        [_sessionManager setSecurityPolicy:[self customSecurityPolicy]];
+    }
+    NSURLSessionDataTask *task = [_sessionManager POST:requestURL parameters:data.parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+        if (progress) {
+            progress (uploadProgress);
+        }
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        network_dispatch_main_async_safe(^{
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        })
+        if (success) {
+            success (task, responseObject);
+        }
+        dispatch_semaphore_signal(semaphore);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        network_dispatch_main_async_safe(^{
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        })
+        if (failer) {
+            failer(error);
+        }
+        dispatch_semaphore_signal(semaphore);
+    }];
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    return task;
+}
+
+- (NSURLSessionDataTask *)synchronouslyGetWithData:(ClientData *)data
+                                 progress:(void(^)(NSProgress *progress))progress
+                                  success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                  failure:(void(^)(NSError *error))failer {
+    network_dispatch_main_async_safe(^{
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    })
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    data.baseURL = data.baseURL ? : @"";
+    data.methodName = data.methodName ? : @"";
+    NSString *requestURL = [NSString stringWithFormat:@"%@%@", data.baseURL, data.methodName];
+    if (self.securityPolicyCerPath) {
+        [_sessionManager setSecurityPolicy:[self customSecurityPolicy]];
+    }
+    NSURLSessionDataTask *task = [_sessionManager GET:requestURL parameters:data.parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+        if (progress) {
+            progress (uploadProgress);
+        }
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        network_dispatch_main_async_safe(^{
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        })
+        if (success) {
+            success (task, responseObject);
+        }
+        dispatch_semaphore_signal(semaphore);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        network_dispatch_main_async_safe(^{
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        })
+        if (failer) {
+            failer(error);
+        }
+        dispatch_semaphore_signal(semaphore);
+    }];
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    return task;
+}
+
+/// 异步网络请求
+
 - (NSURLSessionDataTask *)sendPostWithData:(ClientData *)data
                                   progress:(void(^)(NSProgress *progress))progress
                                    success:(void(^)(NSURLSessionDataTask *task, id response))success

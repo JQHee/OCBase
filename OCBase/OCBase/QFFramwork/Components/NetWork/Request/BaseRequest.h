@@ -31,6 +31,22 @@ NS_ASSUME_NONNULL_BEGIN
 // 响应类型
 @property (nonatomic, strong) NSSet <NSString *> *set;
 
+// 同步请求
+
+// POST 请求
+- (NSURLSessionDataTask *)synchronouslyPostWithProgress:(void(^)(NSProgress *progress))progress
+                                       success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                       failure:(void(^)(NSError *error))failer
+                                  networkBlock:(void(^)(BOOL isNotNetwork))networkBlock;
+
+// GET请求
+- (NSURLSessionDataTask *)synchronouslyGetWithProgress:(void(^)(NSProgress *progress))progress
+                                      success:(void(^)(NSURLSessionDataTask *task, id response))success
+                                      failure:(void(^)(NSError *error))failer
+                                 networkBlock:(void(^)(BOOL isNotNetwork))networkBlock;
+
+/// 异步请求
+
 // POST 请求
 - (NSURLSessionDataTask *)sendPostWithProgress:(void(^)(NSProgress *progress))progress
                                        success:(void(^)(NSURLSessionDataTask *task, id response))success

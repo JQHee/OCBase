@@ -29,7 +29,7 @@
     [[HTTPClient shareInstance] setAcceptableContentTypes:self.set];
 }
 
-/// 同步的网络请求
+#pragma - 同步的网络请求
 // POST 请求
 - (NSURLSessionDataTask *)synchronouslyPostWithProgress:(void(^)(NSProgress *progress))progress
                                        success:(void(^)(NSURLSessionDataTask *task, id response))success
@@ -70,7 +70,7 @@
     return [[HTTPClient shareInstance] synchronouslyGetWithData:data progress:progress success:success failure:failer];
 }
 
-/// 异步网络请求
+#pragma -  异步网络请求
 
 // POST 请求
 - (NSURLSessionDataTask *)sendPostWithProgress:(void(^)(NSProgress *progress))progress

@@ -108,8 +108,7 @@ static HTTPClient *_instance = nil;
     }
 }
 
-/// 同步的网络请求
-
+#pragma - 同步的网络请求
 - (NSURLSessionDataTask *)synchronouslyPOSTWithData:(ClientData *)data
                                        progress:(void(^)(NSProgress *progress))progress
                                         success:(void(^)(NSURLSessionDataTask *task, id response))success
@@ -188,8 +187,7 @@ static HTTPClient *_instance = nil;
     return task;
 }
 
-/// 异步网络请求
-
+#pragma - 异步网络请求
 - (NSURLSessionDataTask *)sendPostWithData:(ClientData *)data
                                   progress:(void(^)(NSProgress *progress))progress
                                    success:(void(^)(NSURLSessionDataTask *task, id response))success

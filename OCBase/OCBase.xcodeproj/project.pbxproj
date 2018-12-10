@@ -22,6 +22,7 @@
 		5E7848F021BA283800CFE8AD /* UITableView+MPreload.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7848EF21BA283800CFE8AD /* UITableView+MPreload.m */; };
 		5E7848F321BA284000CFE8AD /* TestTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7848F221BA283F00CFE8AD /* TestTableView.m */; };
 		5E78490921BA654A00CFE8AD /* NSString+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E78490821BA654A00CFE8AD /* NSString+Network.m */; };
+		5E799E6921BDEC0C0021502F /* NSObject+HZCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E799E6821BDEC0C0021502F /* NSObject+HZCoding.m */; };
 		5E7B5B1621B77E6B00B79747 /* DTBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B5B1321B77E6B00B79747 /* DTBaseAlertView.m */; };
 		5E7B5B1721B77E6B00B79747 /* DTNormalAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B5B1421B77E6B00B79747 /* DTNormalAlert.m */; };
 		6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6617631A219B03CC00EAEE34 /* WordFilter.m */; };
@@ -217,6 +218,8 @@
 		5E7848F221BA283F00CFE8AD /* TestTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableView.m; sourceTree = "<group>"; };
 		5E78490721BA654A00CFE8AD /* NSString+Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Network.h"; sourceTree = "<group>"; };
 		5E78490821BA654A00CFE8AD /* NSString+Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Network.m"; sourceTree = "<group>"; };
+		5E799E6721BDEC0C0021502F /* NSObject+HZCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HZCoding.h"; sourceTree = "<group>"; };
+		5E799E6821BDEC0C0021502F /* NSObject+HZCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HZCoding.m"; sourceTree = "<group>"; };
 		5E7B5B1221B77E6A00B79747 /* DTBaseAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBaseAlertView.h; sourceTree = "<group>"; };
 		5E7B5B1321B77E6B00B79747 /* DTBaseAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBaseAlertView.m; sourceTree = "<group>"; };
 		5E7B5B1421B77E6B00B79747 /* DTNormalAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTNormalAlert.m; sourceTree = "<group>"; };
@@ -1057,7 +1060,6 @@
 				66E16A5821A15D6A002C1F83 /* NSDate */,
 				66E16A5121A15C98002C1F83 /* NSNotificationCenter */,
 				66E16A4D21A15B88002C1F83 /* NSDictionary */,
-				66E16A4721A15ABD002C1F83 /* NSMutableArray */,
 				66E16A4621A15AA2002C1F83 /* NSArray */,
 				66E16A4521A15A86002C1F83 /* NSString */,
 				66E16A4421A15A6B002C1F83 /* NSObject */,
@@ -1154,6 +1156,8 @@
 				66B2B71D218DD47400F028FF /* NSObject+SkyHUD.m */,
 				66B2B71E218DD47500F028FF /* NSObject+SkyToast.h */,
 				66B2B71F218DD47500F028FF /* NSObject+SkyToast.m */,
+				5E799E6721BDEC0C0021502F /* NSObject+HZCoding.h */,
+				5E799E6821BDEC0C0021502F /* NSObject+HZCoding.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -1185,13 +1189,6 @@
 				662CA908218464A30061E49E /* NSArray+Safe.m */,
 			);
 			path = NSArray;
-			sourceTree = "<group>";
-		};
-		66E16A4721A15ABD002C1F83 /* NSMutableArray */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NSMutableArray;
 			sourceTree = "<group>";
 		};
 		66E16A4821A15AE1002C1F83 /* UIImage */ = {
@@ -1660,6 +1657,7 @@
 				669455FE21AEC0D300C319FB /* LogManager.m in Sources */,
 				662CA93D218464A30061E49E /* ZJScrollPageView.m in Sources */,
 				662CA947218464A30061E49E /* QFFramwork.m in Sources */,
+				5E799E6921BDEC0C0021502F /* NSObject+HZCoding.m in Sources */,
 				662CA93A218464A30061E49E /* ZJCollectionView.m in Sources */,
 				662CA934218464A30061E49E /* QFBigText.m in Sources */,
 				66D569C52198446D00D9EBD5 /* TestViewModel.m in Sources */,

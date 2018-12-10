@@ -129,5 +129,7 @@ target 'OCBase' do
     # 线程安全写文件：https://www.cnblogs.com/bomo/p/4668599.html
     # 很好的网络缓存方案： http://www.cocoachina.com/cms/wap.php?action=article&id=19954
     # 搭建日志系统： https://www.jianshu.com/p/0f889e75f387 pod 'CocoaLumberjack', '~> 3.4.2'
+    # 图片jpg转png https://www.xunjiepdf.com/compress
+    # 导入头文件 https://github.com/markohlebar/Import/releases
 
 end

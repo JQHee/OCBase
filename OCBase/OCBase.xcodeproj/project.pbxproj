@@ -97,6 +97,19 @@
 		6651661021B7ED2900F97AF9 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6651660F21B7ED2900F97AF9 /* BaseRequest.m */; };
 		6651661321B7F4EC00F97AF9 /* FileContentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6651661221B7F4EC00F97AF9 /* FileContentData.m */; };
 		6651661821B801F600F97AF9 /* TestRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6651661721B801F600F97AF9 /* TestRequest.m */; };
+		667A57F021BC0E5E00369DE5 /* NSBundle+AppLanguageSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 667A57EF21BC0E5E00369DE5 /* NSBundle+AppLanguageSwitch.m */; };
+		667A57F321BC0E7300369DE5 /* NSString+Localize.m in Sources */ = {isa = PBXBuildFile; fileRef = 667A57F221BC0E7300369DE5 /* NSString+Localize.m */; };
+		667A57F821BC0E9500369DE5 /* UITextField+XIBLocalizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 667A57F521BC0E9500369DE5 /* UITextField+XIBLocalizable.m */; };
+		667A57F921BC0E9500369DE5 /* UIButton+XIBLocalizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 667A57F721BC0E9500369DE5 /* UIButton+XIBLocalizable.m */; };
+		667A57FC21BC0EA400369DE5 /* UILabel+XIBLocalizabe.m in Sources */ = {isa = PBXBuildFile; fileRef = 667A57FB21BC0EA400369DE5 /* UILabel+XIBLocalizabe.m */; };
+		667A57FF21BC136900369DE5 /* UIImage+Stretchable.m in Sources */ = {isa = PBXBuildFile; fileRef = 667A57FE21BC136900369DE5 /* UIImage+Stretchable.m */; };
+		667A580F21BC15F600369DE5 /* UINavigationBar+SXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 667A580521BC15F600369DE5 /* UINavigationBar+SXFixSpace.m */; };
+		667A581021BC15F600369DE5 /* UINavigationItem+SXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 667A580621BC15F600369DE5 /* UINavigationItem+SXFixSpace.m */; };
+		667A581121BC15F600369DE5 /* UINavigationConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 667A580921BC15F600369DE5 /* UINavigationConfig.m */; };
+		667A581221BC15F600369DE5 /* UINavigationController+SXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 667A580B21BC15F600369DE5 /* UINavigationController+SXFixSpace.m */; };
+		667A581321BC15F600369DE5 /* NSObject+SXRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 667A580E21BC15F600369DE5 /* NSObject+SXRuntime.m */; };
+		667A581621BC160000369DE5 /* UIBarButtonItem+SXCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 667A581421BC160000369DE5 /* UIBarButtonItem+SXCreate.m */; };
+		667A581A21BC17EA00369DE5 /* BLDelayStartupTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 667A581921BC17EA00369DE5 /* BLDelayStartupTool.m */; };
 		669455FE21AEC0D300C319FB /* LogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 669455FC21AEC0D200C319FB /* LogManager.m */; };
 		66A1510021B6B2F000BD28B6 /* LZImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A150FF21B6B2F000BD28B6 /* LZImageCropper.m */; };
 		66B2B6D8218D8F9000F028FF /* UIScrollView+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2B6D7218D8F9000F028FF /* UIScrollView+Core.m */; };
@@ -366,6 +379,32 @@
 		6651661421B7FE6800F97AF9 /* NetWorkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkHeader.h; sourceTree = "<group>"; };
 		6651661621B801F600F97AF9 /* TestRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRequest.h; sourceTree = "<group>"; };
 		6651661721B801F600F97AF9 /* TestRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRequest.m; sourceTree = "<group>"; };
+		667A57EE21BC0E5E00369DE5 /* NSBundle+AppLanguageSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+AppLanguageSwitch.h"; sourceTree = "<group>"; };
+		667A57EF21BC0E5E00369DE5 /* NSBundle+AppLanguageSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+AppLanguageSwitch.m"; sourceTree = "<group>"; };
+		667A57F121BC0E7300369DE5 /* NSString+Localize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Localize.h"; sourceTree = "<group>"; };
+		667A57F221BC0E7300369DE5 /* NSString+Localize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Localize.m"; sourceTree = "<group>"; };
+		667A57F421BC0E9500369DE5 /* UIButton+XIBLocalizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XIBLocalizable.h"; sourceTree = "<group>"; };
+		667A57F521BC0E9500369DE5 /* UITextField+XIBLocalizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+XIBLocalizable.m"; sourceTree = "<group>"; };
+		667A57F621BC0E9500369DE5 /* UITextField+XIBLocalizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+XIBLocalizable.h"; sourceTree = "<group>"; };
+		667A57F721BC0E9500369DE5 /* UIButton+XIBLocalizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XIBLocalizable.m"; sourceTree = "<group>"; };
+		667A57FA21BC0EA400369DE5 /* UILabel+XIBLocalizabe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+XIBLocalizabe.h"; sourceTree = "<group>"; };
+		667A57FB21BC0EA400369DE5 /* UILabel+XIBLocalizabe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+XIBLocalizabe.m"; sourceTree = "<group>"; };
+		667A57FD21BC136900369DE5 /* UIImage+Stretchable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Stretchable.h"; sourceTree = "<group>"; };
+		667A57FE21BC136900369DE5 /* UIImage+Stretchable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Stretchable.m"; sourceTree = "<group>"; };
+		667A580521BC15F600369DE5 /* UINavigationBar+SXFixSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+SXFixSpace.m"; sourceTree = "<group>"; };
+		667A580621BC15F600369DE5 /* UINavigationItem+SXFixSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+SXFixSpace.m"; sourceTree = "<group>"; };
+		667A580721BC15F600369DE5 /* UINavigationController+SXFixSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SXFixSpace.h"; sourceTree = "<group>"; };
+		667A580821BC15F600369DE5 /* NSObject+SXRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SXRuntime.h"; sourceTree = "<group>"; };
+		667A580921BC15F600369DE5 /* UINavigationConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavigationConfig.m; sourceTree = "<group>"; };
+		667A580A21BC15F600369DE5 /* UINavigationBar+SXFixSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+SXFixSpace.h"; sourceTree = "<group>"; };
+		667A580B21BC15F600369DE5 /* UINavigationController+SXFixSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SXFixSpace.m"; sourceTree = "<group>"; };
+		667A580C21BC15F600369DE5 /* UINavigationItem+SXFixSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+SXFixSpace.h"; sourceTree = "<group>"; };
+		667A580D21BC15F600369DE5 /* UINavigationConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavigationConfig.h; sourceTree = "<group>"; };
+		667A580E21BC15F600369DE5 /* NSObject+SXRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SXRuntime.m"; sourceTree = "<group>"; };
+		667A581421BC160000369DE5 /* UIBarButtonItem+SXCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SXCreate.m"; sourceTree = "<group>"; };
+		667A581521BC160000369DE5 /* UIBarButtonItem+SXCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SXCreate.h"; sourceTree = "<group>"; };
+		667A581821BC17EA00369DE5 /* BLDelayStartupTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLDelayStartupTool.h; sourceTree = "<group>"; };
+		667A581921BC17EA00369DE5 /* BLDelayStartupTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLDelayStartupTool.m; sourceTree = "<group>"; };
 		669455FC21AEC0D200C319FB /* LogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogManager.m; sourceTree = "<group>"; };
 		669455FD21AEC0D200C319FB /* LogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogManager.h; sourceTree = "<group>"; };
 		66A150FE21B6B2F000BD28B6 /* LZImageCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZImageCropper.h; sourceTree = "<group>"; };
@@ -666,6 +705,8 @@
 		6617631E219B044700EAEE34 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				667A581721BC17A700369DE5 /* DelayStartup */,
+				667A57E621BC0D2000369DE5 /* Localizabe */,
 				5E7848ED21BA282E00CFE8AD /* TableViewPreLoad */,
 				6651660D21B7ED0600F97AF9 /* NetWork */,
 				5E7B5B1821B7805800B79747 /* Log */,
@@ -1001,6 +1042,75 @@
 			path = TestNetwork;
 			sourceTree = "<group>";
 		};
+		667A57E221BC0BA500369DE5 /* XibLocalizabe */ = {
+			isa = PBXGroup;
+			children = (
+				667A57FA21BC0EA400369DE5 /* UILabel+XIBLocalizabe.h */,
+				667A57FB21BC0EA400369DE5 /* UILabel+XIBLocalizabe.m */,
+				667A57F421BC0E9500369DE5 /* UIButton+XIBLocalizable.h */,
+				667A57F721BC0E9500369DE5 /* UIButton+XIBLocalizable.m */,
+				667A57F621BC0E9500369DE5 /* UITextField+XIBLocalizable.h */,
+				667A57F521BC0E9500369DE5 /* UITextField+XIBLocalizable.m */,
+				667A57F121BC0E7300369DE5 /* NSString+Localize.h */,
+				667A57F221BC0E7300369DE5 /* NSString+Localize.m */,
+			);
+			path = XibLocalizabe;
+			sourceTree = "<group>";
+		};
+		667A57E621BC0D2000369DE5 /* Localizabe */ = {
+			isa = PBXGroup;
+			children = (
+				667A57E721BC0D6C00369DE5 /* AppLanguageSwitch */,
+				667A57E221BC0BA500369DE5 /* XibLocalizabe */,
+			);
+			path = Localizabe;
+			sourceTree = "<group>";
+		};
+		667A57E721BC0D6C00369DE5 /* AppLanguageSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				667A57EE21BC0E5E00369DE5 /* NSBundle+AppLanguageSwitch.h */,
+				667A57EF21BC0E5E00369DE5 /* NSBundle+AppLanguageSwitch.m */,
+			);
+			path = AppLanguageSwitch;
+			sourceTree = "<group>";
+		};
+		667A580021BC14E400369DE5 /* UINavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				667A581521BC160000369DE5 /* UIBarButtonItem+SXCreate.h */,
+				667A581421BC160000369DE5 /* UIBarButtonItem+SXCreate.m */,
+				667A580421BC15F600369DE5 /* UINavigation-SXFixSpace */,
+			);
+			path = UINavigationBar;
+			sourceTree = "<group>";
+		};
+		667A580421BC15F600369DE5 /* UINavigation-SXFixSpace */ = {
+			isa = PBXGroup;
+			children = (
+				667A580521BC15F600369DE5 /* UINavigationBar+SXFixSpace.m */,
+				667A580621BC15F600369DE5 /* UINavigationItem+SXFixSpace.m */,
+				667A580721BC15F600369DE5 /* UINavigationController+SXFixSpace.h */,
+				667A580821BC15F600369DE5 /* NSObject+SXRuntime.h */,
+				667A580921BC15F600369DE5 /* UINavigationConfig.m */,
+				667A580A21BC15F600369DE5 /* UINavigationBar+SXFixSpace.h */,
+				667A580B21BC15F600369DE5 /* UINavigationController+SXFixSpace.m */,
+				667A580C21BC15F600369DE5 /* UINavigationItem+SXFixSpace.h */,
+				667A580D21BC15F600369DE5 /* UINavigationConfig.h */,
+				667A580E21BC15F600369DE5 /* NSObject+SXRuntime.m */,
+			);
+			path = "UINavigation-SXFixSpace";
+			sourceTree = "<group>";
+		};
+		667A581721BC17A700369DE5 /* DelayStartup */ = {
+			isa = PBXGroup;
+			children = (
+				667A581821BC17EA00369DE5 /* BLDelayStartupTool.h */,
+				667A581921BC17EA00369DE5 /* BLDelayStartupTool.m */,
+			);
+			path = DelayStartup;
+			sourceTree = "<group>";
+		};
 		669455FB21AEC0D200C319FB /* LogManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -1070,6 +1180,7 @@
 		66B48E7C218B38D1005A7BF2 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				667A580021BC14E400369DE5 /* UINavigationBar */,
 				5E73289421B4FE8A007157E4 /* UIFont */,
 				66E16AC321A162A3002C1F83 /* UITextView */,
 				66E16ABF21A16277002C1F83 /* UITextField */,
@@ -1206,6 +1317,8 @@
 				66B2B723218DD7EC00F028FF /* UIImage+ALinExtension.h */,
 				66B2B724218DD7EC00F028FF /* UIImage+ALinExtension.m */,
 				662CA924218464A30061E49E /* UIImage+Rotate.m */,
+				667A57FD21BC136900369DE5 /* UIImage+Stretchable.h */,
+				667A57FE21BC136900369DE5 /* UIImage+Stretchable.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -1662,6 +1775,8 @@
 				662CA934218464A30061E49E /* QFBigText.m in Sources */,
 				66D569C52198446D00D9EBD5 /* TestViewModel.m in Sources */,
 				66E16AA721A16194002C1F83 /* UIViewController+KMNavigationBarTransition.m in Sources */,
+				667A57FC21BC0EA400369DE5 /* UILabel+XIBLocalizabe.m in Sources */,
+				667A581221BC15F600369DE5 /* UINavigationController+SXFixSpace.m in Sources */,
 				662CA945218464A30061E49E /* YSBPasswordView.m in Sources */,
 				66E16A9621A160DC002C1F83 /* UIImage+SuperCompress.m in Sources */,
 				662CA956218464A40061E49E /* QFLocationInfo.m in Sources */,
@@ -1672,8 +1787,10 @@
 				66E16AED21A163FA002C1F83 /* SearchCoreManager.mm in Sources */,
 				662CA946218464A30061E49E /* UITextField+YSBTextFieldDelegate.m in Sources */,
 				6651661021B7ED2900F97AF9 /* BaseRequest.m in Sources */,
+				667A581A21BC17EA00369DE5 /* BLDelayStartupTool.m in Sources */,
 				66E16AC221A16280002C1F83 /* UITextField+JKShake.m in Sources */,
 				5E66F0C621B8B56900950BB8 /* ClientData.m in Sources */,
+				667A57F021BC0E5E00369DE5 /* NSBundle+AppLanguageSwitch.m in Sources */,
 				66E16A9B21A1614B002C1F83 /* UIImageView+Reflect.m in Sources */,
 				662CA93F218464A30061E49E /* Reachability.m in Sources */,
 				5E7B5B1721B77E6B00B79747 /* DTNormalAlert.m in Sources */,
@@ -1689,8 +1806,10 @@
 				66D569C22198415D00D9EBD5 /* BaseViewModel.m in Sources */,
 				66E16A7121A15EE2002C1F83 /* NSString+MIME.m in Sources */,
 				662CA94E218464A40061E49E /* QFUserInfo.m in Sources */,
+				667A57F821BC0E9500369DE5 /* UITextField+XIBLocalizable.m in Sources */,
 				66E16ADC21A163BB002C1F83 /* GCDGroup.m in Sources */,
 				662CA93B218464A30061E49E /* ZJSegmentStyle.m in Sources */,
+				667A581021BC15F600369DE5 /* UINavigationItem+SXFixSpace.m in Sources */,
 				66E16A7521A15F0E002C1F83 /* NSString+MAC.m in Sources */,
 				5E73289B21B50032007157E4 /* HookUtility.m in Sources */,
 				5E7328A121B50114007157E4 /* UIControl+userStatics.m in Sources */,
@@ -1710,8 +1829,11 @@
 				66B48E83218B3BC3005A7BF2 /* UIDevice+Core.m in Sources */,
 				662CA899218460850061E49E /* main.m in Sources */,
 				66E16A9221A160A8002C1F83 /* UIControl+Block.m in Sources */,
+				667A581121BC15F600369DE5 /* UINavigationConfig.m in Sources */,
 				662CA939218464A30061E49E /* ZJContentView.m in Sources */,
 				5E7328B121B515E3007157E4 /* BrowserViewController.m in Sources */,
+				667A580F21BC15F600369DE5 /* UINavigationBar+SXFixSpace.m in Sources */,
+				667A57F921BC0E9500369DE5 /* UIButton+XIBLocalizable.m in Sources */,
 				66E16AC821A162A3002C1F83 /* UITextView+Placeholder.m in Sources */,
 				66B2B6D8218D8F9000F028FF /* UIScrollView+Core.m in Sources */,
 				66E16A5E21A15D6A002C1F83 /* NSDate+MacFormatter.m in Sources */,
@@ -1725,6 +1847,7 @@
 				5E78490921BA654A00CFE8AD /* NSString+Network.m in Sources */,
 				66E16A5421A15C98002C1F83 /* DefaultNotificationCenter.m in Sources */,
 				662CA953218464A40061E49E /* QFNetworking.m in Sources */,
+				667A581621BC160000369DE5 /* UIBarButtonItem+SXCreate.m in Sources */,
 				66E16AF721A17442002C1F83 /* UIView+Core.m in Sources */,
 				66E16AEA21A163FA002C1F83 /* SearchCore.mm in Sources */,
 				66B2B721218DD47500F028FF /* NSObject+SkyHUD.m in Sources */,
@@ -1739,6 +1862,8 @@
 				662F6AA321980CC800FD5231 /* YINMethodHook.m in Sources */,
 				662CA94C218464A40061E49E /* NSArray+Safe.m in Sources */,
 				66E16A7B21A15F97002C1F83 /* NSUserDefaults+SafeAccess.m in Sources */,
+				667A581321BC15F600369DE5 /* NSObject+SXRuntime.m in Sources */,
+				667A57FF21BC136900369DE5 /* UIImage+Stretchable.m in Sources */,
 				66176335219B045D00EAEE34 /* MLLocationManager.m in Sources */,
 				66E16A7C21A15F97002C1F83 /* NSUserDefaults+iCloudSync.m in Sources */,
 				66E16ABE21A161F6002C1F83 /* UIResponder+Chain.m in Sources */,
@@ -1789,6 +1914,7 @@
 				6617633A219B045D00EAEE34 /* MLCityListHotTableViewCell.m in Sources */,
 				5E7848F021BA283800CFE8AD /* UITableView+MPreload.m in Sources */,
 				5E73289721B4FEAB007157E4 /* MyFont.m in Sources */,
+				667A57F321BC0E7300369DE5 /* NSString+Localize.m in Sources */,
 				66E16A8621A1603D002C1F83 /* UIButton+Indicator.m in Sources */,
 				66B2B722218DD47500F028FF /* NSObject+SkyToast.m in Sources */,
 				662CA94B218464A40061E49E /* NSString+check.m in Sources */,

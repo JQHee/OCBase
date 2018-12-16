@@ -111,6 +111,7 @@
 		667A581A21BC17EA00369DE5 /* BLDelayStartupTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 667A581921BC17EA00369DE5 /* BLDelayStartupTool.m */; };
 		669455FE21AEC0D300C319FB /* LogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 669455FC21AEC0D200C319FB /* LogManager.m */; };
 		66A1510021B6B2F000BD28B6 /* LZImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A150FF21B6B2F000BD28B6 /* LZImageCropper.m */; };
+		66A4225D21C68DC4003D5E40 /* UIImage+Optimize.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A4225C21C68DC4003D5E40 /* UIImage+Optimize.m */; };
 		66B2B6D8218D8F9000F028FF /* UIScrollView+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2B6D7218D8F9000F028FF /* UIScrollView+Core.m */; };
 		66B2B719218DD3A600F028FF /* UIImageView+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2B718218DD3A600F028FF /* UIImageView+Core.m */; };
 		66B2B721218DD47500F028FF /* NSObject+SkyHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2B71D218DD47400F028FF /* NSObject+SkyHUD.m */; };
@@ -406,6 +407,8 @@
 		669455FD21AEC0D200C319FB /* LogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogManager.h; sourceTree = "<group>"; };
 		66A150FE21B6B2F000BD28B6 /* LZImageCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZImageCropper.h; sourceTree = "<group>"; };
 		66A150FF21B6B2F000BD28B6 /* LZImageCropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZImageCropper.m; sourceTree = "<group>"; };
+		66A4225B21C68DC4003D5E40 /* UIImage+Optimize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Optimize.h"; sourceTree = "<group>"; };
+		66A4225C21C68DC4003D5E40 /* UIImage+Optimize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Optimize.m"; sourceTree = "<group>"; };
 		66B2B6D6218D8F9000F028FF /* UIScrollView+Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Core.h"; sourceTree = "<group>"; };
 		66B2B6D7218D8F9000F028FF /* UIScrollView+Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Core.m"; sourceTree = "<group>"; };
 		66B2B717218DD3A600F028FF /* UIImageView+Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Core.h"; sourceTree = "<group>"; };
@@ -1308,10 +1311,6 @@
 		66E16A4821A15AE1002C1F83 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
-				66E16A9821A1614B002C1F83 /* UIImageView+Letters.h */,
-				66E16A9A21A1614B002C1F83 /* UIImageView+Letters.m */,
-				66E16A9921A1614B002C1F83 /* UIImageView+Reflect.h */,
-				66E16A9721A1614B002C1F83 /* UIImageView+Reflect.m */,
 				66E16A9521A160DC002C1F83 /* UIImage+SuperCompress.h */,
 				66E16A9421A160DC002C1F83 /* UIImage+SuperCompress.m */,
 				662F6A512197EE1A00FD5231 /* UIImage+ImageEffects.h */,
@@ -1322,6 +1321,8 @@
 				662CA924218464A30061E49E /* UIImage+Rotate.m */,
 				667A57FD21BC136900369DE5 /* UIImage+Stretchable.h */,
 				667A57FE21BC136900369DE5 /* UIImage+Stretchable.m */,
+				66A4225B21C68DC4003D5E40 /* UIImage+Optimize.h */,
+				66A4225C21C68DC4003D5E40 /* UIImage+Optimize.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -1329,6 +1330,10 @@
 		66E16A4921A15B03002C1F83 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
+				66E16A9821A1614B002C1F83 /* UIImageView+Letters.h */,
+				66E16A9A21A1614B002C1F83 /* UIImageView+Letters.m */,
+				66E16A9921A1614B002C1F83 /* UIImageView+Reflect.h */,
+				66E16A9721A1614B002C1F83 /* UIImageView+Reflect.m */,
 				66B2B717218DD3A600F028FF /* UIImageView+Core.h */,
 				66B2B718218DD3A600F028FF /* UIImageView+Core.m */,
 			);
@@ -1867,6 +1872,7 @@
 				667A581321BC15F600369DE5 /* NSObject+SXRuntime.m in Sources */,
 				667A57FF21BC136900369DE5 /* UIImage+Stretchable.m in Sources */,
 				66176335219B045D00EAEE34 /* MLLocationManager.m in Sources */,
+				66A4225D21C68DC4003D5E40 /* UIImage+Optimize.m in Sources */,
 				66E16A7C21A15F97002C1F83 /* NSUserDefaults+iCloudSync.m in Sources */,
 				66E16ABE21A161F6002C1F83 /* UIResponder+Chain.m in Sources */,
 				66E16A5F21A15D6A002C1F83 /* NSDate+Mac.m in Sources */,

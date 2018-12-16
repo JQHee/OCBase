@@ -149,3 +149,43 @@ void checkSignatureMsg()
 }
 
 */
+
+
+/** tableView header自动更新
+ * Tableview headers are updated automatically
+ */
+
+/*
+ // 1.View
+UILabel *titleLa = [UILabel new];
+titleLa.textColor = FontColor;
+titleLa.text = @"title";
+[self addSubview:titleLa];
+[titleLa mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+    make.centerY.equalTo(img);
+    make.left.equalTo(img.mas_right).offset(8);
+    make.height.mas_equalTo(50);
+    // 至关重要
+    make.bottom.equalTo(self);
+}];
+
+ // 2.VC
+[self.headerView mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+    make.width.mas_equalTo(self.view.frame.size.width);
+}];
+
+[self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+    make.edges.mas_equalTo(self.view);
+}];
+
+[self.tableView layoutIfNeeded];
+
+ // 3.数据请求完成刷新frame
+[self.tableView beginUpdates];
+[self.tableView setTableHeaderView:self.headerView];
+[self.tableView layoutIfNeeded];
+[self.tableView endUpdates];
+ */

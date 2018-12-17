@@ -77,6 +77,8 @@ target 'OCBase' do
 
     # 弹窗框架
     # pod 'LEEAlert'
+    # 带动画的弹窗框架,内容view自定义
+    # pod 'FFPopup'
     # 换肤框架
     # pod 'LEETheme'
 

@@ -8,6 +8,7 @@
 
 #import "UIImage+Optimize.h"
 #import <SDImageCoderHelper.h>
+#import <ImageIO/ImageIO.h>
 
 
 @implementation UIImage (Optimize)

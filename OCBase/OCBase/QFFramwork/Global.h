@@ -77,3 +77,25 @@
 #define LLogWarning(module, ...) LLog(module, LLFileInfo(@"Warning"), __VA_ARGS__)
 #define LLogInfo(module, ...) LLog(module, LLFileInfo(@"Info"), __VA_ARGS__)
 #define LLogCrash(module, ...) LLog(module, LLFileInfo(@"Crash"), __VA_ARGS__)
+
+//系统版本
+NS_INLINE float device_version()
+{
+    return [[[UIDevice currentDevice] systemVersion] floatValue];
+}
+
+// 延迟执行
+NS_INLINE void dispatch_delay_async(NSTimeInterval delay, dispatch_block_t block)
+{
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(),block);
+}
+
+// 主线程执行
+NS_INLINE void dispatch_main_async(dispatch_block_t block) {
+    if ([NSThread isMainThread]) {
+        block();
+    } else {
+        dispatch_async(dispatch_get_main_queue(), block);
+    }
+}

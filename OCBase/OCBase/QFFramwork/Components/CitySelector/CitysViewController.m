@@ -69,6 +69,8 @@
 }
 /*
 -(void)initData{
+ 
+    // SearchCoreManager 为本地拼音检索
     [[SearchCoreManager share] Reset];
     xmlParser = [[CitysXMLParser alloc]init];
     [xmlParser start];

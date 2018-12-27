@@ -64,6 +64,8 @@ target 'OCBase' do
     # pod 'FMDB', '~> 2.6.2'
     # 不需要写sql语句，通过model操作数据库
     # pod 'YIIFMDB'
+    pod 'WCDB', '~> 1.0.7.5'
+    # XWDatabase
 
     # 图片选择器
     # pod 'TZImagePickerController'

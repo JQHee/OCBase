@@ -36,6 +36,12 @@ PODS:
   - SDWebImage (5.0.0-beta3):
     - SDWebImage/Core (= 5.0.0-beta3)
   - SDWebImage/Core (5.0.0-beta3)
+  - SQLiteRepairKit (1.2.1):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDB (1.0.7.5):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
   - YYCache (1.0.4)
   - ZipArchive (1.4.0)
 
@@ -54,6 +60,7 @@ DEPENDENCIES:
   - PINCache (~> 3.0.1-beta.7)
   - pop (~> 1.0.10)
   - SDWebImage (~> 5.0.0-beta3)
+  - WCDB (~> 1.0.7.5)
   - YYCache (~> 1.0.4)
   - ZipArchive (~> 1.4.0)
 
@@ -74,6 +81,9 @@ SPEC REPOS:
     - PINOperation
     - pop
     - SDWebImage
+    - SQLiteRepairKit
+    - WCDB
+    - WCDBOptimizedSQLCipher
     - YYCache
     - ZipArchive
 
@@ -93,9 +103,12 @@ SPEC CHECKSUMS:
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   SDWebImage: e52654ceef9fdc19f4c612d64a5b6d3f05dd81a4
+  SQLiteRepairKit: 4d21bab9eff6a273f63da6815a0d1659e53f5bde
+  WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 1284df0451235e5d26e95880a08e511e3778f237
+PODFILE CHECKSUM: 7ff98fd98eee981027e05c01ad235b929f621113
 
 COCOAPODS: 1.5.3

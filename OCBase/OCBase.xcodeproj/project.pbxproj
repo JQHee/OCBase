@@ -25,6 +25,7 @@
 		5E799E6921BDEC0C0021502F /* NSObject+HZCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E799E6821BDEC0C0021502F /* NSObject+HZCoding.m */; };
 		5E7B5B1621B77E6B00B79747 /* DTBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B5B1321B77E6B00B79747 /* DTBaseAlertView.m */; };
 		5E7B5B1721B77E6B00B79747 /* DTNormalAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B5B1421B77E6B00B79747 /* DTNormalAlert.m */; };
+		5E8890F521D463A6007F632E /* CategoryTitleModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E8890F321D463A6007F632E /* CategoryTitleModel.mm */; };
 		6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6617631A219B03CC00EAEE34 /* WordFilter.m */; };
 		6617631D219B03CC00EAEE34 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6617631B219B03CC00EAEE34 /* words.txt */; };
 		66176335219B045D00EAEE34 /* MLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66176321219B045D00EAEE34 /* MLLocationManager.m */; };
@@ -240,6 +241,8 @@
 		5E7B5B1521B77E6B00B79747 /* DTNormalAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTNormalAlert.h; sourceTree = "<group>"; };
 		5E7B5B1921B7806300B79747 /* log4cplus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log4cplus.h; sourceTree = "<group>"; };
 		5E7B5B1A21B7807600B79747 /* ReadMe.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ReadMe.mm; sourceTree = "<group>"; };
+		5E8890F321D463A6007F632E /* CategoryTitleModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CategoryTitleModel.mm; sourceTree = "<group>"; };
+		5E8890F421D463A6007F632E /* CategoryTitleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTitleModel.h; sourceTree = "<group>"; };
 		66176319219B03CB00EAEE34 /* WordFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordFilter.h; sourceTree = "<group>"; };
 		6617631A219B03CC00EAEE34 /* WordFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordFilter.m; sourceTree = "<group>"; };
 		6617631B219B03CC00EAEE34 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
@@ -693,6 +696,15 @@
 				5E7B5B1A21B7807600B79747 /* ReadMe.mm */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		5E8890F221D46389007F632E /* WCDB */ = {
+			isa = PBXGroup;
+			children = (
+				5E8890F421D463A6007F632E /* CategoryTitleModel.h */,
+				5E8890F321D463A6007F632E /* CategoryTitleModel.mm */,
+			);
+			path = WCDB;
 			sourceTree = "<group>";
 		};
 		66176318219B03C000EAEE34 /* WordFilter */ = {
@@ -1204,6 +1216,7 @@
 		66B48E7D218B3957005A7BF2 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				5E8890F221D46389007F632E /* WCDB */,
 				662F6A9E21980CBC00FD5231 /* NavigationBar */,
 				662F6A5A2197FC4C00FD5231 /* NullSafe */,
 				66B2B6D5218D8F7700F028FF /* Refresh */,
@@ -1875,6 +1888,7 @@
 				66E16ABE21A161F6002C1F83 /* UIResponder+Chain.m in Sources */,
 				66E16A5F21A15D6A002C1F83 /* NSDate+Mac.m in Sources */,
 				66E16A8C21A16067002C1F83 /* UIButton+TouchAreaInsets.m in Sources */,
+				5E8890F521D463A6007F632E /* CategoryTitleModel.mm in Sources */,
 				66E16A6621A15E8A002C1F83 /* ChineseToPinyin.m in Sources */,
 				66E16A9C21A1614B002C1F83 /* UIImageView+Letters.m in Sources */,
 				6651661821B801F600F97AF9 /* TestRequest.m in Sources */,

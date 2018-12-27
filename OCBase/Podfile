@@ -143,5 +143,6 @@ target 'OCBase' do
     # 有意思的应用：
     # https://github.com/coderyi/Monkey/blob/master/README_Chinese.md
     # https://github.com/Coding/Coding-iPad/tree/master/CodingForiPad
+    # https://github.com/Aufree/phphub-ios
 
 end

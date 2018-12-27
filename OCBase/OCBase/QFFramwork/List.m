@@ -7,7 +7,8 @@
 //
 #pragma mark - 宏集合
 #ifdef DEBUG
-#define NSLog(...) NSLog(__VA_ARGS__)
+// #define NSLog(...) NSLog(__VA_ARGS__)
+#define NSLog(fmt, ...) NSLog((@"【%s-第%d行】" fmt), [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, ##__VA_ARGS__);
 #define debugMethod NSLog(@"%s", __FUNCTION__)
 #else
 #define NSLog(...)

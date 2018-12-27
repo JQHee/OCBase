@@ -78,6 +78,7 @@
 #define LLogInfo(module, ...) LLog(module, LLFileInfo(@"Info"), __VA_ARGS__)
 #define LLogCrash(module, ...) LLog(module, LLFileInfo(@"Crash"), __VA_ARGS__)
 
+
 //系统版本
 NS_INLINE float device_version()
 {

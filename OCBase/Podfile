@@ -136,5 +136,6 @@ target 'OCBase' do
     # 搭建日志系统： https://www.jianshu.com/p/0f889e75f387 pod 'CocoaLumberjack', '~> 3.4.2'
     # 图片jpg转png https://www.xunjiepdf.com/compress
     # 导入头文件 https://github.com/markohlebar/Import/releases
+    # 使用Runtime找到图片的名字 http://www.cocoachina.com/ios/20181226/25965.html
 
 end

@@ -139,5 +139,9 @@ target 'OCBase' do
     # 图片jpg转png https://www.xunjiepdf.com/compress
     # 导入头文件 https://github.com/markohlebar/Import/releases
     # 使用Runtime找到图片的名字 http://www.cocoachina.com/ios/20181226/25965.html
+    
+    # 有意思的应用：
+    # https://github.com/coderyi/Monkey/blob/master/README_Chinese.md
+    # https://github.com/Coding/Coding-iPad/tree/master/CodingForiPad
 
 end

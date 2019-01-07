@@ -144,5 +144,9 @@ target 'OCBase' do
     # https://github.com/coderyi/Monkey/blob/master/README_Chinese.md
     # https://github.com/Coding/Coding-iPad/tree/master/CodingForiPad
     # https://github.com/Aufree/phphub-ios
+    
+    # json 浏览器插件：https://github.com/rfletcher/safari-json-formatter/downloads
+    # 流量监测方案： http://zhoulingyu.com/2018/05/30/ios-network-traffic/
+    # RAC实现MVVM Demo: http://zhoulingyu.com/2016/05/20/iOS——教你如何使用ReactiveCocoa和MVVM为代码解耦构建清爽APP/
 
 end

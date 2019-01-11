@@ -112,7 +112,7 @@ target 'OCBase' do
     # 代码格式化
     # OBLint
     
-    # 任务调度，为CPU减负
+    # 任务调度，为CPU减负 这个作者有几个好玩的仓库
     # pod 'YBTaskScheduler'
     
     # 融360  Face++人脸识别及身份证、银行卡扫描

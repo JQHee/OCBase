@@ -41,6 +41,9 @@ target 'OCBase' do
     # pod 'YYText', '~> 1.0.7'
     # pod 'SDCycleScrollView', '~> 1.75'
     
+    # 导航栏弹窗
+    # pod 'JDStatusBarNotification'
+    
     # 内存占用检测
     # pod 'OOMDetector', '1.3'
     # 检测内容泄漏

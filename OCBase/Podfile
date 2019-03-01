@@ -119,6 +119,9 @@ target 'OCBase' do
     # 任务调度，为CPU减负 这个作者有几个好玩的仓库
     # pod 'YBTaskScheduler'
     
+    # 阿里的携程库实现
+    pod 'coobjc', '~> 1.0.1'
+    
     # 融360  Face++人脸识别及身份证、银行卡扫描
     # https://www.jianshu.com/p/66a142505bc9
 
@@ -156,7 +159,6 @@ target 'OCBase' do
     # 流量监测方案： http://zhoulingyu.com/2018/05/30/ios-network-traffic/
     # RAC实现MVVM Demo: http://zhoulingyu.com/2016/05/20/iOS——教你如何使用ReactiveCocoa和MVVM为代码解耦构建清爽APP/
     
-    # 阿里的携程库实现
-    pod 'coobjc', '~> 1.0.1'
-
+    # app国际化 https://github.com/JmoVxia/CLDemo
+    
 end

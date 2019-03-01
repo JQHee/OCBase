@@ -157,6 +157,6 @@ target 'OCBase' do
     # RAC实现MVVM Demo: http://zhoulingyu.com/2016/05/20/iOS——教你如何使用ReactiveCocoa和MVVM为代码解耦构建清爽APP/
     
     # 阿里的携程库实现
-    pod 'coobjc'
+    pod 'coobjc', '~> 1.0.1'
 
 end

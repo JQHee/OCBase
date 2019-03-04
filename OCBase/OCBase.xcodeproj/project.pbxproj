@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E2A1889222CC3D000E542A0 /* SecurityTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A1888222CC3D000E542A0 /* SecurityTools.m */; };
 		5E66F0C221B8A7A600950BB8 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66F0C121B8A7A600950BB8 /* HTTPClient.m */; };
 		5E66F0C621B8B56900950BB8 /* ClientData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66F0C521B8B56900950BB8 /* ClientData.m */; };
 		5E66F0C921B8F70400950BB8 /* UploadFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66F0C821B8F70400950BB8 /* UploadFileRequest.m */; };
@@ -205,6 +206,8 @@
 
 /* Begin PBXFileReference section */
 		5E15A478EEBF569E1D197D7F /* Pods-OCBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBase.debug.xcconfig"; path = "Target Support Files/Pods-OCBase/Pods-OCBase.debug.xcconfig"; sourceTree = "<group>"; };
+		5E2A1887222CC3D000E542A0 /* SecurityTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurityTools.h; sourceTree = "<group>"; };
+		5E2A1888222CC3D000E542A0 /* SecurityTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecurityTools.m; sourceTree = "<group>"; };
 		5E66F0C021B8A7A600950BB8 /* HTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
 		5E66F0C121B8A7A600950BB8 /* HTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
 		5E66F0C421B8B56900950BB8 /* ClientData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientData.h; sourceTree = "<group>"; };
@@ -601,6 +604,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5E2A1886222CC3BF00E542A0 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				5E2A1887222CC3D000E542A0 /* SecurityTools.h */,
+				5E2A1888222CC3D000E542A0 /* SecurityTools.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
 		5E66F0CA21B8F89900950BB8 /* Request */ = {
 			isa = PBXGroup;
 			children = (
@@ -987,6 +999,7 @@
 		662CA901218464A30061E49E /* QFTools */ = {
 			isa = PBXGroup;
 			children = (
+				5E2A1886222CC3BF00E542A0 /* Security */,
 				66E16AE221A163FA002C1F83 /* SearchCore */,
 				66E16ADE21A163E0002C1F83 /* LocalPushCenter */,
 				66E16AD021A163BB002C1F83 /* GCD */,
@@ -1816,6 +1829,7 @@
 				662CA934218464A30061E49E /* QFBigText.m in Sources */,
 				66D569C52198446D00D9EBD5 /* TestViewModel.m in Sources */,
 				66E16AA721A16194002C1F83 /* UIViewController+KMNavigationBarTransition.m in Sources */,
+				5E2A1889222CC3D000E542A0 /* SecurityTools.m in Sources */,
 				667A57FC21BC0EA400369DE5 /* UILabel+XIBLocalizabe.m in Sources */,
 				667A581221BC15F600369DE5 /* UINavigationController+SXFixSpace.m in Sources */,
 				662CA945218464A30061E49E /* YSBPasswordView.m in Sources */,

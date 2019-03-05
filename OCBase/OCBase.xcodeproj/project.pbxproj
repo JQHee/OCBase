@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5E2A1889222CC3D000E542A0 /* SecurityTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A1888222CC3D000E542A0 /* SecurityTools.m */; };
+		5E493220222E7D4C008AE38A /* IAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E493219222E7D4B008AE38A /* IAPManager.m */; };
+		5E493221222E7D4C008AE38A /* IPAPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E49321B222E7D4B008AE38A /* IPAPurchase.m */; };
+		5E493222222E7D4C008AE38A /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E49321D222E7D4B008AE38A /* NSString+UUID.m */; };
+		5E493223222E7D4C008AE38A /* SandBoxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E49321F222E7D4B008AE38A /* SandBoxHelper.m */; };
 		5E66F0C221B8A7A600950BB8 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66F0C121B8A7A600950BB8 /* HTTPClient.m */; };
 		5E66F0C621B8B56900950BB8 /* ClientData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66F0C521B8B56900950BB8 /* ClientData.m */; };
 		5E66F0C921B8F70400950BB8 /* UploadFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66F0C821B8F70400950BB8 /* UploadFileRequest.m */; };
@@ -208,6 +212,15 @@
 		5E15A478EEBF569E1D197D7F /* Pods-OCBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBase.debug.xcconfig"; path = "Target Support Files/Pods-OCBase/Pods-OCBase.debug.xcconfig"; sourceTree = "<group>"; };
 		5E2A1887222CC3D000E542A0 /* SecurityTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurityTools.h; sourceTree = "<group>"; };
 		5E2A1888222CC3D000E542A0 /* SecurityTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecurityTools.m; sourceTree = "<group>"; };
+		5E493217222E7D4B008AE38A /* IAPConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPConfig.h; sourceTree = "<group>"; };
+		5E493218222E7D4B008AE38A /* IAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPManager.h; sourceTree = "<group>"; };
+		5E493219222E7D4B008AE38A /* IAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPManager.m; sourceTree = "<group>"; };
+		5E49321A222E7D4B008AE38A /* IPAPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAPurchase.h; sourceTree = "<group>"; };
+		5E49321B222E7D4B008AE38A /* IPAPurchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAPurchase.m; sourceTree = "<group>"; };
+		5E49321C222E7D4B008AE38A /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
+		5E49321D222E7D4B008AE38A /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
+		5E49321E222E7D4B008AE38A /* SandBoxHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandBoxHelper.h; sourceTree = "<group>"; };
+		5E49321F222E7D4B008AE38A /* SandBoxHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandBoxHelper.m; sourceTree = "<group>"; };
 		5E66F0C021B8A7A600950BB8 /* HTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
 		5E66F0C121B8A7A600950BB8 /* HTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
 		5E66F0C421B8B56900950BB8 /* ClientData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientData.h; sourceTree = "<group>"; };
@@ -613,6 +626,22 @@
 			path = Security;
 			sourceTree = "<group>";
 		};
+		5E493216222E7D4B008AE38A /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				5E493217222E7D4B008AE38A /* IAPConfig.h */,
+				5E493218222E7D4B008AE38A /* IAPManager.h */,
+				5E493219222E7D4B008AE38A /* IAPManager.m */,
+				5E49321A222E7D4B008AE38A /* IPAPurchase.h */,
+				5E49321B222E7D4B008AE38A /* IPAPurchase.m */,
+				5E49321C222E7D4B008AE38A /* NSString+UUID.h */,
+				5E49321D222E7D4B008AE38A /* NSString+UUID.m */,
+				5E49321E222E7D4B008AE38A /* SandBoxHelper.h */,
+				5E49321F222E7D4B008AE38A /* SandBoxHelper.m */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
 		5E66F0CA21B8F89900950BB8 /* Request */ = {
 			isa = PBXGroup;
 			children = (
@@ -750,6 +779,7 @@
 		6617631E219B044700EAEE34 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5E493216222E7D4B008AE38A /* IAP */,
 				667A581721BC17A700369DE5 /* DelayStartup */,
 				667A57E621BC0D2000369DE5 /* Localizabe */,
 				5E7848ED21BA282E00CFE8AD /* TableViewPreLoad */,
@@ -1847,6 +1877,7 @@
 				5E66F0C621B8B56900950BB8 /* ClientData.m in Sources */,
 				667A57F021BC0E5E00369DE5 /* NSBundle+AppLanguageSwitch.m in Sources */,
 				66E16A9B21A1614B002C1F83 /* UIImageView+Reflect.m in Sources */,
+				5E493223222E7D4C008AE38A /* SandBoxHelper.m in Sources */,
 				662CA93F218464A30061E49E /* Reachability.m in Sources */,
 				5E7B5B1721B77E6B00B79747 /* DTNormalAlert.m in Sources */,
 				5E8C21FD21E81F7C0059FA31 /* UIScrollView+Refresh.m in Sources */,
@@ -1894,7 +1925,9 @@
 				66E16AC821A162A3002C1F83 /* UITextView+Placeholder.m in Sources */,
 				66B2B6D8218D8F9000F028FF /* UIScrollView+Core.m in Sources */,
 				66E16A5E21A15D6A002C1F83 /* NSDate+MacFormatter.m in Sources */,
+				5E493222222E7D4C008AE38A /* NSString+UUID.m in Sources */,
 				6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */,
+				5E493220222E7D4C008AE38A /* IAPManager.m in Sources */,
 				5E7848EC21BA1F0400CFE8AD /* NetworkCache.m in Sources */,
 				662CA948218464A30061E49E /* APIList.h in Sources */,
 				66E16AE121A163E0002C1F83 /* LocalPushCenter.m in Sources */,
@@ -1904,6 +1937,7 @@
 				5E66F0C921B8F70400950BB8 /* UploadFileRequest.m in Sources */,
 				5E78490921BA654A00CFE8AD /* NSString+Network.m in Sources */,
 				66E16A5421A15C98002C1F83 /* DefaultNotificationCenter.m in Sources */,
+				5E493221222E7D4C008AE38A /* IPAPurchase.m in Sources */,
 				662CA953218464A40061E49E /* QFNetworking.m in Sources */,
 				667A581621BC160000369DE5 /* UIBarButtonItem+SXCreate.m in Sources */,
 				66E16AF721A17442002C1F83 /* UIView+Core.m in Sources */,

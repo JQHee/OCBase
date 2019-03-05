@@ -347,7 +347,7 @@ static IPAPurchase * manager = nil;
     NSString * order = [dic objectForKey:@"order"];
     NSString * userId = [dic objectForKey:@"user_id"];
     
-#pragma mark -- 发送信息去验证是否成功
+#pragma mark -- 发送信息去验证是否成功 参考 https://www.jianshu.com/p/e7722bc578c0
     /*
     [[ULSDKAPI shareAPI] sendVertifyWithReceipt:receipt order:order success:^(ULSDKAPI *api, id responseObject) {
         

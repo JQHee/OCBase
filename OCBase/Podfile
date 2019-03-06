@@ -13,6 +13,8 @@ target 'OCBase' do
     pod 'MBProgressHUD'
     pod 'DZNEmptyDataSet'
     pod 'AFNetworking'
+    pod 'UICKeyChainStore' # 钥匙链.
+    pod 'NSData+MD5Digest' # MD5 验证.
     pod 'FDStackView'
     pod "CYLTabBarController", "~>1.11.0"
     # 微信平滑过渡的导航栏

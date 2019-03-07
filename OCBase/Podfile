@@ -129,6 +129,9 @@ target 'OCBase' do
     
     # 嵌套滚动方案
     # https://juejin.im/post/5c7f4cb9e51d452bfa4d6fe5
+    
+    # appdelegate 模块化
+    # https://juejin.im/post/5c7f8b34e51d454f8a0c5136
 
     # 指纹校验：https://www.jianshu.com/p/4a0bec497ebd
     # iCloud开发：https://www.jianshu.com/p/33ebab1c2ee1

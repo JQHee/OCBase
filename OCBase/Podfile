@@ -163,4 +163,7 @@ target 'OCBase' do
     
     # app国际化 https://github.com/JmoVxia/CLDemo
     
+    # 面试
+    # 1.iOS 内存分配：http://www.cocoachina.com/ios/20190307/26495.html
+    
 end

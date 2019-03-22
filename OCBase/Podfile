@@ -25,6 +25,7 @@ target 'OCBase' do
     # pod 'TYPagerController'
     # pod 'VTMagic', '~> 1.2.4'
     # pod 'JXCategoryView'
+    # pod 'SGPagingView', '~> 1.6.0'
 
     # 全屏返回框架
     # pod 'FDFullscreenPopGesture', '1.1'

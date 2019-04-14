@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E2A1889222CC3D000E542A0 /* SecurityTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A1888222CC3D000E542A0 /* SecurityTools.m */; };
+		5E493220222E7D4C008AE38A /* IAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E493219222E7D4B008AE38A /* IAPManager.m */; };
+		5E493221222E7D4C008AE38A /* IPAPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E49321B222E7D4B008AE38A /* IPAPurchase.m */; };
+		5E493222222E7D4C008AE38A /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E49321D222E7D4B008AE38A /* NSString+UUID.m */; };
+		5E493223222E7D4C008AE38A /* SandBoxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E49321F222E7D4B008AE38A /* SandBoxHelper.m */; };
+		5E58AE55222F59F20030D121 /* BLJailbreakDetectTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E58AE46222F59F20030D121 /* BLJailbreakDetectTool.m */; };
+		5E58AE56222F59F20030D121 /* BLPaymentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E58AE48222F59F20030D121 /* BLPaymentManager.m */; };
+		5E58AE57222F59F20030D121 /* BLPaymentTransactionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E58AE4A222F59F20030D121 /* BLPaymentTransactionModel.m */; };
+		5E58AE58222F59F20030D121 /* BLPaymentVerifyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E58AE4C222F59F20030D121 /* BLPaymentVerifyManager.m */; };
+		5E58AE59222F59F20030D121 /* BLPaymentVerifyTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E58AE4E222F59F20030D121 /* BLPaymentVerifyTask.m */; };
+		5E58AE5A222F59F20030D121 /* BLWalletCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E58AE50222F59F20030D121 /* BLWalletCompat.m */; };
+		5E58AE5B222F59F20030D121 /* BLWalletKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E58AE53222F59F20030D121 /* BLWalletKeyChainStore.m */; };
+		5E58AE5C222F59F20030D121 /* receipt.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5E58AE54222F59F20030D121 /* receipt.txt */; };
 		5E66F0C221B8A7A600950BB8 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66F0C121B8A7A600950BB8 /* HTTPClient.m */; };
 		5E66F0C621B8B56900950BB8 /* ClientData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66F0C521B8B56900950BB8 /* ClientData.m */; };
 		5E66F0C921B8F70400950BB8 /* UploadFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E66F0C821B8F70400950BB8 /* UploadFileRequest.m */; };
@@ -206,6 +219,34 @@
 
 /* Begin PBXFileReference section */
 		5E15A478EEBF569E1D197D7F /* Pods-OCBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBase.debug.xcconfig"; path = "Target Support Files/Pods-OCBase/Pods-OCBase.debug.xcconfig"; sourceTree = "<group>"; };
+		5E2A1887222CC3D000E542A0 /* SecurityTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurityTools.h; sourceTree = "<group>"; };
+		5E2A1888222CC3D000E542A0 /* SecurityTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecurityTools.m; sourceTree = "<group>"; };
+		5E493217222E7D4B008AE38A /* IAPConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPConfig.h; sourceTree = "<group>"; };
+		5E493218222E7D4B008AE38A /* IAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPManager.h; sourceTree = "<group>"; };
+		5E493219222E7D4B008AE38A /* IAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPManager.m; sourceTree = "<group>"; };
+		5E49321A222E7D4B008AE38A /* IPAPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAPurchase.h; sourceTree = "<group>"; };
+		5E49321B222E7D4B008AE38A /* IPAPurchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAPurchase.m; sourceTree = "<group>"; };
+		5E49321C222E7D4B008AE38A /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
+		5E49321D222E7D4B008AE38A /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
+		5E49321E222E7D4B008AE38A /* SandBoxHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandBoxHelper.h; sourceTree = "<group>"; };
+		5E49321F222E7D4B008AE38A /* SandBoxHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandBoxHelper.m; sourceTree = "<group>"; };
+		5E58AE43222F51DE0030D121 /* IAPReadMe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAPReadMe.h; sourceTree = "<group>"; };
+		5E58AE45222F59F20030D121 /* BLJailbreakDetectTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLJailbreakDetectTool.h; sourceTree = "<group>"; };
+		5E58AE46222F59F20030D121 /* BLJailbreakDetectTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLJailbreakDetectTool.m; sourceTree = "<group>"; };
+		5E58AE47222F59F20030D121 /* BLPaymentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPaymentManager.h; sourceTree = "<group>"; };
+		5E58AE48222F59F20030D121 /* BLPaymentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPaymentManager.m; sourceTree = "<group>"; };
+		5E58AE49222F59F20030D121 /* BLPaymentTransactionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPaymentTransactionModel.h; sourceTree = "<group>"; };
+		5E58AE4A222F59F20030D121 /* BLPaymentTransactionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPaymentTransactionModel.m; sourceTree = "<group>"; };
+		5E58AE4B222F59F20030D121 /* BLPaymentVerifyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPaymentVerifyManager.h; sourceTree = "<group>"; };
+		5E58AE4C222F59F20030D121 /* BLPaymentVerifyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPaymentVerifyManager.m; sourceTree = "<group>"; };
+		5E58AE4D222F59F20030D121 /* BLPaymentVerifyTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPaymentVerifyTask.h; sourceTree = "<group>"; };
+		5E58AE4E222F59F20030D121 /* BLPaymentVerifyTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPaymentVerifyTask.m; sourceTree = "<group>"; };
+		5E58AE4F222F59F20030D121 /* BLWalletCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLWalletCompat.h; sourceTree = "<group>"; };
+		5E58AE50222F59F20030D121 /* BLWalletCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLWalletCompat.m; sourceTree = "<group>"; };
+		5E58AE51222F59F20030D121 /* BLWalletInjecting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLWalletInjecting.h; sourceTree = "<group>"; };
+		5E58AE52222F59F20030D121 /* BLWalletKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLWalletKeyChainStore.h; sourceTree = "<group>"; };
+		5E58AE53222F59F20030D121 /* BLWalletKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLWalletKeyChainStore.m; sourceTree = "<group>"; };
+		5E58AE54222F59F20030D121 /* receipt.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = receipt.txt; sourceTree = "<group>"; };
 		5E66F0C021B8A7A600950BB8 /* HTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
 		5E66F0C121B8A7A600950BB8 /* HTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
 		5E66F0C421B8B56900950BB8 /* ClientData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientData.h; sourceTree = "<group>"; };
@@ -604,6 +645,55 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5E2A1886222CC3BF00E542A0 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				5E2A1887222CC3D000E542A0 /* SecurityTools.h */,
+				5E2A1888222CC3D000E542A0 /* SecurityTools.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		5E493216222E7D4B008AE38A /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				5E493217222E7D4B008AE38A /* IAPConfig.h */,
+				5E493218222E7D4B008AE38A /* IAPManager.h */,
+				5E493219222E7D4B008AE38A /* IAPManager.m */,
+				5E49321A222E7D4B008AE38A /* IPAPurchase.h */,
+				5E49321B222E7D4B008AE38A /* IPAPurchase.m */,
+				5E49321C222E7D4B008AE38A /* NSString+UUID.h */,
+				5E49321D222E7D4B008AE38A /* NSString+UUID.m */,
+				5E49321E222E7D4B008AE38A /* SandBoxHelper.h */,
+				5E49321F222E7D4B008AE38A /* SandBoxHelper.m */,
+				5E58AE43222F51DE0030D121 /* IAPReadMe.h */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
+		5E58AE44222F59F20030D121 /* BLIAP */ = {
+			isa = PBXGroup;
+			children = (
+				5E58AE45222F59F20030D121 /* BLJailbreakDetectTool.h */,
+				5E58AE46222F59F20030D121 /* BLJailbreakDetectTool.m */,
+				5E58AE47222F59F20030D121 /* BLPaymentManager.h */,
+				5E58AE48222F59F20030D121 /* BLPaymentManager.m */,
+				5E58AE49222F59F20030D121 /* BLPaymentTransactionModel.h */,
+				5E58AE4A222F59F20030D121 /* BLPaymentTransactionModel.m */,
+				5E58AE4B222F59F20030D121 /* BLPaymentVerifyManager.h */,
+				5E58AE4C222F59F20030D121 /* BLPaymentVerifyManager.m */,
+				5E58AE4D222F59F20030D121 /* BLPaymentVerifyTask.h */,
+				5E58AE4E222F59F20030D121 /* BLPaymentVerifyTask.m */,
+				5E58AE4F222F59F20030D121 /* BLWalletCompat.h */,
+				5E58AE50222F59F20030D121 /* BLWalletCompat.m */,
+				5E58AE51222F59F20030D121 /* BLWalletInjecting.h */,
+				5E58AE52222F59F20030D121 /* BLWalletKeyChainStore.h */,
+				5E58AE53222F59F20030D121 /* BLWalletKeyChainStore.m */,
+				5E58AE54222F59F20030D121 /* receipt.txt */,
+			);
+			path = BLIAP;
+			sourceTree = "<group>";
+		};
 		5E66F0CA21B8F89900950BB8 /* Request */ = {
 			isa = PBXGroup;
 			children = (
@@ -741,6 +831,8 @@
 		6617631E219B044700EAEE34 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5E58AE44222F59F20030D121 /* BLIAP */,
+				5E493216222E7D4B008AE38A /* IAP */,
 				667A581721BC17A700369DE5 /* DelayStartup */,
 				667A57E621BC0D2000369DE5 /* Localizabe */,
 				5E7848ED21BA282E00CFE8AD /* TableViewPreLoad */,
@@ -990,6 +1082,7 @@
 		662CA901218464A30061E49E /* QFTools */ = {
 			isa = PBXGroup;
 			children = (
+				5E2A1886222CC3BF00E542A0 /* Security */,
 				66E16AE221A163FA002C1F83 /* SearchCore */,
 				66E16ADE21A163E0002C1F83 /* LocalPushCenter */,
 				66E16AD021A163BB002C1F83 /* GCD */,
@@ -1721,6 +1814,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				662CA896218460850061E49E /* LaunchScreen.storyboard in Resources */,
+				5E58AE5C222F59F20030D121 /* receipt.txt in Resources */,
 				662CA893218460850061E49E /* Assets.xcassets in Resources */,
 				6617631D219B03CC00EAEE34 /* words.txt in Resources */,
 				66176339219B045D00EAEE34 /* MLCityListHeaderView.xib in Resources */,
@@ -1757,24 +1851,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-OCBase/Pods-OCBase-resources.sh",
-				"${PODS_ROOT}/DateTools/DateTools/DateTools/DateTools.bundle",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-OCBase/Pods-OCBase-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DateTools.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-OCBase/Pods-OCBase-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCBase/Pods-OCBase-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCBase/Pods-OCBase-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D6BC2BC1F95B8E5091652F3C /* [CP] Check Pods Manifest.lock */ = {
@@ -1821,12 +1906,14 @@
 				662CA934218464A30061E49E /* QFBigText.m in Sources */,
 				66D569C52198446D00D9EBD5 /* TestViewModel.m in Sources */,
 				66E16AA721A16194002C1F83 /* UIViewController+KMNavigationBarTransition.m in Sources */,
+				5E2A1889222CC3D000E542A0 /* SecurityTools.m in Sources */,
 				667A57FC21BC0EA400369DE5 /* UILabel+XIBLocalizabe.m in Sources */,
 				667A581221BC15F600369DE5 /* UINavigationController+SXFixSpace.m in Sources */,
 				662CA945218464A30061E49E /* YSBPasswordView.m in Sources */,
 				66E16A9621A160DC002C1F83 /* UIImage+SuperCompress.m in Sources */,
 				662CA956218464A40061E49E /* QFLocationInfo.m in Sources */,
 				662F6A532197EE1A00FD5231 /* UIImage+ImageEffects.m in Sources */,
+				5E58AE5A222F59F20030D121 /* BLWalletCompat.m in Sources */,
 				66E16ABC21A161F6002C1F83 /* UIResponder+FirstResponder.m in Sources */,
 				5E7328A721B50AA0007157E4 /* UIButton+Click.m in Sources */,
 				66E16ABD21A161F6002C1F83 /* UIResponder+UIAdapt.m in Sources */,
@@ -1839,6 +1926,7 @@
 				5E66F0C621B8B56900950BB8 /* ClientData.m in Sources */,
 				667A57F021BC0E5E00369DE5 /* NSBundle+AppLanguageSwitch.m in Sources */,
 				66E16A9B21A1614B002C1F83 /* UIImageView+Reflect.m in Sources */,
+				5E493223222E7D4C008AE38A /* SandBoxHelper.m in Sources */,
 				662CA93F218464A30061E49E /* Reachability.m in Sources */,
 				5E7B5B1721B77E6B00B79747 /* DTNormalAlert.m in Sources */,
 				5E8C21FD21E81F7C0059FA31 /* UIScrollView+Refresh.m in Sources */,
@@ -1864,12 +1952,14 @@
 				5E73289E21B5009A007157E4 /* UIViewController+userStatics.m in Sources */,
 				66B48E80218B3A0F005A7BF2 /* MBProgressHUD+Core.m in Sources */,
 				66E16AC921A162A3002C1F83 /* UIPlaceholderTextView.m in Sources */,
+				5E58AE55222F59F20030D121 /* BLJailbreakDetectTool.m in Sources */,
 				66E16AB421A161D5002C1F83 /* UINavigationItem+Margin.m in Sources */,
 				66D8F85821A6E36C004D6D71 /* UIViewController+LoginStatus.m in Sources */,
 				66D96CF421A2EC71005F4493 /* SQPrintJsonLog.m in Sources */,
 				662F6AA421980CC800FD5231 /* UIViewController+YINNav.m in Sources */,
 				5E7328B421B51657007157E4 /* WeakScriptMessageDelegate.m in Sources */,
 				662CA932218464A30061E49E /* CALayer+RumtimeAttribute.m in Sources */,
+				5E58AE59222F59F20030D121 /* BLPaymentVerifyTask.m in Sources */,
 				66C59B86218EF10D006D2C66 /* QRViewController.m in Sources */,
 				66E16AFA21A175FA002C1F83 /* UIView+Animation.m in Sources */,
 				662CA88E218460830061E49E /* ViewController.m in Sources */,
@@ -1886,8 +1976,11 @@
 				66E16AC821A162A3002C1F83 /* UITextView+Placeholder.m in Sources */,
 				66B2B6D8218D8F9000F028FF /* UIScrollView+Core.m in Sources */,
 				66E16A5E21A15D6A002C1F83 /* NSDate+MacFormatter.m in Sources */,
+				5E493222222E7D4C008AE38A /* NSString+UUID.m in Sources */,
 				6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */,
+				5E493220222E7D4C008AE38A /* IAPManager.m in Sources */,
 				5E7848EC21BA1F0400CFE8AD /* NetworkCache.m in Sources */,
+				5E58AE5B222F59F20030D121 /* BLWalletKeyChainStore.m in Sources */,
 				662CA948218464A30061E49E /* APIList.h in Sources */,
 				66E16AE121A163E0002C1F83 /* LocalPushCenter.m in Sources */,
 				6632CD2F218C8A4600F65829 /* MLFunctionPageItemView.m in Sources */,
@@ -1896,6 +1989,7 @@
 				5E66F0C921B8F70400950BB8 /* UploadFileRequest.m in Sources */,
 				5E78490921BA654A00CFE8AD /* NSString+Network.m in Sources */,
 				66E16A5421A15C98002C1F83 /* DefaultNotificationCenter.m in Sources */,
+				5E493221222E7D4C008AE38A /* IPAPurchase.m in Sources */,
 				662CA953218464A40061E49E /* QFNetworking.m in Sources */,
 				667A581621BC160000369DE5 /* UIBarButtonItem+SXCreate.m in Sources */,
 				66E16AF721A17442002C1F83 /* UIView+Core.m in Sources */,
@@ -1921,6 +2015,7 @@
 				66E16A5F21A15D6A002C1F83 /* NSDate+Mac.m in Sources */,
 				66E16A8C21A16067002C1F83 /* UIButton+TouchAreaInsets.m in Sources */,
 				5E8890F521D463A6007F632E /* CategoryTitleModel.mm in Sources */,
+				5E58AE57222F59F20030D121 /* BLPaymentTransactionModel.m in Sources */,
 				66E16A6621A15E8A002C1F83 /* ChineseToPinyin.m in Sources */,
 				66E16A9C21A1614B002C1F83 /* UIImageView+Letters.m in Sources */,
 				6651661821B801F600F97AF9 /* TestRequest.m in Sources */,
@@ -1929,6 +2024,7 @@
 				66176336219B045D00EAEE34 /* MLCityListHotCell.m in Sources */,
 				66E16ADB21A163BB002C1F83 /* GCDTimer.m in Sources */,
 				6651661321B7F4EC00F97AF9 /* FileContentData.m in Sources */,
+				5E58AE56222F59F20030D121 /* BLPaymentManager.m in Sources */,
 				66B2B719218DD3A600F028FF /* UIImageView+Core.m in Sources */,
 				66A1510021B6B2F000BD28B6 /* LZImageCropper.m in Sources */,
 				6632CD30218C8A4600F65829 /* MLFunctionPageView.m in Sources */,
@@ -1946,6 +2042,7 @@
 				662CA94A218464A40061E49E /* Common.m in Sources */,
 				662CA958218464A40061E49E /* NSString+AES256.m in Sources */,
 				662CA950218464A40061E49E /* VDCameraAndPhotoTool.m in Sources */,
+				5E58AE58222F59F20030D121 /* BLPaymentVerifyManager.m in Sources */,
 				66E16ADD21A163BB002C1F83 /* GCDSemaphore.m in Sources */,
 				662CA959218464A40061E49E /* UIImage+Rotate.m in Sources */,
 				662CA933218464A30061E49E /* QFBaseTableViewController.m in Sources */,
@@ -2158,7 +2255,7 @@
 		};
 		662CA8B4218460850061E49E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCC8E313EA63866461A190D4 /* Pods-OCBase.release.xcconfig */;
+			baseConfigurationReference = 66D1CA478F5529CE254F37EB /* Pods-OCBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

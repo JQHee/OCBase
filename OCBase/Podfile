@@ -13,6 +13,8 @@ target 'OCBase' do
     pod 'MBProgressHUD'
     pod 'DZNEmptyDataSet'
     pod 'AFNetworking'
+    pod 'UICKeyChainStore' # 钥匙链.
+    pod 'NSData+MD5Digest' # MD5 验证.
     pod 'FDStackView'
     pod "CYLTabBarController", "~>1.11.0"
     # 微信平滑过渡的导航栏
@@ -23,6 +25,7 @@ target 'OCBase' do
     # pod 'TYPagerController'
     # pod 'VTMagic', '~> 1.2.4'
     # pod 'JXCategoryView'
+    # pod 'SGPagingView', '~> 1.6.0'
 
     # 全屏返回框架
     # pod 'FDFullscreenPopGesture', '1.1'
@@ -32,6 +35,7 @@ target 'OCBase' do
     pod 'Masonry'
     # pod 'SDAutoLayout', '~> 2.1.3'
     # pod 'PureLayout'
+    # 基于frame布局，性能更高
     # pod 'MyLayout'
     
     # OC的稳定版本是2.5
@@ -39,6 +43,9 @@ target 'OCBase' do
     # pod 'HYBImageCliped'
     # pod 'YYText', '~> 1.0.7'
     # pod 'SDCycleScrollView', '~> 1.75'
+    
+    # 导航栏弹窗
+    # pod 'JDStatusBarNotification'
     
     # 内存占用检测
     # pod 'OOMDetector', '1.3'
@@ -115,8 +122,17 @@ target 'OCBase' do
     # 任务调度，为CPU减负 这个作者有几个好玩的仓库
     # pod 'YBTaskScheduler'
     
+    # 阿里的携程库实现
+    pod 'coobjc', '~> 1.0.1'
+    
     # 融360  Face++人脸识别及身份证、银行卡扫描
     # https://www.jianshu.com/p/66a142505bc9
+    
+    # 嵌套滚动方案
+    # https://juejin.im/post/5c7f4cb9e51d452bfa4d6fe5
+    
+    # appdelegate 模块化
+    # https://juejin.im/post/5c7f8b34e51d454f8a0c5136
 
     # 指纹校验：https://www.jianshu.com/p/4a0bec497ebd
     # iCloud开发：https://www.jianshu.com/p/33ebab1c2ee1
@@ -151,5 +167,10 @@ target 'OCBase' do
     # json 浏览器插件：https://github.com/rfletcher/safari-json-formatter/downloads
     # 流量监测方案： http://zhoulingyu.com/2018/05/30/ios-network-traffic/
     # RAC实现MVVM Demo: http://zhoulingyu.com/2016/05/20/iOS——教你如何使用ReactiveCocoa和MVVM为代码解耦构建清爽APP/
-
+    
+    # app国际化 https://github.com/JmoVxia/CLDemo
+    
+    # 面试
+    # 1.iOS 内存分配：http://www.cocoachina.com/ios/20190307/26495.html
+    
 end

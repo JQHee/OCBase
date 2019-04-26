@@ -173,4 +173,7 @@ target 'OCBase' do
     # 面试
     # 1.iOS 内存分配：http://www.cocoachina.com/ios/20190307/26495.html
     
+    # 数据库迁移
+    # https://blog.csdn.net/zhangyutangde/article/details/78339120
+    
 end

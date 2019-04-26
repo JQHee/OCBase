@@ -57,6 +57,7 @@
 		6617633F219B045D00EAEE34 /* MLCityListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66176334219B045D00EAEE34 /* MLCityListViewController.xib */; };
 		66176342219B072D00EAEE34 /* AutoCutting.sh in Resources */ = {isa = PBXBuildFile; fileRef = 66176341219B072D00EAEE34 /* AutoCutting.sh */; };
 		66176348219B10C500EAEE34 /* GCDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 66176347219B10C500EAEE34 /* GCDTool.m */; };
+		6628CED92262D87E00434578 /* BFProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6628CED82262D87E00434578 /* BFProgressHUD.m */; };
 		662CA88B218460830061E49E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 662CA88A218460830061E49E /* AppDelegate.m */; };
 		662CA88E218460830061E49E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 662CA88D218460830061E49E /* ViewController.m */; };
 		662CA891218460830061E49E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662CA88F218460830061E49E /* Main.storyboard */; };
@@ -319,6 +320,8 @@
 		66176345219B0E7C00EAEE34 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		66176346219B10C500EAEE34 /* GCDTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTool.h; sourceTree = "<group>"; };
 		66176347219B10C500EAEE34 /* GCDTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTool.m; sourceTree = "<group>"; };
+		6628CED72262D87E00434578 /* BFProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFProgressHUD.h; sourceTree = "<group>"; };
+		6628CED82262D87E00434578 /* BFProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFProgressHUD.m; sourceTree = "<group>"; };
 		662CA886218460830061E49E /* OCBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		662CA889218460830061E49E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		662CA88A218460830061E49E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1273,6 +1276,8 @@
 			children = (
 				66B48E7E218B3A0F005A7BF2 /* MBProgressHUD+Core.h */,
 				66B48E7F218B3A0F005A7BF2 /* MBProgressHUD+Core.m */,
+				6628CED72262D87E00434578 /* BFProgressHUD.h */,
+				6628CED82262D87E00434578 /* BFProgressHUD.m */,
 			);
 			path = HUD;
 			sourceTree = "<group>";
@@ -1916,6 +1921,7 @@
 				662CA946218464A30061E49E /* UITextField+YSBTextFieldDelegate.m in Sources */,
 				6651661021B7ED2900F97AF9 /* BaseRequest.m in Sources */,
 				667A581A21BC17EA00369DE5 /* BLDelayStartupTool.m in Sources */,
+				6628CED92262D87E00434578 /* BFProgressHUD.m in Sources */,
 				66E16AC221A16280002C1F83 /* UITextField+JKShake.m in Sources */,
 				5E66F0C621B8B56900950BB8 /* ClientData.m in Sources */,
 				667A57F021BC0E5E00369DE5 /* NSBundle+AppLanguageSwitch.m in Sources */,

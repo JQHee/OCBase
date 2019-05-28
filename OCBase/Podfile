@@ -176,4 +176,7 @@ target 'OCBase' do
     # 数据库迁移
     # https://blog.csdn.net/zhangyutangde/article/details/78339120
     
+    # 单边设置阴影
+    # https://github.com/YotrolZ/YCShadowView
+    
 end

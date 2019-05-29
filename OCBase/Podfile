@@ -178,5 +178,7 @@ target 'OCBase' do
     
     # 单边设置阴影
     # https://github.com/YotrolZ/YCShadowView
+    # 照片添加水印
+    # https://www.jianshu.com/p/8d5ac876e4ff
     
 end

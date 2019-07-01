@@ -180,5 +180,15 @@ target 'OCBase' do
     # https://github.com/YotrolZ/YCShadowView
     # 照片添加水印
     # https://www.jianshu.com/p/8d5ac876e4ff
+    # IOKit获取电池电量: https://www.jianshu.com/p/bd9ebc815115
+    # WKWebView崩溃记录——SIGSEGV(11): https://www.jianshu.com/p/b302e8a639aa
+    # 原生嵌套RN: https://www.jianshu.com/p/13cbdbd1550f
+    # iOS管理多个弹窗弹出-信号量应用：https://www.jianshu.com/p/8ebfd758a200
+    # 仿美图定制：https://www.jianshu.com/p/f6ce3a5c8da8
+    # iOS AOP简单实现日志打点[Aspects]： https://www.jianshu.com/p/3167fad8a328
+    # Xcode控制台输出内容不全： https://www.jianshu.com/p/26c02014f9f2
+    # 混淆垃圾代码：https://www.jianshu.com/p/b58b38d8bb8b
+    # TableViewDataSource拆分：https://www.jianshu.com/p/5031c370a33a
+    # iOS KVO安全移除所有观察者 防止重复添加或者删除监听：https://www.jianshu.com/p/98ff6dfa4802
     
 end

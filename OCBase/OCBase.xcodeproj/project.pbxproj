@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -42,6 +42,7 @@
 		5E8C21F721E81E960059FA31 /* UIViewController+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C21F621E81E960059FA31 /* UIViewController+Core.m */; };
 		5E8C21FA21E81F000059FA31 /* BFSystemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C21F921E81F000059FA31 /* BFSystemTool.m */; };
 		5E8C21FD21E81F7C0059FA31 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C21FC21E81F7C0059FA31 /* UIScrollView+Refresh.m */; };
+		5ECEBAAF22C9917F00CA8E14 /* 敏感信息.md in Resources */ = {isa = PBXBuildFile; fileRef = 5ECEBAAE22C9917E00CA8E14 /* 敏感信息.md */; };
 		6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6617631A219B03CC00EAEE34 /* WordFilter.m */; };
 		6617631D219B03CC00EAEE34 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6617631B219B03CC00EAEE34 /* words.txt */; };
 		66176335219B045D00EAEE34 /* MLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66176321219B045D00EAEE34 /* MLLocationManager.m */; };
@@ -294,6 +295,7 @@
 		5E8C21F921E81F000059FA31 /* BFSystemTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFSystemTool.m; sourceTree = "<group>"; };
 		5E8C21FB21E81F7C0059FA31 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		5E8C21FC21E81F7C0059FA31 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		5ECEBAAE22C9917E00CA8E14 /* 敏感信息.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "敏感信息.md"; sourceTree = "<group>"; };
 		66176319219B03CB00EAEE34 /* WordFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordFilter.h; sourceTree = "<group>"; };
 		6617631A219B03CC00EAEE34 /* WordFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordFilter.m; sourceTree = "<group>"; };
 		6617631B219B03CC00EAEE34 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
@@ -938,6 +940,7 @@
 		662CA888218460830061E49E /* OCBase */ = {
 			isa = PBXGroup;
 			children = (
+				5ECEBAAE22C9917E00CA8E14 /* 敏感信息.md */,
 				6651661521B801DD00F97AF9 /* TestNetwork */,
 				66D8F85521A6E33E004D6D71 /* LoginStatus */,
 				66176340219B071C00EAEE34 /* sh */,
@@ -1821,6 +1824,7 @@
 				66176342219B072D00EAEE34 /* AutoCutting.sh in Resources */,
 				6617633F219B045D00EAEE34 /* MLCityListViewController.xib in Resources */,
 				662CA891218460830061E49E /* Main.storyboard in Resources */,
+				5ECEBAAF22C9917F00CA8E14 /* 敏感信息.md in Resources */,
 				6617633D219B045D00EAEE34 /* MLCityListTableViewCell.xib in Resources */,
 				6617633C219B045D00EAEE34 /* MLCityListHotCell.xib in Resources */,
 				66E16AEC21A163FA002C1F83 /* multipy_unicode.dat in Resources */,

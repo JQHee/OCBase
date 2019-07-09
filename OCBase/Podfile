@@ -203,5 +203,6 @@ target 'OCBase' do
     # TableViewDataSource拆分：https://www.jianshu.com/p/5031c370a33a
     # iOS KVO安全移除所有观察者 防止重复添加或者删除监听：https://www.jianshu.com/p/98ff6dfa4802
     # 仿微信图片裁剪小工具：https://github.com/Rogue24/JPImageresizerView
+    # 仿微信通讯录索引：https://github.com/TalkingJourney/SCIndexView
     
 end

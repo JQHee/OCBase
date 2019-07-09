@@ -125,6 +125,9 @@ target 'OCBase' do
     # 阿里的携程库实现
     pod 'coobjc', '~> 1.0.1'
     
+    # 仿微信、今日头像图片浏览器
+    # pod 'GKPhotoBrowser', '~> 1.5.2'
+    
     # 欢迎页面 开屏广告、启动广告解决方案-支持静态/动态图片广告,mp4视频广告,全屏/半屏广告、兼容iPhone/iPad
     # pod 'XHLaunchAd', '~> 3.9.8'
     

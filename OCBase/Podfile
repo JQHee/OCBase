@@ -125,6 +125,12 @@ target 'OCBase' do
     # 阿里的携程库实现
     pod 'coobjc', '~> 1.0.1'
     
+    # 欢迎页面 开屏广告、启动广告解决方案-支持静态/动态图片广告,mp4视频广告,全屏/半屏广告、兼容iPhone/iPad
+    # pod 'XHLaunchAd', '~> 3.9.8'
+    
+    # 电商数量增减按钮
+    # pod 'PPNumberButton'
+    
     # 融360  Face++人脸识别及身份证、银行卡扫描
     # https://www.jianshu.com/p/66a142505bc9
     
@@ -190,5 +196,6 @@ target 'OCBase' do
     # 混淆垃圾代码：https://www.jianshu.com/p/b58b38d8bb8b
     # TableViewDataSource拆分：https://www.jianshu.com/p/5031c370a33a
     # iOS KVO安全移除所有观察者 防止重复添加或者删除监听：https://www.jianshu.com/p/98ff6dfa4802
+    # 仿微信图片裁剪小工具：https://github.com/Rogue24/JPImageresizerView
     
 end

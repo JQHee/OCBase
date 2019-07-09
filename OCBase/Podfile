@@ -131,6 +131,9 @@ target 'OCBase' do
     # 电商数量增减按钮
     # pod 'PPNumberButton'
     
+    # 重点：湖南工业大学校园助手
+    # https://github.com/isnine/HutHelper
+    
     # 融360  Face++人脸识别及身份证、银行卡扫描
     # https://www.jianshu.com/p/66a142505bc9
     

@@ -207,7 +207,7 @@ target 'OCBase' do
     # 直播送礼物弹簧效果：https://github.com/Jonhory/LiveSendGift
     # 卡片切换：https://github.com/mengxianliang/XLCardSwitch
     
-    # 小说阅读器：面部id、主题切换、网络框架、today widget
+    # 小说阅读器：面部id、主题切换、网络框架、today widget、架构、
     # https://github.com/JQHee/readNovel
     
 end

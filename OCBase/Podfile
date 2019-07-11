@@ -210,4 +210,7 @@ target 'OCBase' do
     # 小说阅读器：面部id、主题切换、网络框架、today widget、架构、
     # https://github.com/JQHee/readNovel
     
+    # 应用的重签名
+    # https://github.com/DanTheMan827/ios-app-signer
+    
 end

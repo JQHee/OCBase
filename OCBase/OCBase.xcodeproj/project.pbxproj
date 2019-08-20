@@ -42,6 +42,7 @@
 		5E8C21F721E81E960059FA31 /* UIViewController+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C21F621E81E960059FA31 /* UIViewController+Core.m */; };
 		5E8C21FA21E81F000059FA31 /* BFSystemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C21F921E81F000059FA31 /* BFSystemTool.m */; };
 		5E8C21FD21E81F7C0059FA31 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C21FC21E81F7C0059FA31 /* UIScrollView+Refresh.m */; };
+		5EC4E578230BD6E5002F9E98 /* BFToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4E577230BD6E4002F9E98 /* BFToast.m */; };
 		5ECEBAAF22C9917F00CA8E14 /* 敏感信息.md in Resources */ = {isa = PBXBuildFile; fileRef = 5ECEBAAE22C9917E00CA8E14 /* 敏感信息.md */; };
 		6617631C219B03CC00EAEE34 /* WordFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6617631A219B03CC00EAEE34 /* WordFilter.m */; };
 		6617631D219B03CC00EAEE34 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6617631B219B03CC00EAEE34 /* words.txt */; };
@@ -295,6 +296,8 @@
 		5E8C21F921E81F000059FA31 /* BFSystemTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFSystemTool.m; sourceTree = "<group>"; };
 		5E8C21FB21E81F7C0059FA31 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		5E8C21FC21E81F7C0059FA31 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		5EC4E576230BD6E4002F9E98 /* BFToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFToast.h; sourceTree = "<group>"; };
+		5EC4E577230BD6E4002F9E98 /* BFToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFToast.m; sourceTree = "<group>"; };
 		5ECEBAAE22C9917E00CA8E14 /* 敏感信息.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "敏感信息.md"; sourceTree = "<group>"; };
 		66176319219B03CB00EAEE34 /* WordFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordFilter.h; sourceTree = "<group>"; };
 		6617631A219B03CC00EAEE34 /* WordFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordFilter.m; sourceTree = "<group>"; };
@@ -1085,6 +1088,8 @@
 		662CA901218464A30061E49E /* QFTools */ = {
 			isa = PBXGroup;
 			children = (
+				5EC4E576230BD6E4002F9E98 /* BFToast.h */,
+				5EC4E577230BD6E4002F9E98 /* BFToast.m */,
 				5E2A1886222CC3BF00E542A0 /* Security */,
 				66E16AE221A163FA002C1F83 /* SearchCore */,
 				66E16ADE21A163E0002C1F83 /* LocalPushCenter */,
@@ -2053,6 +2058,7 @@
 				66E16A5021A15BA5002C1F83 /* NSDictionary+Core.m in Sources */,
 				6617633E219B045D00EAEE34 /* MLCityListViewController.m in Sources */,
 				662CA949218464A40061E49E /* NSData+AES256.m in Sources */,
+				5EC4E578230BD6E5002F9E98 /* BFToast.m in Sources */,
 				66B2B725218DD7EC00F028FF /* UIImage+ALinExtension.m in Sources */,
 				662F6A562197F2A900FD5231 /* UIView+BFAddTapGestureRecognizer.m in Sources */,
 				662F6A5C2197FC5E00FD5231 /* NullSafe.m in Sources */,
